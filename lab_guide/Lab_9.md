@@ -30,6 +30,14 @@ The following topics will be covered in this chapter:
 
 
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch09_jvm.example.ExampleClass.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch09_jvm.MyApplication.java`
+
 
 JVM Structure and Garbage Collection
 ====================================

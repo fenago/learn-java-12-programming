@@ -1,58 +1,3 @@
-
-
-Exception Handling
-==================
-
-The throw statement allows throwing any exception that a programmer
-deems necessary. One can even create their own exception. To create a
-checked exception, extend the java.lang.Exception class:
-
-```
-class MyCheckedException extends Exception{    public MyCheckedException(String message){        super(message);    }    //add code you need to have here}
-```
-
-Also, to create an unchecked exception, extend
-the java.lang.RunitmeException class, as follows:
-
-```
-class MyUncheckedException extends RuntimeException{    public MyUncheckedException(String message){        super(message);    }    //add code you need to have here}
-```
-
-Notice the comment *add code you need to have here*. You can add methods
-and properties to the custom exception as to any other regular class,
-but programmers rarely do it. The best practices even explicitly
-recommend avoiding using exceptions for driving the business logic.
-Exceptions should be what the name implies, covering only exceptional,
-very rare situations.
-
-But if you need to announce an exceptional condition use
-the throw keyword and new operator to create and trigger propagation of
-an exception object. Here are a few examples:
-
-```
-throw new Exception("Something happend"); throw new RunitmeException("Something happened");throw new MyCheckedException("Something happened");throw new MyUncheckedException("Something happened");
-```
-
-It is even possible to throw null as follows:
-
-```
-throw null;
-```
-
-The result of the preceding statement is the same as the result of this
-one:
-
-```
-throw new NullPointerException;
-```
-
-In both cases, an object of an unchecked NullPointerException begins to
-propagate through the system, until it is caught either by the
-application or the JVM.
-
-
-
-
 Exception Handling
 ==================
 
@@ -77,6 +22,23 @@ The following topics will be covered in this chapter:
 -   The assert statement
 -   Best practices of exceptions handling
 
+
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.CustomExceptions.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.Framework.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.Throws.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.TryCatchFinally.java`
 
 
 Exception Handling

@@ -1,5 +1,5 @@
 
-Java - Getting New Features
+Java - Getting New Features (Read-Only)
 ===========================
 
 In this chapter, the reader will learn about the current most

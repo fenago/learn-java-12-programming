@@ -22,7 +22,33 @@ The following topics will be covered in this chapter:
 -   Using the HTTP 2 Client API
 
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.HttpClientDemo.java`
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.TcpClient.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.TcpServer.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UdpReceiver.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UdpSender.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UrlClient.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UrlServer.java`
 
 Network Programming
 ===================

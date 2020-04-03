@@ -61,6 +61,22 @@ following:
 
 
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.ControlFlow.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.Operators.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.PrimitiveTypes.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.StringClass.java`
+
 
 Getting Started with Java 12
 ============================

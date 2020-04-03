@@ -21,6 +21,26 @@ The following topics will be covered in this chapter, as follows:
 -   Parallel streams
 
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.Initialize.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.IntermediateOps.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.NumericStreams.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.Person.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.TerminalOps.java`
+
 
 Java Standard Streams
 =====================

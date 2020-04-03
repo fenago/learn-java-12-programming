@@ -19,6 +19,26 @@ The following topics will be covered in this chapter:
 
 
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.ArraysUtils.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.CollectionsDemo.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.CollectionsUtils.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.ObjectsUtils.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.TimeRelatedClasses.java`
+
 
 Data Structures, Generics, and Popular Utilities
 ================================================

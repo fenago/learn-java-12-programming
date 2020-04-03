@@ -22,6 +22,18 @@ The following topics will be covered in this chapter:
 
 
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch16_microservices.HttpServerVert.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch16_microservices.MessageRcvVert.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch16_microservices.ReactiveSystemDemo.java`
+
 Microservices
 =============
 

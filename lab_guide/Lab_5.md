@@ -3,8 +3,7 @@
 Strings, Input/Output, and Files
 ================================
 
-\
- In this chapter, a reader will be presented with String class methods
+In this chapter, a reader will be presented with String class methods
 in more detail. We will also discuss popular string utilities from
 standard libraries and Apache Commons project. An overview of Java
 input/output streams and related classes of the java.io packages will
@@ -20,7 +19,37 @@ The following topics will be covered in this chapter:
 -   Apache Commons utilities FileUtils and IOUtils
 
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.ConsoleDemo.java`
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.Files.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.InputOutputStream.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.Person1.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.Person2.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.ReaderWriter.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.SerializableDemo.java`
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.Strings.java`
 
 Strings, Input/Output, and Files
 ================================
