@@ -1,3 +1,4 @@
+<img align="right" src="../logo-small.png">
 
 
 Best Practices for Writing High-Quality Code

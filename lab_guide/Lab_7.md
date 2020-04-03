@@ -1,3 +1,4 @@
+<img align="right" src="../logo-small.png">
 
 
 Java Standard and External Libraries

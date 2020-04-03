@@ -1,3 +1,5 @@
+<img align="right" src="../logo-small.png">
+
 
 Java - Getting New Features (Read-Only)
 ===========================

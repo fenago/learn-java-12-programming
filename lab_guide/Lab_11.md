@@ -1,4 +1,6 @@
 
+<img align="right" src="../logo-small.png">
+
 
 Functional Programming
 ======================

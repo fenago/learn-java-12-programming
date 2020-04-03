@@ -1,3 +1,5 @@
+<img align="right" src="../logo-small.png">
+
 
 Java Object-Oriented Programming (OOP)
 ======================================

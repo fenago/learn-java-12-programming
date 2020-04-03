@@ -1,3 +1,5 @@
+<img align="right" src="../logo-small.png">
+
 
 Getting Started with Java 12
 ============================
