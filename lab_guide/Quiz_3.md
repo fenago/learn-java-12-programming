@@ -1,6 +1,6 @@
 
 
-Java Fundamentals
+Quiz
 =================
 
 1.  Select all the statements that are correct:

@@ -47,7 +47,7 @@ You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.StringClass.java`
 
 
-Getting Started with Java 12
+How to install and run Java
 ============================
 
 When somebody says "*Java*," they may mean quite different things:
@@ -223,8 +223,8 @@ option, it lists all the currently running Java processes and their
 run-away Java processes. If you have, you can then kill such a process
 using the PID provided.
 
-Getting Started with Java 12
-============================
+How to install and run an IDE
+ ============================
 
 What used to be just a specialized editor that allowed checking the
 syntax of the written program the same way a Word editor checks the
@@ -696,7 +696,7 @@ the classpath separator.
 
 
 
-Getting Started with Java 12
+Java primitive types and operators
 ============================
 
 With all the main programming tools in place, we can start talking about
@@ -730,7 +730,10 @@ we are going to discuss in the *Java statements* section. Here is one
 example:
 
 ```
-boolean b = x > 2;if(b){     //do something}
+boolean b = x > 2;
+if(b){ 
+    //do something
+}
 ```
 
 In the code, we assign to the b variable the result of the evaluation of
@@ -754,7 +757,7 @@ Integral types consume the following amount of memory:
 -   short: 16 bit
 -   int: 32 bit
 -   long: 64 bit
-
+1 2q
 The char type is an unsigned integer that can hold a value (called
 a **code point**) from 0 to 65,535 inclusive. It represents a Unicode
 character, which means there are 65,536 Unicode characters. Here are
@@ -772,7 +775,24 @@ three records form the basic Latin list of Unicode characters:
 The following code demonstrates the properties of the char type:
 
 ```
-char x1 = '\u0032';System.out.println(x1);  //prints: 2char x2 = '2';System.out.println(x2);  //prints: 2x2 = 65;System.out.println(x2);  //prints: Achar y1 = '\u0041';System.out.println(y1);  //prints: Achar y2 = 'A';System.out.println(y2);  //prints: Ay2 = 50;System.out.println(y2);  //prints: 2System.out.println(x1 + x2);  //prints: 115System.out.println(x1 + y1);  //prints: 115
+char x1 = '\u0032';
+System.out.println(x1);  //prints: 2
+
+char x2 = '2';
+System.out.println(x2);  //prints: 2
+x2 = 65;
+System.out.println(x2);  //prints: A
+
+char y1 = '\u0041';
+System.out.println(y1);  //prints: A
+
+char y2 = 'A';
+System.out.println(y2);  //prints: A
+y2 = 50;
+System.out.println(y2);  //prints: 2
+
+System.out.println(x1 + x2);  //prints: 115
+System.out.println(x1 + y1);  //prints: 115
 ```
 
 The last two lines from the code example explain why the char type is
@@ -792,7 +812,16 @@ You can always retrieve the maximum and minimum value of each primitive
 type from a corresponding Java constant as follows:
 
 ```
-System.out.println(Byte.MIN_VALUE);      //prints: -128System.out.println(Byte.MAX_VALUE);      //prints:  127System.out.println(Short.MIN_VALUE);     //prints: -32768System.out.println(Short.MAX_VALUE);     //prints:  32767System.out.println(Integer.MIN_VALUE);   //prints: -2147483648System.out.println(Integer.MAX_VALUE);   //prints:  2147483647System.out.println(Long.MIN_VALUE);      //prints: -9223372036854775808System.out.println(Long.MAX_VALUE);      //prints:  9223372036854775807System.out.println((int)Character.MIN_VALUE); //prints: 0System.out.println((int)Character.MAX_VALUE); //prints: 65535
+System.out.println(Byte.MIN_VALUE);      //prints: -128
+System.out.println(Byte.MAX_VALUE);      //prints:  127
+System.out.println(Short.MIN_VALUE);     //prints: -32768
+System.out.println(Short.MAX_VALUE);     //prints:  32767
+System.out.println(Integer.MIN_VALUE);   //prints: -2147483648
+System.out.println(Integer.MAX_VALUE);   //prints:  2147483647
+System.out.println(Long.MIN_VALUE);      //prints: -9223372036854775808
+System.out.println(Long.MAX_VALUE);      //prints:  9223372036854775807
+System.out.println((int)Character.MIN_VALUE); //prints: 0
+System.out.println((int)Character.MAX_VALUE); //prints: 65535
 ```
 
 The construct (int) in the last two lines, is an example of **cast
@@ -822,7 +851,10 @@ There are two types in this group of primitive types—float and double:
 Their positive maximum and minimum possible values are as follows:
 
 ```
-System.out.println(Float.MIN_VALUE);  //prints: 1.4E-45System.out.println(Float.MAX_VALUE);  //prints: 3.4028235E38System.out.println(Double.MIN_VALUE); //prints: 4.9E-324System.out.println(Double.MAX_VALUE); //prints: 1.7976931348623157E308
+System.out.println(Float.MIN_VALUE);  //prints: 1.4E-45
+System.out.println(Float.MAX_VALUE);  //prints: 3.4028235E38
+System.out.println(Double.MIN_VALUE); //prints: 4.9E-324
+System.out.println(Double.MAX_VALUE); //prints: 1.7976931348623157E308
 ```
 
 The maximum and minimum negative values are the same as those just
@@ -851,7 +883,14 @@ need to add either f or F. For example, the following assignments do not
 cause an error:
 
 ```
-float f = 42.3f;float d = 42.3F;double a = 42.3f;double b = 42.3F;float x = (float)42.3d;float y = (float)42.3D;
+float f = 42.3f;
+float d = 42.3F;
+
+double a = 42.3f;
+double b = 42.3F;
+
+float x = (float)42.3d;
+float y = (float)42.3D;
 ```
 
 As you may have noticed from the example, d and D indicate a double
@@ -882,14 +921,18 @@ has two literals: true and false. Literals of the byte, short, int, and
 long integral types have the int type by default:
 
 ```
-byte b = 42;short s = 42;int i = 42;long l = 42;
+byte b = 42;
+short s = 42;
+int i = 42;
+long l = 42;
 ```
 
 In addition, to indicate a literal of a long type, you can append the
 letter l or L to the end:
 
 ```
-long l1 = 42l;long l2 = 42L;
+long l1 = 42l;
+long l2 = 42L;
 ```
 
 The letter l can be easily confused with the number 1, so
@@ -911,7 +954,22 @@ a to f (or A to F) map to the decimal values 10 to 15. Here is the
 demonstration code:
 
 ```
-int i = 42;System.out.println(Integer.toString(i, 2));       // 101010System.out.println(Integer.toBinaryString(i));    // 101010System.out.println(0b101010);                     // 42System.out.println(Integer.toString(i, 8));       // 52System.out.println(Integer.toOctalString(i));     // 52System.out.println(052);                          // 42System.out.println(Integer.toString(i, 10));       // 42System.out.println(Integer.toString(i));           // 42System.out.println(42);                            // 42System.out.println(Integer.toString(i, 16));       // 2aSystem.out.println(Integer.toHexString(i));        // 2aSystem.out.println(0x2a);                          // 42
+int i = 42;
+System.out.println(Integer.toString(i, 2));       // 101010
+System.out.println(Integer.toBinaryString(i));    // 101010
+System.out.println(0b101010);                     // 42
+
+System.out.println(Integer.toString(i, 8));       // 52
+System.out.println(Integer.toOctalString(i));     // 52
+System.out.println(052);                          // 42
+
+System.out.println(Integer.toString(i, 10));       // 42
+System.out.println(Integer.toString(i));           // 42
+System.out.println(42);                            // 42
+
+System.out.println(Integer.toString(i, 16));       // 2a
+System.out.println(Integer.toHexString(i));        // 2a
+System.out.println(0x2a);                          // 42
 ```
 
 As you can see, Java provides methods that convert decimal system values
@@ -923,7 +981,14 @@ is large, it is possible to break it into triples separated by
 an underscore (\_) sign. Observe the following, for example:
 
 ```
-int i = 354_263_654;System.out.println(i);  //prints: 354263654float f = 54_436.98f;System.out.println(f);  //prints: 54436.98long l = 55_763_948L;System.out.println(l);  //prints: 55763948
+int i = 354_263_654;
+System.out.println(i);  //prints: 354263654
+
+float f = 54_436.98f;
+System.out.println(f);  //prints: 54436.98
+
+long l = 55_763_948L;
+System.out.println(l);  //prints: 55763948
 ```
 
 The compiler ignores an embedded underscore sign.
@@ -933,7 +998,10 @@ The char type has two kinds of literals: a **single character** or an
 discussing the numeric types:
 
 ```
-char x1 = '\u0032';char x2 = '2';char y1 = '\u0041';char y2 = 'A';
+char x1 = '\u0032';
+char x2 = '2';
+char y1 = '\u0041';
+char y2 = 'A';
 ```
 
 As you can see, the character has to be enclosed in single quotes. 
@@ -955,14 +1023,21 @@ a symbol. They are used when this symbol cannot be otherwise displayed.
 Observe the following, for example:
 
 ```
-System.out.println("\"");   //prints: "System.out.println('\'');   //prints: 'System.out.println('\\');   //prints: \
+System.out.println("\"");   //prints: "
+System.out.println('\'');   //prints: '
+System.out.println('\\');   //prints: \
 ```
 
 The rest are used more as control codes that direct the output device to
 do something:
 
 ```
-System.out.println("The back\bspace");     //prints: The bacspaceSystem.out.println("The horizontal\ttab"); //prints: The horizontal   tabSystem.out.println("The line\nfeed");      //prints: The line                                           //        feedSystem.out.println("The form\ffeed");      //prints: The form feedSystem.out.println("The carriage\rreturn");//prints: return
+System.out.println("The back\bspace");     //prints: The bacspace
+System.out.println("The horizontal\ttab"); //prints: The horizontal   tab
+System.out.println("The line\nfeed");      //prints: The line
+                                           //        feed
+System.out.println("The form\ffeed");      //prints: The form feed
+System.out.println("The carriage\rreturn");//prints: return
 ```
 
 As you can see, \\b deletes a previous symbol, \\t inserts a tab space,
@@ -983,7 +1058,13 @@ It represents a number in the locale-specific, human-readable form.
 Observe the following, for example: 
 
 ```
-NumberFormat fmt = NumberFormat.getCompactNumberInstance(Locale.US,                                             NumberFormat.Style.SHORT);System.out.println(fmt.format(42_000));          //prints: 42KSystem.out.println(fmt.format(42_000_000));      //prints: 42MNumberFormat fmtP = NumberFormat.getPercentInstance();System.out.println(fmtP.format(0.42));          //prints: 42%
+NumberFormat fmt = NumberFormat.getCompactNumberInstance(Locale.US, 
+                                            NumberFormat.Style.SHORT);
+System.out.println(fmt.format(42_000));          //prints: 42K
+System.out.println(fmt.format(42_000_000));      //prints: 42M
+
+NumberFormat fmtP = NumberFormat.getPercentInstance();
+System.out.println(fmtP.format(0.42));          //prints: 42%
 ```
 
 As you can see, to access this capability, you have to acquire a
@@ -1057,7 +1138,8 @@ divides the left-hand operand by the right-hand operand and returns the
 remainder, as follows:
 
 ```
-int x = 5;System.out.println(x % 2);   //prints: 1
+int x = 5;
+System.out.println(x % 2);   //prints: 1
 ```
 
 It is also worth mentioning that the division of two integer numbers in
@@ -1065,7 +1147,8 @@ Java loses the fractional part because Java assumes the result should be
 an integer number two, as follows:
 
 ```
-int x = 5;System.out.println(x / 2);   //prints: 2
+int x = 5;
+System.out.println(x / 2);   //prints: 2
 ```
 
 If you need the fractional part of the result to be preserved, convert
@@ -1073,7 +1156,11 @@ one of the operands into a floating-point type. Here are a few, among
 many ways, in which to do this:
 
 ```
-int x = 5;System.out.println(x / 2.);           //prints: 2.5System.out.println((1. * x) / 2);     //prints: 2.5System.out.println(((float)x) / 2);   //prints: 2.5System.out.println(((double) x) / 2); //prints: 2.5
+int x = 5;
+System.out.println(x / 2.);           //prints: 2.5
+System.out.println((1. * x) / 2);     //prints: 2.5
+System.out.println(((float)x) / 2);   //prints: 2.5
+System.out.println(((double) x) / 2); //prints: 2.5
 ```
 
 Increment and decrement unary operators (++ and --)
@@ -1087,7 +1174,15 @@ value by 1 after the variable value is returned. Here are a few
 examples:
 
 ```
-int i = 2;System.out.println(++i);   //prints: 3System.out.println(i);     //prints: 3System.out.println(--i);   //prints: 2System.out.println(i);     //prints: 2System.out.println(i++);   //prints: 2System.out.println(i);     //prints: 3System.out.println(i--);   //prints: 3System.out.println(i);     //prints: 2
+int i = 2;
+System.out.println(++i);   //prints: 3
+System.out.println(i);     //prints: 3
+System.out.println(--i);   //prints: 2
+System.out.println(i);     //prints: 2
+System.out.println(i++);   //prints: 2
+System.out.println(i);     //prints: 3
+System.out.println(i--);   //prints: 3
+System.out.println(i);     //prints: 2
 ```
 
 Equality operators (== and !=)
@@ -1099,7 +1194,12 @@ the boolean value true if the operand's values are equal, or false
 otherwise. Observe the following, for example:
 
 ```
-int i1 = 1;int i2 = 2;System.out.println(i1 == i2);        //prints: falseSystem.out.println(i1 != i2);        //prints: trueSystem.out.println(i1 == (i2 - 1));  //prints: trueSystem.out.println(i1 != (i2 - 1));  //prints: false
+int i1 = 1;
+int i2 = 2;
+System.out.println(i1 == i2);        //prints: false
+System.out.println(i1 != i2);        //prints: true
+System.out.println(i1 == (i2 - 1));  //prints: true
+System.out.println(i1 != (i2 - 1));  //prints: false
 ```
 
 Exercise caution, though, while comparing values of floating-point
@@ -1117,7 +1217,16 @@ Relational operators (\<, \>, \<=, and \>=)
 value. Observe the following, for example:
 
 ```
-int i1 = 1;int i2 = 2;System.out.println(i1 > i2);         //prints: falseSystem.out.println(i1 >= i2);        //prints: falseSystem.out.println(i1 >= (i2 - 1));  //prints: trueSystem.out.println(i1 < i2);         //prints: trueSystem.out.println(i1 <= i2);        //prints: trueSystem.out.println(i1 <= (i2 - 1));  //prints: truefloat f = 1.2f;System.out.println(i1 < f);          //prints: true
+int i1 = 1;
+int i2 = 2;
+System.out.println(i1 > i2);         //prints: false
+System.out.println(i1 >= i2);        //prints: false
+System.out.println(i1 >= (i2 - 1));  //prints: true
+System.out.println(i1 < i2);         //prints: true
+System.out.println(i1 <= i2);        //prints: true
+System.out.println(i1 <= (i2 - 1));  //prints: true
+float f = 1.2f;
+System.out.println(i1 < f);          //prints: true
 ```
 
 Logical operators (!, &, and |)
@@ -1134,7 +1243,15 @@ The logical operators can be defined as follows:
 Here is an example:
 
 ```
-boolean b = true;System.out.println(!b);    //prints: falseSystem.out.println(!!b);   //prints: trueboolean c = true;System.out.println(c & b); //prints: trueSystem.out.println(c | b); //prints: trueboolean d = false;System.out.println(c & d); //prints: falseSystem.out.println(c | d); //prints: true
+boolean b = true;
+System.out.println(!b);    //prints: false
+System.out.println(!!b);   //prints: true
+boolean c = true;
+System.out.println(c & b); //prints: true
+System.out.println(c | b); //prints: true
+boolean d = false;
+System.out.println(c & d); //prints: false
+System.out.println(c | d); //prints: true
 ```
 
 Conditional operators (&&, ||, and ? :)
@@ -1144,7 +1261,13 @@ The && and || operators produce the same results as the & and | logical
 operators we have just demonstrated:
 
 ```
-boolean b = true;boolean c = true;System.out.println(c && b); //prints: trueSystem.out.println(c || b); //prints: trueboolean d = false;System.out.println(c && d); //prints: falseSystem.out.println(c || d); //prints: true
+boolean b = true;
+boolean c = true;
+System.out.println(c && b); //prints: true
+System.out.println(c || b); //prints: true
+boolean d = false;
+System.out.println(c && d); //prints: false
+System.out.println(c || d); //prints: true
 ```
 
 The difference is that the && and || operators do not always evaluate
@@ -1156,7 +1279,11 @@ expression will be clearly evaluated to true without evaluating the
 second operand. We can demonstrate this in the following code:
 
 ```
-int h = 1;System.out.println(h > 3 & h++ < 3);  //prints: falseSystem.out.println(h);                //prints: 2System.out.println(h > 3 && h++ < 3); //prints: falseSystem.out.println(h);                //prints: 2
+int h = 1;
+System.out.println(h > 3 & h++ < 3);  //prints: false
+System.out.println(h);                //prints: 2
+System.out.println(h > 3 && h++ < 3); //prints: false
+System.out.println(h);                //prints: 2
 ```
 
 The ? : operator is called a **ternary operator**. It evaluates a
@@ -1166,7 +1293,9 @@ variable the value calculated by the first expression (between the ? and
 expression (after the : sign):
 
 ```
-int n = 1, m = 2;float k = n > m ? (n * m + 3) : ((float)n / m); System.out.println(k);           //prints: 0.5
+int n = 1, m = 2;
+float k = n > m ? (n * m + 3) : ((float)n / m); 
+System.out.println(k);           //prints: 0.5
 ```
 
 Assignment operators (=, +=, -=, \*=, /=, and %=)
@@ -1194,12 +1323,22 @@ Other assignment operators calculate a new value before assigning it:
 Here is how these operators work:
 
 ```
-float a = 1f;a += 2;System.out.println(a); //prints: 3.0a -= 1;System.out.println(a); //prints: 2.0a *= 2;System.out.println(a); //prints: 4.0a /= 2;System.out.println(a); //prints: 2.0a %= 2;System.out.println(a); //prints: 0.0
+float a = 1f;
+a += 2;
+System.out.println(a); //prints: 3.0
+a -= 1;
+System.out.println(a); //prints: 2.0
+a *= 2;
+System.out.println(a); //prints: 4.0
+a /= 2;
+System.out.println(a); //prints: 2.0
+a %= 2;
+System.out.println(a); //prints: 0.0
 ```
 
 
 
-Getting Started with Java 12
+String types and literals
 ============================
 
 We have just described the primitive value types of the Java language.
@@ -1258,7 +1397,10 @@ in a dedicated section of memory called the **string pool**, and two
 literals equally spelled to represent the same value from the pool:
 
 ```
-String s1 = "abc";String s2 = "abc";System.out.println(s1 == s2);    //prints: trueSystem.out.println("abc" == s1); //prints: true
+String s1 = "abc";
+String s2 = "abc";
+System.out.println(s1 == s2);    //prints: true
+System.out.println("abc" == s1); //prints: true
 ```
 
 The JVM authors have chosen such an implementation to avoid duplication
@@ -1269,14 +1411,19 @@ allocated outside the string pool, so references of two String objects,
 or any other objects for that matter, are always different:
 
 ```
-String o1 = new String("abc");String o2 = new String("abc");System.out.println(o1 == o2);    //prints: falseSystem.out.println("abc" == o1); //prints: false
+String o1 = new String("abc");
+String o2 = new String("abc");
+System.out.println(o1 == o2);    //prints: false
+System.out.println("abc" == o1); //prints: false
 ```
 
 If necessary, it is possible to move the string value created with
 the new operator to the string pool using the intern() method:
 
 ```
-String o1 = new String("abc");System.out.println("abc" == o1);          //prints: falseSystem.out.println("abc" == o1.intern()); //prints: true
+String o1 = new String("abc");
+System.out.println("abc" == o1);          //prints: false
+System.out.println("abc" == o1.intern()); //prints: true
 ```
 
 In the previous code, the intern() method attempted to move the newly
@@ -1295,7 +1442,13 @@ strings by spelling (and case) is necessary, in order to compare two
 literals or String objects, the equals() method is a better choice:
 
 ```
-String o1 = new String("abc");String o2 = new String("abc");System.out.println(o1.equals(o2));       //prints: trueSystem.out.println(o2.equals(o1));       //prints: trueSystem.out.println(o1.equals("abc"));    //prints: trueSystem.out.println("abc".equals(o1));    //prints: trueSystem.out.println("abc".equals("abc")); //prints: true
+String o1 = new String("abc");
+String o2 = new String("abc");
+System.out.println(o1.equals(o2));       //prints: true
+System.out.println(o2.equals(o1));       //prints: true
+System.out.println(o1.equals("abc"));    //prints: true
+System.out.println("abc".equals(o1));    //prints: true
+System.out.println("abc".equals("abc")); //prints: true
 ```
 
 We will talk about the equals() and other methods of the String class
@@ -1306,7 +1459,18 @@ primitive values is that they can be added using the arithmetic
 operator, +:
 
 ```
-String s1 = "abc";String s2 = "abc";String s = s1 + s2;System.out.println(s);              //prints: abcabcSystem.out.println(s1 + "abc");     //prints: abcabcSystem.out.println("abc" + "abc");  //prints: abcabcString o1 = new String("abc");String o2 = new String("abc");String o = o1 + o2;System.out.println(o);              //prints: abcabcSystem.out.println(o1 + "abc");     //prints: abcabc 
+ String s1 = "abc";
+String s2 = "abc";
+String s = s1 + s2;
+System.out.println(s);              //prints: abcabc
+System.out.println(s1 + "abc");     //prints: abcabc
+System.out.println("abc" + "abc");  //prints: abcabc
+
+String o1 = new String("abc");
+String o2 = new String("abc");
+String o = o1 + o2;
+System.out.println(o);              //prints: abcabc
+System.out.println(o1 + "abc");     //prints: abcabc
 ```
 
 No other arithmetic operator can be applied to a String literal or an
@@ -1329,7 +1493,12 @@ String html = "<html>\n" +
 And here is how the same result is achieved with Java 12:
 
 ```
-String html = `<html>                   <body>                       <p>Hello World.</p>                   </body>               </html>              `;
+String html = `<html>
+                   <body>
+                       <p>Hello World.</p>
+                   </body>
+               </html>
+              `;
 ```
 
 As you can see, a raw string literal consists of one or more characters
@@ -1349,7 +1518,11 @@ password.
 The following code looks like a String value modification:
 
 ```
-String str = "abc";str = str + "def";System.out.println(str);       //prints: abcdefstr = str + new String("123");System.out.println(str);      //prints: abcdef123
+String str = "abc";
+str = str + "def";
+System.out.println(str);       //prints: abcdef
+str = str + new String("123");
+System.out.println(str);      //prints: abcdef123
 ```
 
 But, behind the scenes, the original "abc" literal remains intact.
@@ -1357,7 +1530,12 @@ Instead, a few new literals were created: "def", "abcdef", "123",
 and "abcdef123". To prove it, we have executed the following code:
 
 ```
-String str1 = "abc";String r1 = str1;str1 = str1 + "def";String r2 = str1;System.out.println(r1 == r2);      //prints: falseSystem.out.println(r1.equals(r2)); //prints: false
+String str1 = "abc";
+String r1 = str1;
+str1 = str1 + "def";
+String r2 = str1;
+System.out.println(r1 == r2);      //prints: false
+System.out.println(r1.equals(r2)); //prints: false
 ```
 
 As you can see, the r1 and r2 variables refer to different memories, and
@@ -1370,7 +1548,7 @@ Input/Output, and Files*.
 
 
 
-Getting Started with Java 12
+Identifiers and variables
 ============================
 
 From our school days, we have an intuitive understanding of what a
@@ -1404,7 +1582,10 @@ Other limitations are as follows:
 Here are a few unusual but legal examples of identifiers:
 
 ```
-$_42αρετηString
+$
+_42
+αρετη
+String
 ```
 
 Variable declaration (definition) and initialization
@@ -1425,7 +1606,9 @@ Java programmers sometimes use the word *definition* as a synonym of
 Here is the terminology review with examples:
 
 ```
-int x;      //declartion of variable xx = 1;      //initialization of variable xx = 2;      //assignment of variable x
+int x;      //declartion of variable x
+x = 1;      //initialization of variable x
+x = 2;      //assignment of variable x
 ```
 
 Initialization and assignment look the same. The difference is in their
@@ -1436,12 +1619,15 @@ Declaration and initialization can be combined in a single
 statement. Observe the following, for example:
 
 ```
-float $ = 42.42f;String _42 = "abc";int αρετη = 42;double String = 42.;
+float $ = 42.42f;
+String _42 = "abc";
+int αρετη = 42;
+double String = 42.;
 ```
 
 
 
-Getting Started with Java 12
+Java statements
 ============================
 
 A **Java statement** is a minimal construct that can be executed.
@@ -1449,7 +1635,9 @@ It describes an action and ends with a semicolon (;). We have seen many
 statements already. For example, here are three statements:
 
 ```
-float f = 23.42f;String sf = String.valueOf(f);System.out.println(sf);
+float f = 23.42f;
+String sf = String.valueOf(f);
+System.out.println(sf);
 ```
 
 The first line is a declaration statement combined with an assignment
@@ -1571,13 +1759,42 @@ four variations:
 Here are examples of if statements:
 
 ```
-if(x > y){    //do something}if(x > y){    //do something} else {    //do something else}if(x > y){    //do something} else if (x == y){    //do something else} else {    //do something different}
+if(x > y){
+    //do something
+}
+
+if(x > y){
+    //do something
+} else {
+    //do something else
+}
+
+if(x > y){
+    //do something
+} else if (x == y){
+    //do something else
+} else {
+    //do something different
+}
 ```
 
 A switch...case statement is a variation of the if...else statement:
 
 ```
-switch(x){    case 5:               //means: if(x = 5)        //do something         break;    case 7:                     //do something else        break;    case 12:        //do something different        break;    default:                     //do something completely different        //if x is not 5, 7, or 12}
+switch(x){
+    case 5:               //means: if(x = 5)
+        //do something 
+        break;
+    case 7:             
+        //do something else
+        break;
+    case 12:
+        //do something different
+        break;
+    default:             
+        //do something completely different
+        //if x is not 5, 7, or 12
+}
 ```
 
 As you can see, the switch...case statement forks the execution flow
@@ -1589,7 +1806,15 @@ In Java 12, a new feature is introduced in a preview mode; a
 switch...case statement in a less verbose form:
 
 ```
-void switchDemo1(int x){    switch (x) {        case 1, 3 -> System.out.print("1 or 3");        case 4    -> System.out.print("4");        case 5, 6 -> System.out.print("5 or 6");        default   -> System.out.print("Not 1,3,4,5,6");    }    System.out.println(": " + x);}
+void switchDemo1(int x){
+    switch (x) {
+        case 1, 3 -> System.out.print("1 or 3");
+        case 4    -> System.out.print("4");
+        case 5, 6 -> System.out.print("5 or 6");
+        default   -> System.out.print("Not 1,3,4,5,6");
+    }
+    System.out.println(": " + x);
+}
 ```
 
 As you can see, it uses an arrow, -\>, and does not use a break
@@ -1617,7 +1842,9 @@ We have added the --enable-preview option, as we have just described,
 and executed the switchDemo1() method with different parameters:
 
 ```
-switchDemo1(1);    //prints: 1 or 3: 1switchDemo1(2);    //prints: Not 1,3,4,5,6: 2switchDemo1(5);    //prints: 5 or 6: 5
+switchDemo1(1);    //prints: 1 or 3: 1
+switchDemo1(2);    //prints: Not 1,3,4,5,6: 2
+switchDemo1(5);    //prints: 5 or 6: 5
 ```
 
 You can see the results from the comments.
@@ -1626,7 +1853,16 @@ If several lines of code have to be executed in each case, you can just
 put braces, {} , around the block of code, as follows:
 
 ```
-switch (x) {    case 1, 3 -> {                     //do something                 }    case 4    -> {                    //do something else                  }    case 5, 6 -> System.out.println("5 or 6");    default   -> System.out.println("Not 1,3,4,5,6");}
+switch (x) {
+    case 1, 3 -> { 
+                    //do something
+                 }
+    case 4    -> {
+                    //do something else 
+                 }
+    case 5, 6 -> System.out.println("5 or 6");
+    default   -> System.out.println("Not 1,3,4,5,6");
+}
 ```
 
 The Java 12 switch...case statement can even return a value. For
@@ -1634,14 +1870,23 @@ example, here is the case when another variable has to be assigned based
 on the switch...case statement result:
 
 ```
-void switchDemo2(int i){    boolean b = switch(i) {        case 0 -> false;        case 1 -> true;        default -> false;    };    System.out.println(b);}
+void switchDemo2(int i){
+    boolean b = switch(i) {
+        case 0 -> false;
+        case 1 -> true;
+        default -> false;
+    };
+    System.out.println(b);
+}
 ```
 
 If we execute the switchDemo2() method, the results are going to be as
 follows:
 
 ```
-switchDemo2(0);    //prints: falseswitchDemo2(1);    //prints: trueswitchDemo2(2);    //prints: false
+switchDemo2(0);    //prints: false
+switchDemo2(1);    //prints: true
+switchDemo2(2);    //prints: false
 ```
 
 It looks like a nice improvement. If this feature will prove to be
@@ -1660,13 +1905,19 @@ An **iteration statement** can be one of the following three forms:
 A while statement appears as follows:
 
 ```
-while (boolean expression){      //do something}
+while (boolean expression){
+      //do something
+}
 ```
 
 Here is a specific example:
 
 ```
-int n = 0;while(n < 5){ System.out.print(n + " "); //prints: 0 1 2 3 4  n++;}
+int n = 0;
+while(n < 5){
+ System.out.print(n + " "); //prints: 0 1 2 3 4 
+ n++;
+}
 ```
 
 In some examples, instead of the println() method, we use
@@ -1677,14 +1928,20 @@ the output in one line.
 The do...while statement has a very similar form:
 
 ```
-do {    //do something} while (boolean expression)
+do {
+    //do something
+} while (boolean expression)
 ```
 
 It differs from the while statement by always executing the block of
 statements at least once, before evaluating the expression:
 
 ```
-int n = 0;do {    System.out.print(n + " ");   //prints: 0 1 2 3 4    n++;} while(n < 5);
+int n = 0;
+do {
+    System.out.print(n + " ");   //prints: 0 1 2 3 4
+    n++;
+} while(n < 5);
 ```
 
 As you can see, it behaves the same way in the case when the expression
@@ -1692,13 +1949,25 @@ is true at the first iteration. But if the expression evaluates to
 false, the results are different:
 
 ```
-int n = 6;while(n < 5){    System.out.print(n + " ");   //prints:     n++;}n = 6;do {    System.out.print(n + " ");   //prints: 6    n++;} while(n < 5);
+int n = 6;
+while(n < 5){
+    System.out.print(n + " ");   //prints: 
+    n++;
+}
+
+n = 6;
+do {
+    System.out.print(n + " ");   //prints: 6
+    n++;
+} while(n < 5);
 ```
 
 The for statement syntax is as follows:
 
 ```
-for(init statements; boolean expression; update statements) { //do what has to be done here}
+for(init statements; boolean expression; update statements) {
+ //do what has to be done here
+}
 ```
 
 Here is how the for statement works:
@@ -1716,28 +1985,37 @@ As you can see, if you aren't careful, you can get into an infinite
 loop:
 
 ```
-for (int x = 0; x > -1; x++){    System.out.print(x + " ");  //prints: 0 1 2 3 4 5 6 ...}
+for (int x = 0; x > -1; x++){
+    System.out.print(x + " ");  //prints: 0 1 2 3 4 5 6 ...
+}
 ```
 
 So, you have to make sure that the boolean expression guarantees
 eventual exit from the loop:
 
 ```
-for (int x = 0; x < 3; x++){    System.out.print(x + " ");  //prints: 0 1 2}
+for (int x = 0; x < 3; x++){
+    System.out.print(x + " ");  //prints: 0 1 2
+}
 ```
 
 The following example demonstrates multiple initialization and update
 statements:
 
 ```
-for (int x = 0, y = 0; x < 3 && y < 3; ++x, ++y){    System.out.println(x + " " + y);}
+for (int x = 0, y = 0; x < 3 && y < 3; ++x, ++y){
+    System.out.println(x + " " + y);
+}
 ```
 
 And here is the variation of the preceding for statements for demo
 purposes:
 
 ```
-for (int x = getInitialValue(), i = x == -2 ? x + 2 : 0, j = 0; i < 3 || j < 3 ; ++i, j = i) { System.out.println(i + " " + j);}
+for (int x = getInitialValue(), i = x == -2 ? x + 2 : 0, j = 0;
+ i < 3 || j < 3 ; ++i, j = i) {
+ System.out.println(i + " " + j);
+}
 ```
 
 If the getInitialValue() method is implemented like int
@@ -1747,20 +2025,29 @@ produce exactly the same results.
 To iterate over an array of values, you can use an array index:
 
 ```
-int[] arr = {24, 42, 0};for (int i = 0; i < arr.length; i++){    System.out.print(arr[i] + " ");  //prints: 24 42 0}
+int[] arr = {24, 42, 0};
+for (int i = 0; i < arr.length; i++){
+    System.out.print(arr[i] + " ");  //prints: 24 42 0
+}
 ```
 
 Alternatively, you can use a more compact form of a for statement that
 produces the same result, as follows:
 
 ```
-int[] arr = {24, 42, 0};for (int a: arr){    System.out.print(a + " ");  //prints: 24 42 0}
+int[] arr = {24, 42, 0};
+for (int a: arr){
+    System.out.print(a + " ");  //prints: 24 42 0
+}
 ```
 
 This last form is especially useful with a collection as shown here:
 
 ```
-List<String> list = List.of("24", "42", "0");for (String s: list){    System.out.print(s + " ");  //prints: 24 42 0}
+List<String> list = List.of("24", "42", "0");
+for (String s: list){
+    System.out.print(s + " ");  //prints: 24 42 0
+}
 ```
 
 We will talk about collections in [Chapter
@@ -1799,7 +2086,15 @@ execution.
 Here is a typical example of exception handling:
 
 ```
-try {    //x = someMethodReturningValue();    if(x > 10){        throw new RuntimeException("The x value is out of range: " + x);    }    //normal processing flow of x here} catch (RuntimeException ex) {    //do what has to be done to address the problem}
+try {
+    //x = someMethodReturningValue();
+    if(x > 10){
+        throw new RuntimeException("The x value is out of range: " + x);
+    }
+    //normal processing flow of x here
+} catch (RuntimeException ex) {
+    //do what has to be done to address the problem
+}
 ```
 
 In the preceding code snippet, normal processing flow will be not
@@ -1813,7 +2108,19 @@ exception was thrown/caught or not. Instead of repeating the same code
 block in two places, you can put it in a finally block, as follows:
 
 ```
-try {    //x = someMethodReturningValue();    if(x > 10){        throw new RuntimeException("The x value is out of range: " + x);    }    //normal processing flow of x here} catch (RuntimeException ex) {   System.out.println(ex.getMessage());                                //prints: The x value is out of range: ...   //do what has to be done to address the problem} finally {   //the code placed here is always executed}
+try {
+    //x = someMethodReturningValue();
+    if(x > 10){
+        throw new RuntimeException("The x value is out of range: " + x);
+    }
+    //normal processing flow of x here
+} catch (RuntimeException ex) {
+   System.out.println(ex.getMessage());   
+                             //prints: The x value is out of range: ...
+   //do what has to be done to address the problem
+} finally {
+   //the code placed here is always executed
+}
 ```
 
 We will talk about exception handling in more detail in [Chapter
@@ -1837,7 +2144,16 @@ We have seen how break was used in switch-case statements. Here is
 another example:
 
 ```
-String found = null;List<String> list = List.of("24", "42", "31", "2", "1");for (String s: list){    System.out.print(s + " ");         //prints: 24 42 31    if(s.contains("3")){        found = s;        break;    }}System.out.println("Found " + found);  //prints: Found 31
+String found = null;
+List<String> list = List.of("24", "42", "31", "2", "1");
+for (String s: list){
+    System.out.print(s + " ");         //prints: 24 42 31
+    if(s.contains("3")){
+        found = s;
+        break;
+    }
+}
+System.out.println("Found " + found);  //prints: Found 31
 ```
 
 If we need to find the first list element that contains "3", we can stop
@@ -1849,7 +2165,22 @@ possible to set a label (with a : column) that indicates which for
 statement has to be exited: 
 
 ```
-String found = null;List<List<String>> listOfLists = List.of(        List.of("24", "16", "1", "2", "1"),        List.of("43", "42", "31", "3", "3"),        List.of("24", "22", "31", "2", "1"));exit: for(List<String> l: listOfLists){    for (String s: l){        System.out.print(s + " ");      //prints: 24 16 1 2 1 43        if(s.contains("3")){            found = s;            break exit;        }    }}System.out.println("Found " + found);  //prints: Found 43
+String found = null;
+List<List<String>> listOfLists = List.of(
+        List.of("24", "16", "1", "2", "1"),
+        List.of("43", "42", "31", "3", "3"),
+        List.of("24", "22", "31", "2", "1")
+);
+exit: for(List<String> l: listOfLists){
+    for (String s: l){
+        System.out.print(s + " ");      //prints: 24 16 1 2 1 43
+        if(s.contains("3")){
+            found = s;
+            break exit;
+        }
+    }
+}
+System.out.println("Found " + found);  //prints: Found 43
 ```
 
 We have chosen the label name exit, but we could call it any other name
@@ -1858,7 +2189,25 @@ too.
 The continue statement works similarly, as follows:
 
 ```
-String found = null;List<List<String>> listOfLists = List.of(                List.of("24", "16", "1", "2", "1"),                List.of("43", "42", "31", "3", "3"),                List.of("24", "22", "31", "2", "1"));String checked = "";cont: for(List<String> l: listOfLists){        for (String s: l){           System.out.print(s + " "); //prints: 24 16 1 2 1 43 24 22 31           if(s.contains("3")){               continue cont;           }           checked += s + " ";        }}System.out.println("Found " + found);  //prints: Found 43System.out.println("Checked " + checked);                                  //prints: Checked 24 16 1 2 1 24 22
+String found = null;
+List<List<String>> listOfLists = List.of(
+                List.of("24", "16", "1", "2", "1"),
+                List.of("43", "42", "31", "3", "3"),
+                List.of("24", "22", "31", "2", "1")
+);
+String checked = "";
+cont: for(List<String> l: listOfLists){
+        for (String s: l){
+           System.out.print(s + " "); //prints: 24 16 1 2 1 43 24 22 31
+           if(s.contains("3")){
+               continue cont;
+           }
+           checked += s + " ";
+        }
+}
+System.out.println("Found " + found);  //prints: Found 43
+System.out.println("Checked " + checked);  
+                                //prints: Checked 24 16 1 2 1 24 22
 ```
 
 It differs from break by telling which of the for statements to
@@ -1866,7 +2215,15 @@ continue, and not to exit.\
  A return statement is used to return a result from a method:
 
 ```
-String returnDemo(int i){    if(i < 10){        return "Not enough";    } else if (i == 10){        return "Exactly right";    } else {        return "More than enough";    }}
+String returnDemo(int i){
+    if(i < 10){
+        return "Not enough";
+    } else if (i == 10){
+        return "Exactly right";
+    } else {
+        return "More than enough";
+    }
+}
 ```
 
 As you can see, there can be several return statements in a method, each
@@ -1875,7 +2232,18 @@ returns nothing (void), the return statement is not required, although
 it is frequently used for better readability, as follows:
 
 ```
-void returnDemo(int i){    if(i < 10){        System.out.println("Not enough");        return;    } else if (i == 10){        System.out.println("Exactly right");        return;    } else {        System.out.println("More than enough");        return;    }}
+void returnDemo(int i){
+    if(i < 10){
+        System.out.println("Not enough");
+        return;
+    } else if (i == 10){
+        System.out.println("Exactly right");
+        return;
+    } else {
+        System.out.println("More than enough");
+        return;
+    }
+}
 ```
 
 Statements are the building blocks of Java programming. They are like
@@ -1889,7 +2257,7 @@ Congratulations for getting through it!
 
 
 
-Getting Started with Java 12
+Summary
 ============================
 
 This chapter introduced you to the exciting world of Java programming.

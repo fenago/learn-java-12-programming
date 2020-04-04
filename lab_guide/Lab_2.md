@@ -113,7 +113,7 @@ You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Varargs.java`
 
 
-Java Object-Oriented Programming (OOP)
+OOP concepts
 ======================================
 
 As we have already stated in the introduction, the main OOP concepts are
@@ -223,7 +223,10 @@ The parent-child relationship in Java is expressed using
 the extends keyword:
 
 ```
-class A { }class B extends A { }class C extends B { }class D extends C { }
+class A { }
+class B extends A { }
+class C extends B { }
+class D extends C { }
 ```
 
 In this code, the classes A, B, C, and D have the following
@@ -256,7 +259,10 @@ Similarly to classes, interfaces can have a parent-child relationship
 using the extends keyword too:
 
 ```
-interface A { }interface B extends A {}interface C extends B {}interface D extends C {}
+interface A { }
+interface B extends A {}
+interface C extends B {}
+interface D extends C {}
 ```
 
 In this code, the interfaces A, B, C, and D have the following
@@ -289,7 +295,15 @@ object-oriented programming: better management of concurrent access to
 the shared data. For example:
 
 ```
-class A {  private String prop = "init value";  public void setProp(String value){     prop = value;  }  public String getProp(){     return prop;  }}
+class A {
+  private String prop = "init value";
+  public void setProp(String value){
+     prop = value;
+  }
+  public String getProp(){
+     return prop;
+  }
+}
 ```
 
 As you can see, to read or to modify the value of the prop property, we
@@ -316,8 +330,7 @@ action and look at the specific usage of polymorphism in the
 *Polymorphism in action* section.
 
 
-
-Java Object-Oriented Programming (OOP)
+Class
 ======================================
 
 Java program is a sequence of statements that express an executable
@@ -345,7 +358,14 @@ executing their methods.
 Here is an example of the main class:
 
 ```
-public class MyApp {  public static void main(String[] args){     AnotherClass an = new AnotherClass();     for(String s: args){        an.display(s);     }   }}
+public class MyApp {
+  public static void main(String[] args){
+     AnotherClass an = new AnotherClass();
+     for(String s: args){
+        an.display(s);
+     }
+   }
+}
 ```
 
 It represents a very simple application that receives any number of
@@ -359,7 +379,19 @@ shortly), and calls on it the display() method.
 And here is the AnotherClass class:
 
 ```
-public class AnotherClass {   private int result;   public void display(String s){      System.out.println(s);   }   public int process(int i){      result = i *2;      return result;   }   public int getResult(){      return result;   }} 
+public class AnotherClass {
+   private int result;
+   public void display(String s){
+      System.out.println(s);
+   }
+   public int process(int i){
+      result = i *2;
+      return result;
+   }
+   public int getResult(){
+      return result;
+   }
+} 
 ```
 
 As you can see, the display() method is used for its side effect only—it
@@ -385,7 +417,9 @@ Method
 As we have stated already, Java statements are organized as methods:
 
 ```
-<return type> <method name>(<list of parameter types>){     <method body that is a sequence of statements>}
+<return type> <method name>(<list of parameter types>){
+     <method body that is a sequence of statements>
+}
 ```
 
 We have seen a few examples already. A method has a name, a set of input
@@ -404,7 +438,13 @@ parameters.
 The following two methods have the same signature:
 
 ```
-double doSomething(String s, int i){    //some code goes here}double doSomething(String i, int s){    //some code other code goes here}
+double doSomething(String s, int i){
+    //some code goes here
+}
+
+double doSomething(String i, int s){
+    //some code other code goes here
+}
 ```
 
 The code inside the methods may be different even if the signature is
@@ -413,7 +453,13 @@ the same. 
 The following two methods have different signatures:
 
 ```
-double doSomething(String s, int i){    //some code goes here}double doSomething(int s, String i){    //some code other code goes here}
+double doSomething(String s, int i){
+    //some code goes here
+}
+
+double doSomething(int s, String i){
+    //some code other code goes here
+}
 ```
 
 Just a change in the sequence of parameters makes the signature
@@ -441,7 +487,21 @@ constructors explicitly, each taking a different set of parameters to
 set the initial state. Here is an example:
 
 ```
-class SomeClass {     private int prop1;     private String prop2;     public SomeClass(int prop1){         this.prop1 = prop1;     }     public SomeClass(String prop2){         this.prop2 = prop2;     }     public SomeClass(int prop1, String prop2){         this.prop1 = prop1;         this.prop2 = prop2;     }        // methods follow }
+class SomeClass {
+     private int prop1;
+     private String prop2;
+     public SomeClass(int prop1){
+         this.prop1 = prop1;
+     }
+     public SomeClass(String prop2){
+         this.prop2 = prop2;
+     }
+     public SomeClass(int prop1, String prop2){
+         this.prop1 = prop1;
+         this.prop2 = prop2;
+     }   
+     // methods follow 
+}
 ```
 
 If a property is not set by a constructor, the default value of the
@@ -454,7 +514,28 @@ constructor must be called as the first line of the child constructor
 using the super keyword as follows:
 
 ```
-class TheParentClass {    private int prop;    public TheParentClass(int prop){        this.prop = prop;    }    // methods follow}class TheChildClass extends TheParentClass{ private int x; private String prop; private String anotherProp = "abc"; public TheChildClass(String prop){ super(42); this.prop = prop; } public TheChildClass(int arg1, String arg2){ super(arg1); this.prop = arg2; } // methods follow}
+class TheParentClass {
+    private int prop;
+    public TheParentClass(int prop){
+        this.prop = prop;
+    }
+    // methods follow
+}
+
+class TheChildClass extends TheParentClass{
+ private int x;
+ private String prop;
+ private String anotherProp = "abc";
+ public TheChildClass(String prop){
+ super(42);
+ this.prop = prop;
+ }
+ public TheChildClass(int arg1, String arg2){
+ super(arg1);
+ this.prop = arg2;
+ }
+ // methods follow
+}
 ```
 
 In the preceding code example, we added two constructors to
@@ -487,7 +568,22 @@ As soon as an explicit constructor is added, the default constructor is
 not provided and the following code generates an error:
 
 ```
-class TheParentClass {    private int prop;    public TheParentClass(int prop){        this.prop = prop;    }    // methods follow}class TheChildClass extends TheParentClass{    private String prop;    public TheChildClass(String prop){        //super(42);       //No call to the parent's contuctor        this.prop = prop;    }    // methods follow}
+class TheParentClass {
+    private int prop;
+    public TheParentClass(int prop){
+        this.prop = prop;
+    }
+    // methods follow
+}
+
+class TheChildClass extends TheParentClass{
+    private String prop;
+    public TheChildClass(String prop){
+        //super(42);       //No call to the parent's contuctor
+        this.prop = prop;
+    }
+    // methods follow
+}
 ```
 
 To avoid the error, either add a constructor without parameters to
@@ -496,7 +592,22 @@ the first statement of the child's constructor. The following code does
 not generate an error:
 
 ```
-class TheParentClass {    private int prop;    public TheParentClass() {}    public TheParentClass(int prop){        this.prop = prop;    }    // methods follow}class TheChildClass extends TheParentClass{    private String prop;    public TheChildClass(String prop){        this.prop = prop;    }    // methods follow}
+class TheParentClass {
+    private int prop;
+    public TheParentClass() {}
+    public TheParentClass(int prop){
+        this.prop = prop;
+    }
+    // methods follow
+}
+
+class TheChildClass extends TheParentClass{
+    private String prop;
+    public TheChildClass(String prop){
+        this.prop = prop;
+    }
+    // methods follow
+}
 ```
 
 One important aspect to note is that constructors, although they look
@@ -516,7 +627,8 @@ variable of the same type as the class used to create the object or the
 type of its parent:
 
 ```
-TheChildClass ref1 = new TheChildClass("something"); TheParentClass ref2 = new TheChildClass("something");
+TheChildClass ref1 = new TheChildClass("something"); 
+TheParentClass ref2 = new TheChildClass("something");
 ```
 
 Here is an interesting observation. In the code, both object references
@@ -525,13 +637,33 @@ of TheChildClass and TheParentClass. For example, we can add methods to
 these classes as follows:
 
 ```
-class TheParentClass {    private int prop;    public TheParentClass(int prop){        this.prop = prop;    }    public void someParentMethod(){}}class TheChildClass extends TheParentClass{    private String prop;    public TheChildClass(int arg1, String arg2){        super(arg1);        this.prop = arg2;    }    public void someChildMethod(){}}
+class TheParentClass {
+    private int prop;
+    public TheParentClass(int prop){
+        this.prop = prop;
+    }
+    public void someParentMethod(){}
+}
+
+class TheChildClass extends TheParentClass{
+    private String prop;
+    public TheChildClass(int arg1, String arg2){
+        super(arg1);
+        this.prop = arg2;
+    }
+    public void someChildMethod(){}
+}
 ```
 
 Then we can call them using any of the following references:
 
 ```
-TheChildClass ref1 = new TheChildClass("something");TheParentClass ref2 = new TheChildClass("something");ref1.someChildMethod();ref1.someParentMethod();((TheChildClass) ref2).someChildMethod();ref2.someParentMethod();
+TheChildClass ref1 = new TheChildClass("something");
+TheParentClass ref2 = new TheChildClass("something");
+ref1.someChildMethod();
+ref1.someParentMethod();
+((TheChildClass) ref2).someChildMethod();
+ref2.someParentMethod();
 ```
 
 Note that, to access the child's methods using the parent's type
@@ -546,7 +678,9 @@ parent's type, we would not be able to access the child's method even
 with casting, as the following example shows:
 
 ```
-TheParentClass ref2 = new TheParentClass(42);((TheChildClass) ref2).someChildMethod();  //compiler's errorref2.someParentMethod();
+TheParentClass ref2 = new TheParentClass(42);
+((TheChildClass) ref2).someChildMethod();  //compiler's error
+ref2.someParentMethod();
 ```
 
 The area where memory for the new object is allocated is called
@@ -556,7 +690,11 @@ as an object is not needed anymore. For example, look at the following
 method:
 
 ```
-void someMethod(){   SomeClass ref = new SomeClass();   ref.someClassMethod();   //other statements follow}
+void someMethod(){
+   SomeClass ref = new SomeClass();
+   ref.someClassMethod();
+   //other statements follow
+}
 ```
 
 As soon as the execution of the someMethod() method is completed, the
@@ -581,7 +719,10 @@ Let's look back at the example we have provided in
 the *Inheritance* section:
 
 ```
-class A { }class B extends A {}class C extends B {}class D extends C {}
+class A { }
+class B extends A {}
+class C extends B {}
+class D extends C {}3
 ```
 
 All classes, A, B, C, D, are children of the Object class, which has ten
@@ -604,14 +745,18 @@ The toString() method is typically used to print the state of the
 object. Its default implementation in JDK looks like this:
 
 ```
-public String toString() {   return getClass().getName()+"@"+Integer.toHexString(hashCode());}
+public String toString() {
+   return getClass().getName()+"@"+Integer.toHexString(hashCode());
+}
 ```
 
 If we use it on the object of the TheChildClass class, the result will
 be as follows:
 
 ```
-TheChildClass ref1 = new TheChildClass("something");System.out.println(ref1.toString());  //prints: com.packt.learnjava.ch02_oop.Constructor$TheChildClass@72ea2f77
+TheChildClass ref1 = new TheChildClass("something");
+System.out.println(ref1.toString());  
+//prints: com.packt.learnjava.ch02_oop.Constructor$TheChildClass@72ea2f77
 ```
 
 By the way, there is no need to call toString() explicitly while passing
@@ -640,7 +785,12 @@ TheChildClass as follows:
 After you click the OK button, the following code will be generated:
 
 ```
-@Overridepublic String toString() {    return "TheChildClass{" +            "prop='" + prop + '\'' +            '}';}
+@Override
+public String toString() {
+    return "TheChildClass{" +
+            "prop='" + prop + '\'' +
+            '}';
+}
 ```
 
 If there were more properties in the class and you had selected them,
@@ -648,7 +798,9 @@ more properties and their values would be included in the method output.
 If we print the object now, the result will be this:
 
 ```
-TheChildClass ref1 = new TheChildClass("something");System.out.println(ref1.toString());                            //prints: TheChildClass{prop='something'}
+TheChildClass ref1 = new TheChildClass("something");
+System.out.println(ref1.toString());  
+                          //prints: TheChildClass{prop='something'}
 ```
 
 That is why the toString() method is often overridden and even included
@@ -688,7 +840,11 @@ be made static and invoked without creating an object. The example of
 such a method is the main() method. Here is another example:
 
 ```
-class SomeClass{    public static void someMethod(int i){        //do something    }}
+class SomeClass{
+    public static void someMethod(int i){
+        //do something
+    }
+}
 ```
 
 This method can be called as follows:
@@ -707,7 +863,9 @@ Similarly, a property can be declared static and thus accessible without
 creating an object. For example:
 
 ```
-class SomeClass{    public static String SOME_PROPERTY = "abc";}
+class SomeClass{
+    public static String SOME_PROPERTY = "abc";
+}
 ```
 
 This property can be accessed directly via class too, as follows:
@@ -730,7 +888,9 @@ property is typically used for two purposes:
 A typical example of a constant is a name of a resource:
 
 ```
-class SomeClass{    public static final String INPUT_FILE_NAME = "myFile.csv";}
+class SomeClass{
+    public static final String INPUT_FILE_NAME = "myFile.csv";
+}
 ```
 
 Note the final keyword in front of the static property. It tells the
@@ -767,7 +927,11 @@ creating an instance of the class. Consider, for example, the following
 class:
 
 ```
-class SomeClass{    public static String someMethod() {        return "abc";    }}
+class SomeClass{
+    public static String someMethod() {
+        return "abc";
+    }
+}
 ```
 
 We can call the preceding method by using just a class name:
@@ -778,7 +942,7 @@ System.out.println(SomeClass.someMethod()); //prints: abc
 
 
 
-Java Object-Oriented Programming (OOP)
+Interface
 ======================================
 
 In the *Abstraction/Interface* section*,* we talked about an interface
@@ -791,13 +955,24 @@ values. For example, here is an interface that declares two abstract
 methods:
 
 ```
-interface SomeInterface {    void method1();    String method2(int i);}
+interface SomeInterface {
+    void method1();
+    String method2(int i);
+}
 ```
 
 And here is a class that implements it:
 
 ```
-class SomeClass implements SomeInterface{    public void method1(){        //method body    }    public String method2(int i) {        //method body        return "abc";    }}
+class SomeClass implements SomeInterface{
+    public void method1(){
+        //method body
+    }
+    public String method2(int i) {
+        //method body
+        return "abc";
+    }
+}
 ```
 
 An interface cannot be instantiated. An object of an interface type can
@@ -845,14 +1020,33 @@ let's look at an example of an interface and a class that implements it,
 as follows:
 
 ```
-interface SomeInterface {    void method1();    String method2(int i);    default int method3(){        return 42;    }}class SomeClass implements SomeInterface{    public void method1(){        //method body    }    public String method2(int i) {        //method body        return "abc";    }}
+interface SomeInterface {
+    void method1();
+    String method2(int i);
+    default int method3(){
+        return 42;
+    }
+}
+
+class SomeClass implements SomeInterface{
+    public void method1(){
+        //method body
+    }
+    public String method2(int i) {
+        //method body
+        return "abc";
+    }
+}
 ```
 
 We can now create an object of SomeClass class and make the following
 call:
 
 ```
-SomeClass sc = new SomeClass();sc.method1();sc.method2(22);  //returns: "abc"sc.method3();    //returns: 42
+SomeClass sc = new SomeClass();
+sc.method1();
+sc.method2(22);  //returns: "abc"
+sc.method3();    //returns: 42
 ```
 
 As you can see, method3() is not implemented in the SomeClass class, but
@@ -863,13 +1057,27 @@ the interface the class implements.
 Let's now add method3() implementation to the class too, as follows:
 
 ```
-class SomeClass implements SomeInterface{    public void method1(){        //method body    }    public String method2(int i) {        //method body        return "abc";    }    public int method3(){        return 15;    }}
+class SomeClass implements SomeInterface{
+    public void method1(){
+        //method body
+    }
+    public String method2(int i) {
+        //method body
+        return "abc";
+    }
+    public int method3(){
+        return 15;
+    }
+}
 ```
 
 Now the interface implementation of method3() will be ignored:
 
 ```
-SomeClass sc = new SomeClass();sc.method1();sc.method2(22);  //returns: "abc"sc.method3();    //returns: 15
+SomeClass sc = new SomeClass();
+sc.method1();
+sc.method2(22);  //returns: "abc"
+sc.method3();    //returns: 15
 ```
 
 The purpose of the default method in an interface is to provide a new
@@ -886,7 +1094,19 @@ interface. They can be used to contain common functionality, instead of
 repeating it in every default method:
 
 ```
-interface SomeInterface {    void method1();    String method2(int i);    default int method3(){        return getNumber();    }    default int method4(){        return getNumber() + 22;    }    private int getNumber(){        return 42;    }}
+interface SomeInterface {
+    void method1();
+    String method2(int i);
+    default int method3(){
+        return getNumber();
+    }
+    default int method4(){
+        return getNumber() + 22;
+    }
+    private int getNumber(){
+        return 42;
+    }
+}
 ```
 
 This concept of private methods is not different to private methods in
@@ -905,7 +1125,11 @@ As for the static methods, they function in an interface in the same way
 as in a class:
 
 ```
-interface SomeInterface{   static String someMethod() {      return "abc";   }}
+interface SomeInterface{
+   static String someMethod() {
+      return "abc";
+   }
+}
 ```
 
 Note, there is no need to mark the interface method as public. All
@@ -952,7 +1176,7 @@ section.
 
 
 
-Java Object-Oriented Programming (OOP)
+Overloading, overriding, and hiding
 ======================================
 
 We have already mentioned overriding in the *Inheritance* and
@@ -982,7 +1206,12 @@ overloading. Here are a few examples of a legitimate method of
 overloading in an interface:
 
 ```
-interface A {    int m(String s);    int m(String s, double d);    default int m(String s, int i) { return 1; }    static int m(String s, int i, double d) { return 1; }}
+interface A {
+    int m(String s);
+    int m(String s, double d);
+    default int m(String s, int i) { return 1; }
+    static int m(String s, int i, double d) { return 1; }
+}
 ```
 
 Note that no two of the preceding methods have the same signature,
@@ -995,7 +1224,11 @@ the examples less cluttered.
 Method overloading is done similarly in a class:
 
 ```
-    class C {        int m(String s){ return 42; }        int m(String s, double d){ return 42; }        static int m(String s, double d, int i) { return 1; }    }
+class C {
+        int m(String s){ return 42; }
+        int m(String s, double d){ return 42; }
+        static int m(String s, double d, int i) { return 1; }
+    }
 ```
 
 And, it does not matter where the methods with the same name are
@@ -1003,7 +1236,21 @@ declared. The following method overloading is not different to the
 previous example, as follows:
 
 ```
-interface A {    int m(String s);    int m(String s, double d);}interface B extends A {    default int m(String s, int i) { return 1; }    static int m(String s, int i, double d) { return 1; }}class C {     int m(String s){ return 42; }}class D extends C {     int m(String s, double d){ return 42; }     static int m(String s, double d, int i) { return 1; }}
+interface A {
+    int m(String s);
+    int m(String s, double d);
+}
+interface B extends A {
+    default int m(String s, int i) { return 1; }
+    static int m(String s, int i, double d) { return 1; }
+}
+class C {
+     int m(String s){ return 42; }
+}
+class D extends C {
+     int m(String s, double d){ return 42; }
+     static int m(String s, double d, int i) { return 1; }
+}
 ```
 
 A private non-static method can be overloaded only by a non-static
@@ -1030,14 +1277,26 @@ ancestor interfaces (or classes). A private method cannot be overridden.
 The following are examples of a method overriding in an interface: 
 
 ```
-interface A {    default void method(){        System.out.println("interface A");    }}interface B extends A{    @Override    default void method(){        System.out.println("interface B");    }}class C implements B { }
+interface A {
+    default void method(){
+        System.out.println("interface A");
+    }
+}
+interface B extends A{
+    @Override
+    default void method(){
+        System.out.println("interface B");
+    }
+}
+class C implements B { }
 ```
 
 If we call the method() using the C class instance, the result will be
 as follows:
 
 ```
-C c = new C();c.method();      //prints: interface B
+C c = new C();
+c.method();      //prints: interface B
 ```
 
 Please notice the usage of the annotation @Override. It tells the
@@ -1048,7 +1307,12 @@ For example, a programmer may misspell the name of the method as
 follows:
 
 ```
-interface B extends A{    @Override    default void metod(){        System.out.println("interface B");    }}
+interface B extends A{
+    @Override
+    default void metod(){
+        System.out.println("interface B");
+    }
+}
 ```
 
 If that happens, the compiler generates an error because there is no
@@ -1057,20 +1321,32 @@ mistake may go unnoticed by the programmer and the result would be quite
 different:
 
 ```
-C c = new C();c.method();      //prints: interface A
+C c = new C();
+c.method();      //prints: interface A
 ```
 
 The same rules of overriding apply to the class instance methods. In the
 following example, the C2 class overrides a method of the C1 class:
 
 ```
-class C1{    public void method(){        System.out.println("class C1");    }}class C2 extends C1{    @Override    public void method(){        System.out.println("class C2");    }}
+class C1{
+    public void method(){
+        System.out.println("class C1");
+    }
+}
+class C2 extends C1{
+    @Override
+    public void method(){
+        System.out.println("class C2");
+    }
+}
 ```
 
 The result is as follows:
 
 ```
-C2 c2 = new C2();c2.method();      //prints: class C2
+C2 c2 = new C2();
+c2.method();      //prints: class C2
 ```
 
 And, it does not matter how many ancestors are between the class or
@@ -1078,7 +1354,22 @@ interface with the overridden method and the class or interface with the
 overriding method:
 
 ```
-class C1{    public void method(){        System.out.println("class C1");    }}class C3 extends C1{    public void someOtherMethod(){        System.out.println("class C3");    }}class C2 extends C3{    @Override    public void method(){        System.out.println("class C2");    }}
+class C1{
+    public void method(){
+        System.out.println("class C1");
+    }
+}
+class C3 extends C1{
+    public void someOtherMethod(){
+        System.out.println("class C3");
+    }
+}
+class C2 extends C3{
+    @Override
+    public void method(){
+        System.out.println("class C2");
+    }
+}
 ```
 
 The result of the preceding method's overriding will still be the same.
@@ -1103,7 +1394,18 @@ Let's create two interfaces that have a parent-child relationship and
 static fields and methods with the same name:
 
 ```
-interface A {    String NAME = "interface A";    static void method() {        System.out.println("interface A");    }}interface B extends A {    String NAME = "interface B";    static void method() {        System.out.println("interface B");    }}
+interface A {
+    String NAME = "interface A";
+    static void method() {
+        System.out.println("interface A");
+    }
+}
+interface B extends A {
+    String NAME = "interface B";
+    static void method() {
+        System.out.println("interface B");
+    }
+}
 ```
 
 Please note the capital case for an identifier of an interface field.
@@ -1118,7 +1420,8 @@ If we print NAME from the B interface and execute its method(), we get
 the following result:
 
 ```
-System.out.println(B.NAME); //prints: interface BB.method();                 //prints: interface B
+System.out.println(B.NAME); //prints: interface B
+B.method();                 //prints: interface B
 ```
 
 It looks very much like overriding, but, in fact, it is just that we
@@ -1128,21 +1431,44 @@ interface.
 Similarly, consider the following classes:
 
 ```
-public class C {    public static String NAME = "class C";    public static void method(){        System.out.println("class C");     }    public String name1 = "class C";}public class D extends C {    public static String NAME = "class D";    public static void method(){        System.out.println("class D");     }    public String name1 = "class D";}
+public class C {
+    public static String NAME = "class C";
+    public static void method(){
+        System.out.println("class C"); 
+    }
+    public String name1 = "class C";
+}
+public class D extends C {
+    public static String NAME = "class D";
+    public static void method(){
+        System.out.println("class D"); 
+    }
+    public String name1 = "class D";
+}
 ```
 
 If we try to access the static members of D class using the class
 itself, we will get what we asked for:
 
 ```
-System.out.println(D.NAME);  //prints: class DD.method();                  //prints: class D
+System.out.println(D.NAME);  //prints: class D
+D.method();                  //prints: class D
 ```
 
 The confusion appears only when a property or a static method is
 accessed using an object:
 
 ```
-C obj = new D();System.out.println(obj.NAME);       //prints: class CSystem.out.println(((D) obj).NAME); //prints: class Dobj.method();                       //prints: class C((D)obj).method();                  //prints: class DSystem.out.println(obj.name1);       //prints: class CSystem.out.println(((D) obj).name1); //prints: class D
+C obj = new D();
+
+System.out.println(obj.NAME);       //prints: class C
+System.out.println(((D) obj).NAME); //prints: class D
+
+obj.method();                       //prints: class C
+((D)obj).method();                  //prints: class D
+
+System.out.println(obj.name1);       //prints: class C
+System.out.println(((D) obj).name1); //prints: class D
 ```
 
 The obj variable refers to the object of the D class, and the casting
@@ -1161,14 +1487,33 @@ properties, always declare them private and access via methods.
 To illustrate the last tip, consider the following classes:
 
 ```
-class X {    private String name = "class X";    public String getName() {        return name;    }    public void setName(String name) {        this.name = name;    }}class Y extends X {    private String name = "class Y";    public String getName() {        return name;    }    public void setName(String name) {        this.name = name;    }}
+class X {
+    private String name = "class X";
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+class Y extends X {
+    private String name = "class Y";
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+}
 ```
 
 If we run the same test for the instance properties as we did for
 classes C and D, the result will be this:
 
 ```
-X x = new Y();System.out.println(x.getName());      //prints: class YSystem.out.println(((Y)x).getName()); //prints: class Y
+X x = new Y();
+System.out.println(x.getName());      //prints: class Y
+System.out.println(((Y)x).getName()); //prints: class Y
 ```
 
 Now we access instance properties using methods, which are subjects for
@@ -1179,7 +1524,21 @@ another type of hiding, namely, when a local variable hides the instance
 or static property with the same name. Here is a class that does it:
 
 ```
-public class HidingProperty {   private static String name1 = "static property";   private String name2 = "instance property";   public void method() {      var name1 = "local variable";      System.out.println(name1);     //prints: local variable      var name2 = "local variable";  //prints: local variable      System.out.println(name2);      System.out.println(HidingProperty.name1); //prints: static property      System.out.println(this.name2);         //prints: instance property   }}
+public class HidingProperty {
+   private static String name1 = "static property";
+   private String name2 = "instance property";
+
+   public void method() {
+      var name1 = "local variable";
+      System.out.println(name1);     //prints: local variable
+
+      var name2 = "local variable";  //prints: local variable
+      System.out.println(name2);
+
+      System.out.println(HidingProperty.name1); //prints: static property
+      System.out.println(this.name2);         //prints: instance property
+   }
+}
 ```
 
 As you can see, the local variable name1 hides the static property with
@@ -1193,7 +1552,7 @@ keyword that means **current object**.
 
 
 
-Java Object-Oriented Programming (OOP)
+Final variable, method, and classes
 ======================================
 
 We have mentioned a final property several times in relation to the
@@ -1216,7 +1575,8 @@ final String s = "abc";
 The initialization can even be delayed:
 
 ```
-final String s;s = "abc";
+final String s;
+s = "abc";
 ```
 
 In the case of an object property, this delay can last only until the
@@ -1224,7 +1584,17 @@ object is created. This means that the property can be initialized in
 the constructor. For example:
 
 ```
-private static class A {    private final String s1 = "abc";    private final String s2;    private final String s3;   //error    private final int x;       //error    public A() {        this.s1 = "xyz";      //error        this.s2 = "xyz";         }}
+private static class A {
+    private final String s1 = "abc";
+    private final String s2;
+    private final String s3;   //error
+    private final int x;       //error
+
+    public A() {
+        this.s1 = "xyz";      //error
+        this.s2 = "xyz";     
+    }
+}
 ```
 
 Notice that, even during the object construction, it is not possible to
@@ -1238,7 +1608,14 @@ It is also possible to initialize a final property in an initialization
 block:
 
 ```
-class B {    private final String s1 = "abc";    private final String s2;    {        s1 = "xyz"; //error        s2 = "abc";    }}
+class B {
+    private final String s1 = "abc";
+    private final String s2;
+    {
+        s1 = "xyz"; //error
+        s2 = "abc";
+    }
+}
 ```
 
 In the case of a static property, it is not possible to initialize it in
@@ -1246,7 +1623,14 @@ a constructor, so it has to be initialized either during its declaration
 or in a static initialization block:
 
 ```
-class C {    private final static String s1 = "abc";    private final static String s2;    static {        s1 = "xyz"; //error        s2 = "abc";    }}
+class C {
+    private final static String s1 = "abc";
+    private final static String s2;
+    static {
+        s1 = "xyz"; //error
+        s2 = "abc";
+    }
+}
 ```
 
 In an interface, all fields are always final, even if they are not
@@ -1256,7 +1640,10 @@ field is during declaration. Failing to do it results in a compilation
 error:
 
 ```
-interface I {    String s1;  //error    String s2 = "abc";}
+interface I {
+    String s1;  //error
+    String s2 = "abc";
+}
 ```
 
 Final method
@@ -1268,7 +1655,13 @@ the java.lang.Object class, which is the ancestor of all classes in
 Java, has some of its methods declared final:
 
 ```
-public final Class getClass()public final void notify()public final void notifyAll()public final void wait() throws InterruptedExceptionpublic final void wait(long timeout) throws InterruptedExceptionpublic final void wait(long timeout, int nanos)                                     throws InterruptedException
+public final Class getClass()
+public final void notify()
+public final void notifyAll()
+public final void wait() throws InterruptedException
+public final void wait(long timeout) throws InterruptedException
+public final void wait(long timeout, int nanos)
+                                     throws InterruptedException
 ```
 
 All private methods and uninherited methods of a final class are
@@ -1285,7 +1678,7 @@ some other design considerations.
 
 
 
-Java Object-Oriented Programming (OOP)
+Polymorphism in action
 ======================================
 
 Polymorphism is the most powerful and useful feature of OOP. It uses all
@@ -1319,7 +1712,19 @@ new object of a certain type under certain conditions. For example, look
 at the CalcUsingAlg1 and CalcUsingAlg2 classes:
 
 ```
-interface CalcSomething{ double calculate(); }class CalcUsingAlg1 implements CalcSomething{    public double calculate(){ return 42.1; }}class CalcUsingAlg2 implements CalcSomething{    private int prop1;    private double prop2;    public CalcUsingAlg2(int prop1, double prop2) {        this.prop1 = prop1;        this.prop2 = prop2;    }    public double calculate(){ return prop1 * prop2; }}
+interface CalcSomething{ double calculate(); }
+class CalcUsingAlg1 implements CalcSomething{
+    public double calculate(){ return 42.1; }
+}
+class CalcUsingAlg2 implements CalcSomething{
+    private int prop1;
+    private double prop2;
+    public CalcUsingAlg2(int prop1, double prop2) {
+        this.prop1 = prop1;
+        this.prop2 = prop2;
+    }
+    public double calculate(){ return prop1 * prop2; }
+}
 ```
 
 As you can see, they both implement the same
@@ -1328,7 +1733,22 @@ that we decided that the selection of the algorithm used will be done in
 a property file. Then we can create the following object factory:
 
 ```
-class CalcFactory{    public static CalcSomething getCalculator(){        String alg = getAlgValueFromPropertyFile();        switch(alg){            case "1":                return new CalcUsingAlg1();            case "2":                int p1 = getAlg2Prop1FromPropertyFile();                double p2 = getAlg2Prop2FromPropertyFile();                return new CalcUsingAlg2(p1, p2);            default:                System.out.println("Unknown value " + alg);                return new CalcUsingAlg1();        }    }}
+class CalcFactory{
+    public static CalcSomething getCalculator(){
+        String alg = getAlgValueFromPropertyFile();
+        switch(alg){
+            case "1":
+                return new CalcUsingAlg1();
+            case "2":
+                int p1 = getAlg2Prop1FromPropertyFile();
+                double p2 = getAlg2Prop2FromPropertyFile();
+                return new CalcUsingAlg2(p1, p2);
+            default:
+                System.out.println("Unknown value " + alg);
+                return new CalcUsingAlg1();
+        }
+    }
+}
 ```
 
 The factory selects which algorithm to use based on the value returned
@@ -1338,7 +1758,8 @@ methods and getAlg2Prop2FromPropertyFile() to get the input parameters
 for the algorithm. But this complexity is hidden from a client:
 
 ```
-CalcSomething calc = CalcFactory.getCalculator();double result = calc.calculate();
+CalcSomething calc = CalcFactory.getCalculator();
+double result = calc.calculate();
 ```
 
 We can add new algorithm variations, change the source for the algorithm
@@ -1349,19 +1770,46 @@ Alternatively, we could use inheritance to implement polymorphic
 behavior. Consider the following classes:
 
 ```
-class CalcSomething{    public double calculate(){ return 42.1; }}class CalcUsingAlg2 extends CalcSomething{    private int prop1;    private double prop2;    public CalcUsingAlg2(int prop1, double prop2) {        this.prop1 = prop1;        this.prop2 = prop2;    }    public double calculate(){ return prop1 * prop2; }}
+class CalcSomething{
+    public double calculate(){ return 42.1; }
+}
+class CalcUsingAlg2 extends CalcSomething{
+    private int prop1;
+    private double prop2;
+    public CalcUsingAlg2(int prop1, double prop2) {
+        this.prop1 = prop1;
+        this.prop2 = prop2;
+    }
+    public double calculate(){ return prop1 * prop2; }
+}
 ```
 
 Then our factory may look as follows:
 
 ```
-class CalcFactory{    public static CalcSomething getCalculator(){        String alg = getAlgValueFromPropertyFile();        switch(alg){            case "1":                return new CalcSomething();            case "2":                int p1 = getAlg2Prop1FromPropertyFile();                double p2 = getAlg2Prop2FromPropertyFile();                return new CalcUsingAlg2(p1, p2);            default:                System.out.println("Unknown value " + alg);                return new CalcSomething();        }    }}
+class CalcFactory{
+    public static CalcSomething getCalculator(){
+        String alg = getAlgValueFromPropertyFile();
+        switch(alg){
+            case "1":
+                return new CalcSomething();
+            case "2":
+                int p1 = getAlg2Prop1FromPropertyFile();
+                double p2 = getAlg2Prop2FromPropertyFile();
+                return new CalcUsingAlg2(p1, p2);
+            default:
+                System.out.println("Unknown value " + alg);
+                return new CalcSomething();
+        }
+    }
+}
 ```
 
 But the client code does not change:
 
 ```
-CalcSomething calc = CalcFactory.getCalculator();double result = calc.calculate();
+CalcSomething calc = CalcFactory.getCalculator();
+double result = calc.calculate();
 ```
 
 Given a choice, an experienced programmer uses a common interface for
@@ -1383,19 +1831,47 @@ instance of a certain class.
 Let's assume we have two unrelated classes:
 
 ```
-class CalcUsingAlg1 {    public double calculate(CalcInput1 input){        return 42. * input.getProp1();    }}class CalcUsingAlg2{    public double calculate(CalcInput2 input){        return input.getProp2() * input.getProp1();    }}
+class CalcUsingAlg1 {
+    public double calculate(CalcInput1 input){
+        return 42. * input.getProp1();
+    }
+}
+
+class CalcUsingAlg2{
+    public double calculate(CalcInput2 input){
+        return input.getProp2() * input.getProp1();
+    }
+}
 ```
 
 Each of the classes expects as an input an object of a certain type:
 
 ```
-class CalcInput1{    private int prop1;    public CalcInput1(int prop1) { this.prop1 = prop1; }    public int getProp1() { return prop1; }}class CalcInput2{    private int prop1;    private double prop2;    public CalcInput2(int prop1, double prop2) {        this.prop1 = prop1;        this.prop2 = prop2;    }    public int getProp1() { return prop1; }    public double getProp2() { return prop2; }}
+class CalcInput1{
+    private int prop1;
+    public CalcInput1(int prop1) { this.prop1 = prop1; }
+    public int getProp1() { return prop1; }
+}
+
+class CalcInput2{
+    private int prop1;
+    private double prop2;
+    public CalcInput2(int prop1, double prop2) {
+        this.prop1 = prop1;
+        this.prop2 = prop2;
+    }
+    public int getProp1() { return prop1; }
+    public double getProp2() { return prop2; }
+}
 ```
 
 And let's assume that the method we implement receives such an object:
 
 ```
-void calculate(Object input) {    double result = Calculator.calculate(input);    //other code follows}
+void calculate(Object input) {
+    double result = Calculator.calculate(input);
+    //other code follows
+}
 ```
 
 We still use polymorphism here because we describe our input as
@@ -1405,7 +1881,18 @@ for all Java classes.
 Now let's look at how the Calculator class is implemented:
 
 ```
-class Calculator{    public static double calculate(Object input){        if(input instanceof CalcInput1){            return new CalcUsingAlg1().calculate((CalcInput1)input);        } else if (input instanceof CalcInput2){            return new CalcUsingAlg2().calculate((CalcInput2)input);        } else {            throw new RuntimeException("Unknown input type " +                                input.getClass().getCanonicalName());        }    }}
+class Calculator{
+    public static double calculate(Object input){
+        if(input instanceof CalcInput1){
+            return new CalcUsingAlg1().calculate((CalcInput1)input);
+        } else if (input instanceof CalcInput2){
+            return new CalcUsingAlg2().calculate((CalcInput2)input);
+        } else {
+            throw new RuntimeException("Unknown input type " + 
+                               input.getClass().getCanonicalName());
+        }
+    }
+}
 ```
 
 As you can see, it uses the instanceof operator for selecting the
@@ -1415,7 +1902,7 @@ its implementation has nothing to do with it. Yet, from outside, it
 looks polymorphic and it is, but only to a degree.
 
 
-Java Object-Oriented Programming (OOP)
+Summary
 ======================================
 
 This chapter introduced readers to the concepts of OOP and how they are

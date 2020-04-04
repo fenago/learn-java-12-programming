@@ -54,7 +54,7 @@ You can run the example by running following command in the terminal:
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch03_fundamentals.WideningNarrowing.java`
 
-Java Fundamentals
+Packages, importing, and access
 =================
 
 As you already know, the package name reflects the directory structure,
@@ -85,7 +85,15 @@ Packages
 Let's look at the class we called Packages:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;import com.packt.learnjava.ch02_oop.hiding.C;import com.packt.learnjava.ch02_oop.hiding.D;public class Packages {    public void method(){        C c = new C();        D d = new D();    }}
+package com.packt.learnjava.ch03_fundamentals;
+import com.packt.learnjava.ch02_oop.hiding.C;
+import com.packt.learnjava.ch02_oop.hiding.D;
+public class Packages {
+    public void method(){
+        C c = new C();
+        D d = new D();
+    }
+}
 ```
 
 The first line in the Packages class is a package declaration that
@@ -114,7 +122,15 @@ class (and interface) location when several packages are imported as a
 group. For example, look at this code snippet:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;import com.packt.learnjava.ch02_oop.*;import com.packt.learnjava.ch02_oop.hiding.*;public class Packages {    public void method(){        C c = new C();        D d = new D();    }}
+package com.packt.learnjava.ch03_fundamentals;
+import com.packt.learnjava.ch02_oop.*;
+import com.packt.learnjava.ch02_oop.hiding.*;
+public class Packages {
+    public void method(){
+        C c = new C();
+        D d = new D();
+    }
+}
 ```
 
 In the preceding code, can you guess to which package a class C or class
@@ -128,13 +144,25 @@ you, interface properties are public and static by default), you can
 typically refer to it as follows:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;import com.packt.learnjava.ch02_oop.SomeInterface;public class Packages {    public void method(){        System.out.println(SomeInterface.NAME);    }}
+package com.packt.learnjava.ch03_fundamentals;
+import com.packt.learnjava.ch02_oop.SomeInterface;
+public class Packages {
+    public void method(){
+        System.out.println(SomeInterface.NAME);
+    }
+}
 ```
 
 To avoid using even the interface name, you can use a static import:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;import static com.packt.learnjava.ch02_oop.SomeInterface.NAME;public class Packages {    public void method(){        System.out.println(NAME);    }}
+package com.packt.learnjava.ch03_fundamentals;
+import static com.packt.learnjava.ch02_oop.SomeInterface.NAME;
+public class Packages {
+    public void method(){
+        System.out.println(NAME);
+    }
+}
 ```
 
 Similarly, if SomeClass has a public static property, someProperty, and
@@ -142,7 +170,24 @@ a public static method, someMethod(), it is possible to import them
 statically too:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;import com.packt.learnjava.ch02_oop.StaticMembers.SomeClass;import com.packt.learnjava.ch02_oop.hiding.C;import com.packt.learnjava.ch02_oop.hiding.D;import static com.packt.learnjava.ch02_oop.StaticMembers                                          .SomeClass.someMethod;import static com.packt.learnjava.ch02_oop.StaticMembers                                          .SomeClass.SOME_PROPERTY;public class Packages {    public static void main(String... args){        C c = new C();        D d = new D();        SomeClass obj = new SomeClass();        someMethod(42);        System.out.println(SOME_PROPERTY);    //prints: abc    }}
+package com.packt.learnjava.ch03_fundamentals;
+import com.packt.learnjava.ch02_oop.StaticMembers.SomeClass;
+import com.packt.learnjava.ch02_oop.hiding.C;
+import com.packt.learnjava.ch02_oop.hiding.D;
+import static com.packt.learnjava.ch02_oop.StaticMembers
+                                          .SomeClass.someMethod;
+import static com.packt.learnjava.ch02_oop.StaticMembers
+                                          .SomeClass.SOME_PROPERTY;
+public class Packages {
+    public static void main(String... args){
+        C c = new C();
+        D d = new D();
+
+        SomeClass obj = new SomeClass();
+        someMethod(42);
+        System.out.println(SOME_PROPERTY);    //prints: abc
+    }
+}
 ```
 
 But this technique should be used wisely since it may create an
@@ -196,7 +241,27 @@ only to the members of the same package.
 Here is an example:
 
 ```
-public class AccessModifiers {    String prop1;    private String prop2;    protected String prop3;    public String prop4;        void method1(){ }    private void method2(){ }    protected void method3(){ }    public void method4(){ }    class A1{ }    private class A2{ }    protected class A3{ }    public class A4{ }    interface I1 {}    private interface I2 {}    protected interface I3 {}    public interface I4 {}}
+public class AccessModifiers {
+    String prop1;
+    private String prop2;
+    protected String prop3;
+    public String prop4;
+    
+    void method1(){ }
+    private void method2(){ }
+    protected void method3(){ }
+    public void method4(){ }
+
+    class A1{ }
+    private class A2{ }
+    protected class A3{ }
+    public class A4{ }
+
+    interface I1 {}
+    private interface I2 {}
+    protected interface I3 {}
+    public interface I4 {}
+}
 ```
 
 Please note that static nested classes* *do not have access to other
@@ -208,7 +273,31 @@ demonstrate this feature, let's create the following private properties
 and methods in the top-level class and in a private inner class:
 
 ```
-public class AccessModifiers {    private String topLevelPrivateProperty = "Top-level private value";    private void topLevelPrivateMethod(){        var inner = new InnerClass();        System.out.println(inner.innerPrivateProperty);        inner.innerPrivateMethod();    }    private class InnerClass {        //private static String PROP = "Inner static"; //error        private String innerPrivateProperty = "Inner private value";        private void innerPrivateMethod(){            System.out.println(topLevelPrivateProperty);        }    }    private static class InnerStaticClass {        private static String PROP = "Inner private static";        private String innerPrivateProperty = "Inner private value";        private void innerPrivateMethod(){            var top = new AccessModifiers();            System.out.println(top.topLevelPrivateProperty);        }    }}
+public class AccessModifiers {
+    private String topLevelPrivateProperty = "Top-level private value";
+    private void topLevelPrivateMethod(){
+        var inner = new InnerClass();
+        System.out.println(inner.innerPrivateProperty);
+        inner.innerPrivateMethod();
+    }
+
+    private class InnerClass {
+        //private static String PROP = "Inner static"; //error
+        private String innerPrivateProperty = "Inner private value";
+        private void innerPrivateMethod(){
+            System.out.println(topLevelPrivateProperty);
+        }
+    }
+
+    private static class InnerStaticClass {
+        private static String PROP = "Inner private static";
+        private String innerPrivateProperty = "Inner private value";
+        private void innerPrivateMethod(){
+            var top = new AccessModifiers();
+            System.out.println(top.topLevelPrivateProperty);
+        }
+    }
+}
 ```
 
 As you can see, all the methods and properties in the previous classes
@@ -226,7 +315,15 @@ To demonstrate all the possibilities described, we add the following
 main() method to the  AccessModifiers  class:
 
 ```
-public static void main(String... args){    var top = new AccessModifiers();    top.topLevelPrivateMethod();    //var inner = new InnerClass();  //error    System.out.println(InnerStaticClass.PROP);    var inner = new InnerStaticClass();    System.out.println(inner.innerPrivateProperty);    inner.innerPrivateMethod();}
+public static void main(String... args){
+    var top = new AccessModifiers();
+    top.topLevelPrivateMethod();
+    //var inner = new InnerClass();  //error
+    System.out.println(InnerStaticClass.PROP);
+    var inner = new InnerStaticClass();
+    System.out.println(inner.innerPrivateProperty);
+    inner.innerPrivateMethod();
+}
 ```
 
 Naturally, a non-static inner class cannot be accessed from a static
@@ -242,7 +339,7 @@ outside.
 
 
 
-Java Fundamentals
+Java reference types
 =================
 
 A new operator creates an object of a class and returns the reference to
@@ -323,7 +420,13 @@ reference can be assigned to this interface or any ancestor of the
 interface:
 
 ```
-interface C {}interface B extends C {}class A implements B { }B b = new A();C c = new A();A a1 = (A)b;A a2 = (A)c;
+interface C {}
+interface B extends C {}
+class A implements B { }
+B b = new A();
+C c = new A();
+A a1 = (A)b;
+A a2 = (A)c;
 ```
 
 As you can see, as in the case with class reference upcasting and
@@ -348,14 +451,20 @@ array is created, its length never changes.
 The following are examples of an array declaration:
 
 ```
-int[] intArray;float[][] floatArray;String[] stringArray;SomeClass[][][] arr;
+int[] intArray;
+float[][] floatArray;
+String[] stringArray;
+SomeClass[][][] arr;
 ```
 
 Each bracket pair indicates another dimension. The number of bracket
 pairs is the nesting depth of the array:
 
 ```
-int[] intArray = new int[10];float[][] floatArray = new float[3][4];String[] stringArray = new String[2];SomeClass[][][] arr = new SomeClass[3][5][2];
+int[] intArray = new int[10];
+float[][] floatArray = new float[3][4];
+String[] stringArray = new String[2];
+SomeClass[][][] arr = new SomeClass[3][5][2];
 ```
 
 The new operator allocates memory for each element that can be assigned
@@ -364,7 +473,9 @@ initialized to the default values at creation time in my case, as the
 following example demonstrates:
 
 ```
-System.out.println(intArray[3]);      //prints: 0System.out.println(floatArray[2][2]); //prints: 0.0System.out.println(stringArray[1]);   //prints: null
+System.out.println(intArray[3]);      //prints: 0
+System.out.println(floatArray[2][2]); //prints: 0.0
+System.out.println(stringArray[1]);   //prints: null
 ```
 
 Another way to create an array is to use an array
@@ -372,7 +483,13 @@ initializer–comma-separated list of values enclosed in braces for each
 dimension, for example:
 
 ```
-int[] intArray = {1,2,3,4,5,6,7,8,9,10};float[][] floatArray ={{1.1f,2.2f,3,2},{10,20.f,30.f,5},{1,2,3,4}};String[] stringArray = {"abc", "a23"};System.out.println(intArray[3]);      //prints: 4System.out.println(floatArray[2][2]); //prints: 3.0System.out.println(stringArray[1]);   //prints: a23
+int[] intArray = {1,2,3,4,5,6,7,8,9,10};
+float[][] floatArray ={{1.1f,2.2f,3,2},{10,20.f,30.f,5},{1,2,3,4}};
+String[] stringArray = {"abc", "a23"};
+
+System.out.println(intArray[3]);      //prints: 4
+System.out.println(floatArray[2][2]); //prints: 3.0
+System.out.println(stringArray[1]);   //prints: a23
 ```
 
 A multidimensional array can be created without declaring the length of
@@ -380,13 +497,24 @@ each dimension. Only the first dimension has to have the length
 specified:
 
 ```
-float[][] floatArray = new float[3][];System.out.println(floatArray.length);  //prints: 3System.out.println(floatArray[0]);      //prints: nullSystem.out.println(floatArray[1]);      //prints: nullSystem.out.println(floatArray[2]);      //prints: null//System.out.println(floatArray[3]);    //error//System.out.println(floatArray[2][2]); //error
+float[][] floatArray = new float[3][];
+
+System.out.println(floatArray.length);  //prints: 3
+System.out.println(floatArray[0]);      //prints: null
+System.out.println(floatArray[1]);      //prints: null
+System.out.println(floatArray[2]);      //prints: null
+//System.out.println(floatArray[3]);    //error
+//System.out.println(floatArray[2][2]); //error
 ```
 
 The missing length of other dimensions can be specified later:
 
 ```
-float[][] floatArray = new float[3][];floatArray[0] = new float[4];floatArray[1] = new float[3];floatArray[2] = new float[7];System.out.println(floatArray[2][5]);   //prints: 0.0
+float[][] floatArray = new float[3][];
+floatArray[0] = new float[4];
+floatArray[1] = new float[3];
+floatArray[2] = new float[7];
+System.out.println(floatArray[2][5]);   //prints: 0.
 ```
 
 This way, it is possible to assign a different length to different
@@ -437,7 +565,9 @@ Because the enum values are constants, they exist uniquely in JVM and
 can be compared by reference:
 
 ```
-Season season = Season.WINTER;boolean b = season == Season.WINTER;System.out.println(b);   //prints: true
+Season season = Season.WINTER;
+boolean b = season == Season.WINTER;
+System.out.println(b);   //prints: true
 ```
 
 The following are the most frequently used methods of
@@ -472,19 +602,37 @@ enum Season { SPRING, SUMMER, AUTUMN, WINTER }
 And here is the demo code:
 
 ```
-System.out.println(Season.SPRING.name());            //prints: SPRINGSystem.out.println(Season.WINTER.toString());        //prints: WINTERSystem.out.println(Season.SUMMER.ordinal());         //prints: 1Season season = Enum.valueOf(Season.class, "AUTUMN");System.out.println(season == Season.AUTUMN);         //prints: truefor(Season s: Season.values()){    System.out.print(s.name() + " ");                                //prints: SPRING SUMMER AUTUMN WINTER}
+System.out.println(Season.SPRING.name());            //prints: SPRING
+System.out.println(Season.WINTER.toString());        //prints: WINTER
+System.out.println(Season.SUMMER.ordinal());         //prints: 1
+Season season = Enum.valueOf(Season.class, "AUTUMN");
+System.out.println(season == Season.AUTUMN);         //prints: true
+
+for(Season s: Season.values()){
+    System.out.print(s.name() + " "); 
+                               //prints: SPRING SUMMER AUTUMN WINTER
+}
 ```
 
 To override the toString() method, let's create enum Season1:
 
 ```
-enum Season1 {    SPRING, SUMMER, AUTUMN, WINTER;    public String toString() {        return this.name().charAt(0) +                this.name().substring(1).toLowerCase();    }}
+enum Season1 {
+    SPRING, SUMMER, AUTUMN, WINTER;
+    public String toString() {
+        return this.name().charAt(0) + 
+               this.name().substring(1).toLowerCase();
+    }
+}
 ```
 
 Here is how it works:
 
 ```
-for(Season1 s: Season1.values()){    System.out.print(s.toString() + " ");                                  //prints: Spring Summer Autumn Winter}
+for(Season1 s: Season1.values()){
+    System.out.print(s.toString() + " "); 
+                                 //prints: Spring Summer Autumn Winter
+}
 ```
 
 It is possible to add any other property to each enum constant. For
@@ -508,7 +656,10 @@ If we iterate over values of enum Season2, the result will be as
 follows:
 
 ```
-for(Season2 s: Season2.values()){    System.out.print(s.toString() + " ");               //prints: Spring(42) Summer(67) Autumn(32) Winter(20)}
+for(Season2 s: Season2.values()){
+    System.out.print(s.toString() + " "); 
+              //prints: Spring(42) Summer(67) Autumn(32) Winter(20)
+}
 ```
 
 In the standard Java libraries, there are several enum classes, for
@@ -537,14 +688,18 @@ not like the value passed into the method, we change it as we see fit
 and do not think twice about it:
 
 ```
-void modifyParameter(int x){    x = 2;}
+void modifyParameter(int x){
+    x = 2;
+}
 ```
 
 We have no concerns that the variable value outside the method may
 change:
 
 ```
-int x = 1;modifyParameter(x);System.out.println(x);  //prints: 1
+int x = 1;
+modifyParameter(x);
+System.out.println(x);  //prints: 1
 ```
 
 It is not possible to change the parameter value of a primitive type
@@ -560,13 +715,23 @@ modify it. To demonstrate it, let's create a DemoClass and the method
 that uses it:
 
 ```
-class DemoClass{    private String prop;    public DemoClass(String prop) { this.prop = prop; }    public String getProp() { return prop; }    public void setProp(String prop) { this.prop = prop; }}void modifyParameter(DemoClass obj){    obj.setProp("Changed inside the method");}
+class DemoClass{
+    private String prop;
+    public DemoClass(String prop) { this.prop = prop; }
+    public String getProp() { return prop; }
+    public void setProp(String prop) { this.prop = prop; }
+}
+void modifyParameter(DemoClass obj){
+    obj.setProp("Changed inside the method");
+}
 ```
 
 If we use the preceding method, the result will be as follows: 
 
 ```
-DemoClass obj = new DemoClass("Is not changed");modifyParameter(obj);System.out.println(obj.getProp()); //prints: Changed inside the method
+DemoClass obj = new DemoClass("Is not changed");
+modifyParameter(obj);
+System.out.println(obj.getProp()); //prints: Changed inside the method
 ```
 
 That is a big difference, isn't it? So, you have to be careful not to
@@ -583,13 +748,23 @@ types* section). Here is DemoClass1 and an overloaded version of
 the modifyParameter() method:
 
 ```
-class DemoClass1{    private Integer prop;    public DemoClass1(Integer prop) { this.prop = prop; }    public Integer getProp() { return prop; }    public void setProp(Integer prop) { this.prop = prop; }}void modifyParameter(DemoClass1 obj){    obj.setProp(Integer.valueOf(2));}
+class DemoClass1{
+    private Integer prop;
+    public DemoClass1(Integer prop) { this.prop = prop; }
+    public Integer getProp() { return prop; }
+    public void setProp(Integer prop) { this.prop = prop; }
+}
+void modifyParameter(DemoClass1 obj){
+    obj.setProp(Integer.valueOf(2));
+}
 ```
 
 If we use the preceding method, the result will be as follows: 
 
 ```
-DemoClass1 obj = new DemoClass1(Integer.valueOf(1));modifyParameter(obj);System.out.println(obj.getProp());  //prints: 2
+DemoClass1 obj = new DemoClass1(Integer.valueOf(1));
+modifyParameter(obj);
+System.out.println(obj.getProp());  //prints: 2
 ```
 
 The only exception to this behavior of reference types is an object of
@@ -597,13 +772,21 @@ the String class. Here is another overloaded version of
 the modifyParameter() method:
 
 ```
-void modifyParameter(String obj){    obj = "Changed inside the method";}  
+void modifyParameter(String obj){
+    obj = "Changed inside the method";
+}  
 ```
 
 If we use the preceding method, the result will be as follows:
 
 ```
-String obj = "Is not changed";modifyParameter(obj);System.out.println(obj); //prints: Is not changedobj = new String("Is not changed");modifyParameter(obj);System.out.println(obj); //prints: Is not changed
+String obj = "Is not changed";
+modifyParameter(obj);
+System.out.println(obj); //prints: Is not changed
+
+obj = new String("Is not changed");
+modifyParameter(obj);
+System.out.println(obj); //prints: Is not changed
 ```
 
 As you can see, whether we use a literal or a new String object, the
@@ -640,14 +823,22 @@ the equals() method and, thus, override its implementation in
 the java.lang.Object class, which appears as follows:
 
 ```
-  public boolean equals(Object obj) {       return (this == obj);}
+  public boolean equals(Object obj) {
+       return (this == obj);
+}
 ```
 
 By contrast, look how the same method is implemented in the
 Integer class:
 
 ```
-private final int value;public boolean equals(Object obj) {    if (obj instanceof Integer) {        return value == ((Integer)obj).intValue();    }    return false;}
+private final int value;
+public boolean equals(Object obj) {
+    if (obj instanceof Integer) {
+        return value == ((Integer)obj).intValue();
+    }
+    return false;
+}
 ```
 
 As you can see, it extracts the primitive int value from the input
@@ -659,7 +850,20 @@ if the references are not the same value, compares the content of the
 objects:
 
 ```
-private final byte[] value;public boolean equals(Object anObject) {      if (this == anObject) {            return true;      }      if (anObject instanceof String) {         String aString = (String)anObject;         if (coder() == aString.coder()) {           return isLatin1() ? StringLatin1.equals(value, aString.value)                             : StringUTF16.equals(value, aString.value);         }      }      return false;}
+private final byte[] value;
+public boolean equals(Object anObject) {
+      if (this == anObject) {
+            return true;
+      }
+      if (anObject instanceof String) {
+         String aString = (String)anObject;
+         if (coder() == aString.coder()) {
+           return isLatin1() ? StringLatin1.equals(value, aString.value)
+                             : StringUTF16.equals(value, aString.value);
+         }
+      }
+      return false;
+}
 ```
 
 The StringLatin1.equals() and StringUTF16.equals() methods compare the
@@ -670,7 +874,12 @@ content, the equals() method in the corresponding class has to be
 overridden. For example, let's look at the familiar DemoClass class:
 
 ```
-class DemoClass{    private String prop;    public DemoClass(String prop) { this.prop = prop; }    public String getProp() { return prop; }    public void setProp(String prop) { this.prop = prop; }}
+class DemoClass{
+    private String prop;
+    public DemoClass(String prop) { this.prop = prop; }
+    public String getProp() { return prop; }
+    public void setProp(String prop) { this.prop = prop; }
+}
 ```
 
 We could add to it the equals() method manually, but IDE can help us to
@@ -682,7 +891,18 @@ do this as follows:
 Eventually, two methods will be generated and added to the class:
 
 ```
-@Overridepublic boolean equals(Object o) {    if (this == o) return true;    if (!(o instanceof DemoClass)) return false;    DemoClass demoClass = (DemoClass) o;    return Objects.equals(getProp(), demoClass.getProp());}@Overridepublic int hashCode() {    return Objects.hash(getProp());}
+@Override
+public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof DemoClass)) return false;
+    DemoClass demoClass = (DemoClass) o;
+    return Objects.equals(getProp(), demoClass.getProp());
+}
+
+@Override
+public int hashCode() {
+    return Objects.hash(getProp());
+}
 ```
 
 Looking at the generated code, we would like to attract your attention
@@ -700,7 +920,9 @@ to the following points:
     not only references, but also uses the equals() method:
 
 ```
-     public static boolean equals(Object a, Object b) {         return (a == b) || (a != null && a.equals(b));     }
+  public static boolean equals(Object a, Object b) {
+         return (a == b) || (a != null && a.equals(b));
+     }
 ```
 
 Since, as we have demonstrated earlier, the equals() method, implemented
@@ -728,7 +950,7 @@ too. Besides, as you have seen, an IDE can do this without any overhead.
 
 
 
-Java Fundamentals
+Reserved and restricted keywords
 =================
 
 The **keywords** are the words that have particular meaning for a
@@ -804,7 +1026,8 @@ In all other places, it is possible to use them as identifiers, for
 example:
 
 ```
-String to = "To";String with = "abc";
+String to = "To";
+String with = "abc";
 ```
 
 Although you can, this is a good practice not to use them as identifiers
@@ -812,7 +1035,7 @@ even outside module declaration. 
 
 
 
-Java Fundamentals
+Usage of the this and super keywords
 =================
 
 The this keyword provides a reference to the current object.
@@ -826,7 +1049,15 @@ Usage of the this keyword
 Here is the most popular example:
 
 ```
-class A {    private int count;    public void setCount(int count) {        count = count;         // 1    }    public int getCount(){        return count;          // 2    }}
+class A {
+    private int count;
+    public void setCount(int count) {
+        count = count;         // 1
+    }
+    public int getCount(){
+        return count;          // 2
+    }
+}
 ```
 
 The first line looks ambiguous, but, in fact, it is not: the local
@@ -834,13 +1065,23 @@ variable, int count , hides the  private property instance int count. We
 can demonstrate this by running the following code:
 
 ```
-A a = new A();a.setCount(2);System.out.println(a.getCount());     //prints: 0
+A a = new A();
+a.setCount(2);
+System.out.println(a.getCount());     //prints: 0
 ```
 
 Using the this keyword fixes the problem:
 
 ```
-class A {    private int count;    public void setCount(int count) {        this.count = count;         // 1    }    public int getCount(){        return this.count;          // 2    }}
+class A {
+    private int count;
+    public void setCount(int count) {
+        this.count = count;         // 1
+    }
+    public int getCount(){
+        return this.count;          // 2
+    }
+}
 ```
 
 Adding this to line 1 allows  the value to be assigned the instance
@@ -852,7 +1093,13 @@ difficult-to-trace errors, such as the one we have just demonstrated.
 We have also seen  this keyword usage in the equals() method:
 
 ```
-@Overridepublic boolean equals(Object o) {    if (this == o) return true;    if (!(o instanceof DemoClass)) return false;    DemoClass demoClass = (DemoClass) o;    return Objects.equals(getProp(), demoClass.getProp());}
+@Override
+public boolean equals(Object o) {
+    if (this == o) return true;
+    if (!(o instanceof DemoClass)) return false;
+    DemoClass demoClass = (DemoClass) o;
+    return Objects.equals(getProp(), demoClass.getProp());
+}
 ```
 
 And, just to remind you, here are the examples of a constructor we
@@ -861,7 +1108,20 @@ presented in [Chapter
 *Java Object-Oriented Programming (OOP)*:
 
 ```
-class TheChildClass extends TheParentClass{    private int x;    private String prop;    private String anotherProp = "abc";    public TheChildClass(String prop){        super(42);        this.prop = prop;    }    public TheChildClass(int arg1, String arg2){        super(arg1);        this.prop = arg2;    }    // methods follow}
+class TheChildClass extends TheParentClass{
+    private int x;
+    private String prop;
+    private String anotherProp = "abc";
+    public TheChildClass(String prop){
+        super(42);
+        this.prop = prop;
+    }
+    public TheChildClass(int arg1, String arg2){
+        super(arg1);
+        this.prop = arg2;
+    }
+    // methods follow
+}
 ```
 
 In the preceding code, you can see not only the this keyword, but also
@@ -881,14 +1141,27 @@ The super keyword is especially helpful when a method is overridden and
 the method of the parent class has to be called:
 
 ```
-class B  {    public void someMethod() {        System.out.println("Method of B class");    }}class C extends B {    public void someMethod() {        System.out.println("Method of C class");    }    public void anotherMethod() {        this.someMethod();    //prints: Method of C class        super.someMethod();   //prints: Method of B class    }}
+class B  {
+    public void someMethod() {
+        System.out.println("Method of B class");
+    }
+}
+class C extends B {
+    public void someMethod() {
+        System.out.println("Method of C class");
+    }
+    public void anotherMethod() {
+        this.someMethod();    //prints: Method of C class
+        super.someMethod();   //prints: Method of B class
+    }
+}
 ```
 
 As we progress through this book, we will see more examples of using
 the this and super keywords.
 
 
-Java Fundamentals
+Converting between primitive types
 =================
 
 The maximum numeric value a numeric type can hold depends on the number
@@ -932,7 +1205,25 @@ Specification. Here are a few examples that demonstrate the loss of
 precision:
 
 ```
-int i = 123456789;double d = (double)i;System.out.println(i - (int)d);    //prints: 0long l1 = 12345678L;float f1 = (float)l1;System.out.println(l1 - (long)f1);    //prints: 0long l2 = 123456789L;float f2 = (float)l2;System.out.println(l2 - (long)f2);    //prints: -3long l3 = 1234567891111111L;double d3 = (double)l3;System.out.println(l3 - (long)d3);    //prints: 0long l4 = 12345678999999999L;double d4 = (double)l4;System.out.println(l4 - (long)d4);    //prints: -1 
+int i = 123456789;
+double d = (double)i;
+System.out.println(i - (int)d);    //prints: 0
+
+long l1 = 12345678L;
+float f1 = (float)l1;
+System.out.println(l1 - (long)f1);    //prints: 0
+
+long l2 = 123456789L;
+float f2 = (float)l2;
+System.out.println(l2 - (long)f2);    //prints: -3
+
+long l3 = 1234567891111111L;
+double d3 = (double)l3;
+System.out.println(l3 - (long)d3);    //prints: 0
+
+long l4 = 12345678999999999L;
+double d4 = (double)l4;
+System.out.println(l4 - (long)d4);    //prints: -1
 ```
 
 As you can see, conversion from int to double preserves the value, but
@@ -963,7 +1254,12 @@ you can get a completely different value (with lost magnitude). Look at
 the following example:
 
 ```
-System.out.println(Integer.MAX_VALUE); //prints: 2147483647double d1 = 1234567890.0;System.out.println((int)d1);           //prints: 1234567890double d2 = 12345678909999999999999.0;System.out.println((int)d2);           //prints: 2147483647
+System.out.println(Integer.MAX_VALUE); //prints: 2147483647
+double d1 = 1234567890.0;
+System.out.println((int)d1);           //prints: 1234567890
+
+double d2 = 12345678909999999999999.0;
+System.out.println((int)d2);           //prints: 2147483647
 ```
 
 As you can see from the examples, without checking first whether the
@@ -1014,7 +1310,25 @@ of them. The results they produce are the same as the cast operator in
 the previous examples:
 
 ```
-int i = 123456789;double d = Integer.valueOf(i).doubleValue();System.out.println(i - (int)d);          //prints: 0long l1 = 12345678L;float f1 = Long.valueOf(l1).floatValue();System.out.println(l1 - (long)f1);       //prints: 0long l2 = 123456789L;float f2 = Long.valueOf(l2).floatValue();System.out.println(l2 - (long)f2);       //prints: -3long l3 = 1234567891111111L;double d3 = Long.valueOf(l3).doubleValue();System.out.println(l3 - (long)d3);       //prints: 0long l4 = 12345678999999999L;double d4 = Long.valueOf(l4).doubleValue();System.out.println(l4 - (long)d4);       //prints: -1double d1 = 1234567890.0;System.out.println(Double.valueOf(d1)                         .intValue());   //prints: 1234567890double d2 = 12345678909999999999999.0;System.out.println(Double.valueOf(d2)                         .intValue());   //prints: 2147483647
+int i = 123456789;
+double d = Integer.valueOf(i).doubleValue();
+System.out.println(i - (int)d);          //prints: 0
+
+long l1 = 12345678L;
+float f1 = Long.valueOf(l1).floatValue();
+System.out.println(l1 - (long)f1);       //prints: 0
+
+long l2 = 123456789L;
+float f2 = Long.valueOf(l2).floatValue();
+System.out.println(l2 - (long)f2);       //prints: -3
+
+long l3 = 1234567891111111L;
+double d3 = Long.valueOf(l3).doubleValue();
+System.out.println(l3 - (long)d3);       //prints: 0
+
+long l4 = 12345678999999999L;
+double d4 = Long.valueOf(l4).doubleValue();
+System.out.println(l4 - (long)d4);       //prints: -1
 ```
 
 In addition, each of the wrapper classes has methods that allow the
@@ -1022,7 +1336,25 @@ conversion of String representation of a numeric value to the
 corresponding primitive numeric type or reference type, for example:
 
 ```
-byte b1 = Byte.parseByte("42");System.out.println(b1);             //prints: 42Byte b2 = Byte.decode("42");System.out.println(b2);             //prints: 42boolean b3 = Boolean.getBoolean("property");System.out.println(b3);            //prints: falseBoolean b4 = Boolean.valueOf("false");System.out.println(b4);            //prints: falseint i1 = Integer.parseInt("42");System.out.println(i1);            //prints: 42Integer i2 = Integer.getInteger("property");System.out.println(i2);            //prints: nulldouble d1 = Double.parseDouble("3.14");System.out.println(d1);            //prints: 3.14Double d2 = Double.valueOf("3.14");System.out.println(d2);            //prints: 3.14
+byte b1 = Byte.parseByte("42");
+System.out.println(b1);             //prints: 42
+Byte b2 = Byte.decode("42");
+System.out.println(b2);             //prints: 42
+
+boolean b3 = Boolean.getBoolean("property");
+System.out.println(b3);            //prints: false
+Boolean b4 = Boolean.valueOf("false");
+System.out.println(b4);            //prints: false
+
+int i1 = Integer.parseInt("42");
+System.out.println(i1);            //prints: 42
+Integer i2 = Integer.getInteger("property");
+System.out.println(i2);            //prints: null
+
+double d1 = Double.parseDouble("3.14");
+System.out.println(d1);            //prints: 3.14
+Double d2 = Double.valueOf("3.14");
+System.out.println(d2);            //prints: 3.14
 ```
 
 In the examples, please note the two methods that accept the property
@@ -1035,7 +1367,10 @@ method to convert the primitive type value to its String representation,
 for example:
 
 ```
-String s1 = Integer.toString(42);System.out.println(s1);            //prints: 42String s2 = Double.toString(3.14);System.out.println(s2);            //prints: 3.14
+String s1 = Integer.toString(42);
+System.out.println(s1);            //prints: 42
+String s2 = Double.toString(3.14);
+System.out.println(s2);            //prints: 3.14
 ```
 
 The wrapper classes have many other useful methods of conversion from
@@ -1043,8 +1378,7 @@ one primitive type to another and to different formats. So, if you need
 to do something such as that, look into the corresponding wrapper class
 first.
 
-
-Java Fundamentals
+Converting between primitive and reference types
 =================
 
 The conversion of a primitive type value to an object of the
@@ -1060,7 +1394,25 @@ The boxing of a primitive type can be done either automatically (called
 each wrapper type:
 
 ```
-int i1 = 42;Integer i2 = i1;              //autoboxing//Long l2 = i1;               //errorSystem.out.println(i2);       //prints: 42i2 = Integer.valueOf(i1);System.out.println(i2);       //prints: 42Byte b = Byte.valueOf((byte)i1);System.out.println(b);       //prints: 42Short s = Short.valueOf((short)i1);System.out.println(s);       //prints: 42Long l = Long.valueOf(i1);System.out.println(l);       //prints: 42Float f = Float.valueOf(i1);System.out.println(f);       //prints: 42.0Double d = Double.valueOf(i1);System.out.println(d);       //prints: 42.0 
+int i1 = 42;
+Integer i2 = i1;              //autoboxing
+//Long l2 = i1;               //error
+System.out.println(i2);       //prints: 42
+
+i2 = Integer.valueOf(i1);
+System.out.println(i2);       //prints: 42
+
+Byte b = Byte.valueOf((byte)i1);
+System.out.println(b);       //prints: 42
+
+Short s = Short.valueOf((short)i1);
+System.out.println(s);       //prints: 42
+
+Long l = Long.valueOf(i1);
+System.out.println(l);       //prints: 42
+
+Float f = Float.valueOf(i1);
+System.out.println(f);       //prints: 42.0
 ```
 
 Notice that autoboxing is only possible in relation to a corresponding
@@ -1078,7 +1430,37 @@ Unboxing can be accomplished using methods of the Number class
 implemented in each wrapper class:
 
 ```
-Integer i1 = Integer.valueOf(42);int i2 = i1.intValue();System.out.println(i2);      //prints: 42byte b = i1.byteValue();System.out.println(b);       //prints: 42short s = i1.shortValue();System.out.println(s);       //prints: 42long l = i1.longValue();System.out.println(l);       //prints: 42float f = i1.floatValue();System.out.println(f);       //prints: 42.0double d = i1.doubleValue();System.out.println(d);       //prints: 42.0Long l1 = Long.valueOf(42L);long l2 = l1;                //implicit unboxingSystem.out.println(l2);      //prints: 42double d2 = l1;              //implicit unboxingSystem.out.println(d2);      //prints: 42long l3 = i1;                //implicit unboxingSystem.out.println(l3);      //prints: 42double d3 = i1;              //implicit unboxingSystem.out.println(d3);      //prints: 42
+Integer i1 = Integer.valueOf(42);
+int i2 = i1.intValue();
+System.out.println(i2);      //prints: 42
+
+byte b = i1.byteValue();
+System.out.println(b);       //prints: 42
+
+short s = i1.shortValue();
+System.out.println(s);       //prints: 42
+
+long l = i1.longValue();
+System.out.println(l);       //prints: 42
+
+float f = i1.floatValue();
+System.out.println(f);       //prints: 42.0
+
+double d = i1.doubleValue();
+System.out.println(d);       //prints: 42.0
+
+Long l1 = Long.valueOf(42L);
+long l2 = l1;                //implicit unboxing
+System.out.println(l2);      //prints: 42
+
+double d2 = l1;              //implicit unboxing
+System.out.println(d2);      //prints: 42
+
+long l3 = i1;                //implicit unboxing
+System.out.println(l3);      //prints: 42
+
+double d3 = i1;              //implicit unboxing
+System.out.println(d3);      //prints: 42
 ```
 
 As you can see from the comment in the example, the conversion from a
@@ -1088,7 +1470,7 @@ contrast to autoboxing, it is possible to use implicit unboxing even
 between wrapping and primitive types that do not match.
 
 
-Java Fundamentals
+Summary
 =================
 
 In this chapter, you have learned what Java packages are and the role

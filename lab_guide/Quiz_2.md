@@ -1,6 +1,6 @@
 
 
-Java Object-Oriented Programming (OOP)
+Quiz
 ======================================
 
 1.  Select all the correct OOP concepts from the following list:
