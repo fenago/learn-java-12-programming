@@ -30,39 +30,6 @@ following:
 -   Identifiers and variables
 -   Java statements
 
-
-
-Getting Started with Java 12
-============================
-
-This chapter is about how to start learning Java 12 and Java in general.
-We will begin with the basics, first explaining what Java is and its
-main terms, followed by how to install the necessary tools to write and
-run (execute) a program. In this respect, Java 12 is not much different
-to the previous Java versions, so this chapter's content is applies to
-the older versions too.
-
-We will describe and demonstrate all the necessary steps for building
-and configuring a Java programming environment. This is the bare minimum
-that you have to have on the computer in order to start programming. We
-also describe the basic Java language constructs and illustrate them
-with examples that can be executed immediately.
-
-The best way to learn a programming language, or any language for that
-matter, is to use it, and this chapter guides the reader on how they can
-do this with Java. The topics covered in this chapter include the
-following:
-
--   How to install and run Java
--   How to install and run an **Integrated Development Environment**
-    (**IDE**)
--   Java primitive types and operators
--   String types and literals
--   Identifiers and variables
--   Java statements
-
-
-
 ### Run Java Code
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.ControlFlow.java`
@@ -169,6 +136,11 @@ purpose. There are five Java platform editions, as listed here:
 So, to install Java means to install JDK, which also means to install
 Java platform on one of the listed editions. In this book, we are going
 to talk about and use only Java SE.
+
+<h2><span style="color:red;">Note:</span></h2>
+
+<span style="color:red;">- Java has been installed already in the lab environment</span><br>
+<span style="color:red;">- Intructions below also contain information how to setup IDE locally. You can skip these steps and click <a href="#start">go to exercise</a> to start running java code.</span>
 
 Installing Java SE
 ------------------
@@ -501,6 +473,8 @@ executed and serve as an entry point into the application. It has a
 certain format, as follows:
 
 ![](./images_1/04ec52ad-627c-4e98-a41e-914a0476b457.png)
+
+<br id="start">
 
 This has to have the following attributes:
 
