@@ -61,7 +61,7 @@ this section, we will explain how a string can be processed using
 library and the [StringUtils] class
 from the [org.apache.commons.lang3] package in particular.
 
-Methods of the String class  {#methods-of-the-string-class .header-title}
+Methods of the String class 
 ----------------------------
 
 The [String] class has more than 70 methods that enable analyzing,
@@ -70,7 +70,7 @@ corresponding string literals. To see all the methods of the
 [String] class, please refer the Java API online at
 <https://docs.oracle.com/en/java/javase>.
 
-Strings analysis {#strings-analysis .header-title}
+Strings analysis
 ----------------
 
 The [length()] method returns the count of characters in the
@@ -124,7 +124,7 @@ at [https://www.regular-expressions.info](https://www.regular-expressions.info/
 In the preceding example, the expression [\[a-z\]+] matches one or
 more letters only.
 
-Strings comparison {#strings-comparison .header-title}
+Strings comparison
 ------------------
 
 In 
@@ -240,7 +240,7 @@ located in the string at the specified position. The code points were
 described in the *Integral types* section of 
 *Getting Started with Java*.
 
-Strings transformation {#strings-transformation .header-title}
+Strings transformation
 ----------------------
 
 The [substring()] method returns the substring starting with the
@@ -359,7 +359,7 @@ the [chars()] method creates an [IntStream] of characters
 (their code points). We will talk about streams in  *Java
 Standard Streams*.
 
-Methods added with Java 11 {#methods-added-with-java-11 .header-title}
+Methods added with Java 11
 --------------------------
 
 Java 11 introduced several new methods in the [String] class.
@@ -419,7 +419,7 @@ The output of the preceding code is as follows:
 We will talk about streams in  *Java
 Standard Streams*.
 
-String utilities {#string-utilities .header-title}
+String utilities
 ----------------
 
 In addition to the [String] class, there are many other classes
@@ -582,7 +582,7 @@ addition, they can work in *a non-blocking* mode, which can
 substantially increase the performance in certain situations. We will
 talk about non-blocking processing in *Reactive Programming*.
 
-Stream data {#stream-data .header-title}
+Stream data
 -----------
 
 The data a program understands has to be binary---expressed in 0s and
@@ -629,7 +629,7 @@ In the rest of this section, we will review classes of the
 [java.io] package and some popular related classes from other
 packages.
 
-Class InputStream and its subclasses {#class-inputstream-and-its-subclasses .header-title}
+Class InputStream and its subclasses
 ------------------------------------
 
 In Java Class Library, the [InputStream] abstract class has the
@@ -675,7 +675,7 @@ The [abstract int read()] is the only method that has to be
 implemented, but most of the descendants of this class override many of
 the other methods too.
 
-ByteArrayInputStream {#bytearrayinputstream .header-title}
+ByteArrayInputStream
 --------------------
 
 The [ByteArrayInputStream] class allows reading a byte array as an
@@ -762,7 +762,7 @@ classes that are specialized for characters processing. We will talk
 about them in the *Reader and Writer classes and their
 subclasses* section.
 
-FileInputStream {#fileinputstream .header-title}
+FileInputStream
 ---------------
 
 The [FileInputStream] class gets data from a file in a filesystem,
@@ -847,7 +847,7 @@ the classpath and creating a stream that contains its content. In
 the *Files Management* section, we will present other ways of reading a
 file too.
 
-ObjectInputStream {#objectinputstream .header-title}
+ObjectInputStream
 -----------------
 
 The set of methods of the [ObjectInputStream] class is much bigger
@@ -915,7 +915,7 @@ directories* section. And, to remind you, we have used the
 try-with-resources statement because [InputStream] and
 [OutputStream] both implement the [Closeable] interface. 
 
-PipedInputStream {#pipedinputstream .header-title}
+PipedInputStream
 ----------------
 
 A piped input stream has very particular specialization; it is used as
@@ -1034,7 +1034,7 @@ stream by the [PipedOutputWorker]. We will get into more details
 about threads in  *Multithreading
 and Concurrent Processing.*
 
-SequenceInputStream {#sequenceinputstream .header-title}
+SequenceInputStream
 -------------------
 
 The [SequenceInputStream] class concatenates input streams passed
@@ -1072,7 +1072,7 @@ try(FileInputStream fis1 =
 Similarly, when an enumeration of input streams is passed in, each of
 the streams is read (and printed in our case) until the end.
 
-FilterInputStream {#filterinputstream .header-title}
+FilterInputStream
 -----------------
 
 The [FilterInputStream] class is a wrapper around the
@@ -1158,7 +1158,7 @@ monitor of the progress of reading from the [InputStream]. The
 monitor object can be accessed using
 the [getProgressMonitor()] method.
 
-javax.sound.sampled.AudioInputStream {#javax.sound.sampled.audioinputstream .header-title}
+javax.sound.sampled.AudioInputStream
 ------------------------------------
 
 The [AudioInputStream] class represents an input stream with a
@@ -1184,7 +1184,7 @@ reading from an audio file, a stream, or a URL, and write to an audio
 file. They also can be used to convert an audio stream to another audio
 format.
 
-Class OutputStream and its subclasses {#class-outputstream-and-its-subclasses .header-title}
+Class OutputStream and its subclasses
 -------------------------------------
 
 The [OutputStream] class is a peer of the [InputStream]
@@ -1226,7 +1226,7 @@ subclasses *section, all of the [OutputStream] implementations,
 except the [PrintStream] class, should be intuitively familiar to
 you. So, we will discuss here only the [PrintStream] class.
 
-Reader and Writer classes and their subclasses {#reader-and-writer-classes-and-their-subclasses .header-title}
+Reader and Writer classes and their subclasses
 ----------------------------------------------
 
 As we mentioned several times already, [Reader] and
@@ -1241,7 +1241,7 @@ describing [InputStream] and [OutputStream] classes.
 However, using [Reader] and [Writer] classes makes text
 processing simpler and the code easier to read.
 
-Reader and its subclasses {#reader-and-its-subclasses .header-title}
+Reader and its subclasses
 -------------------------
 
 The class [Reader] is an abstract class that reads streams as
@@ -1288,7 +1288,7 @@ the JCL are: [CharArrayReader], [InputStreamReader],
 a [LineNumberReader] subclass, and the [FilterReader]
 class has a [PushbackReader] subclass.
 
-Writer and its subclasses {#writer-and-its-subclasses .header-title}
+Writer and its subclasses
 -------------------------
 
 The abstract [Writer] class writes to character streams. It is an
@@ -1327,7 +1327,7 @@ The [Writer] subclasses in the JCL are: [CharArrayWriter],
 and [PrintWriter]. The [OutputStreamWriter] class has
 a [FileWriter] subclass.
 
-Other classes of java.io package {#other-classes-of-java.io-package .header-title}
+Other classes of java.io package
 --------------------------------
 
 Other classes of the [java.io] package include the following: 
@@ -1346,7 +1346,7 @@ Other classes of the [java.io] package include the following: 
 -   [File]: Allows creating and managing files and directories;
     described in the *Files management* section
 
-Console {#console .header-title}
+Console
 -------
 
 There are several ways to create and run a **Java Virtual Machine**
@@ -1510,7 +1510,7 @@ The result of the preceding code looks as follows:
 [Input] and [Output] streams we have been talking about in
 this section.
 
-StreamTokenizer {#streamtokenizer .header-title}
+StreamTokenizer
 ---------------
 
 The [StreamTokenizer] class parses the input stream and produces
@@ -1635,7 +1635,7 @@ object:
 As you can see, using the wealth of the preceding methods allows
 fine-tuning of the text interpretation.
 
-ObjectStreamClass and ObjectStreamField {#objectstreamclass-and-objectstreamfield .header-title}
+ObjectStreamClass and ObjectStreamField
 ---------------------------------------
 
 The [ObjectStreamClass] and [ObjectStreamField] class
@@ -1754,7 +1754,7 @@ If we run the preceding example, the result will be as follows:
 From a non-serializable object, we were able to extract information
 about the class, but not about the fields.
 
-Class java.util.Scanner {#class-java.util.scanner .header-title}
+Class java.util.Scanner
 -----------------------
 
 The [java.util.Scanner] class is typically used to read an input
@@ -1873,7 +1873,7 @@ created with one of the following constructors:
 We will now see the examples of the constructors\' usage while talking
 about creating and deleting files.
 
-Creating and deleting files and directories {#creating-and-deleting-files-and-directories .header-title}
+Creating and deleting files and directories
 -------------------------------------------
 
 To create a file or directory in the filesystem, one needs first to
@@ -1992,7 +1992,7 @@ remove from the path the just deleted directory and to continue doing it
 until all the nested directories are deleted, and the top level
 directory is deleted last. 
 
-Listing files and directories {#listing-files-and-directories .header-title}
+Listing files and directories
 -----------------------------
 
 The following methods can be used for listing directories and the files
@@ -2106,7 +2106,7 @@ Refer to Apache Commons project documentation
 ([https://commons.apache.org](https://commons.apache.org/)) for more
 details.
 
-Class FileUtils {#class-fileutils .header-title}
+Class FileUtils
 ---------------
 
 A popular [org.apache.commons.io.FileUtils] class allows doing all
@@ -2128,7 +2128,7 @@ imperative that you study the documentation of this class on the Apache
 Commons project website
 (<https://commons.apache.org/proper/commons-io/javadocs/api-2.5/org/apache/commons/io/FileUtils.html>).
 
-Class IOUtils {#class-ioutils .header-title}
+Class IOUtils
 -------------
 
 The [org.apache.commons.io.IOUtils] is another very useful utility

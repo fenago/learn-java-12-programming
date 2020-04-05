@@ -98,7 +98,7 @@ primarily used by the tools or other specialized applications. In our
 book, we will concentrate mostly on the mainstream Java programming and
 talk only about the [java] and [javax] packages.
 
-java.lang {#java.lang .header-title}
+java.lang
 ---------
 
 This package is so fundamental that is not required to be imported in
@@ -139,7 +139,7 @@ contains the most often used classes of JCL:
     other JVM processes
 -   Many other useful classes and interfaces
 
-java.util {#java.util .header-title}
+java.util
 ---------
 
 Most of the content of the [java.util] package is dedicated to
@@ -198,7 +198,7 @@ classes:
 -   Many other useful utility classes including the classes that
     support internationalization and base64-encoding and -decoding.
 
-java.time {#java.time .header-title}
+java.time
 ---------
 
 The [java.time] package contains classes for managing dates, time,
@@ -225,7 +225,7 @@ periods, and durations. The package includes the following:
 We discussed most of these classes in  *Data
 Structures, Generics, and Popular Utilities.*
 
-java.io and java.nio {#java.io-and-java.nio .header-title}
+java.io and java.nio
 --------------------
 
 The [java.io] and [java.nio] packages contain classes and
@@ -246,7 +246,7 @@ packages is as follows:
     15]
     *Reactive Programming*).
 
-java.sql and javax.sql {#java.sql-and-javax.sql .header-title}
+java.sql and javax.sql
 ----------------------
 
 These two packages compose the **Java Database Connectivity** (**JDBC**)
@@ -261,7 +261,7 @@ following:
 -   Distributed transactions
 -   Rowsets
 
-java.net {#java.net .header-title}
+java.net
 --------
 
 The [java.net] package contains classes that support applications
@@ -280,7 +280,7 @@ networking on the following two levels:
 We will talk about this package and see code examples in *Network
 Programming*.
 
-java.lang.math and java.math {#java.lang.math-and-java.math .header-title}
+java.lang.math and java.math
 ----------------------------
 
 The [java.lang.math] package contains methods for performing basic
@@ -294,7 +294,7 @@ wrapper classes of the [java.lang] package by allowing working
 with much bigger numbers using the [BigDecimal] and
 [BigInteger] classes.
 
-java.awt, javax.swing, and javafx {#java.awt-javax.swing-and-javafx .header-title}
+java.awt, javax.swing, and javafx
 ---------------------------------
 
 The first Java library that supported building a **Graphical User
@@ -351,7 +351,7 @@ between 20 and 100 libraries. In this section, we are going to discuss
 those that are included in the majority of such lists. All of them are
 open source projects.
 
-org.junit {#org.junit .header-title}
+org.junit
 ---------
 
 The [org.junit] package is the root package of an open source
@@ -429,7 +429,7 @@ A **unit** is a minimal piece of code that can be tested, thus the name.
 The best testing practices consider a method as a minimal testable unit.
 That\'s why a unit test usually tests a method.
 
-org.mockito {#org.mockito .header-title}
+org.mockito
 -----------
 
 One of the problems a unit test often faces is the need to test a method
@@ -524,7 +524,7 @@ methods and private methods. Otherwise, it is a great way to isolate the
 code you are testing by reliably predicting the results of the used
 third-party classes. 
 
-org.apache.log4j and org.slf4j {#org.apache.log4j-and-org.slf4j .header-title}
+org.apache.log4j and org.slf4j
 ------------------------------
 
 Throughout this book, we used [System.out] to display the results.
@@ -648,7 +648,7 @@ configuration to log messages of different levels, to different files,
 and so on. Read the [log4J] documentation
 ([https://logging.apache.org](https://logging.apache.org/)).
 
-org.apache.commons {#org.apache.commons .header-title}
+org.apache.commons
 ------------------
 
 The [org.apache.commons] package is another popular library
@@ -684,7 +684,7 @@ But there are many more packages under [org.apache.commons] that
 contain thousands of classes that can easily be used and can help make
 your code more elegant and efficient.
 
-lang and lang3 {#lang-and-lang3 .header-title}
+lang and lang3
 --------------
 
 The [org.apache.commons.lang3] package is actually the version 3
@@ -725,7 +725,7 @@ static utility methods, chiefly concerned with adding value to the
     5] *String,
     Input/Output, and Files*
 
-collections4 {#collections4 .header-title}
+collections4
 ------------
 
 Although on the surface the content of
@@ -827,7 +827,7 @@ Read the package documentation
 (<https://commons.apache.org/proper/commons-collections>) for more
 details.
 
-codec.binary {#codec.binary .header-title}
+codec.binary
 ------------
 
 The [org.apache.commons.codec.binary] package provides support for

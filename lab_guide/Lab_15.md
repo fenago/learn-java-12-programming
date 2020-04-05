@@ -109,7 +109,7 @@ execute the [main()] method. It can be done using [java]
 command directly or using the IDE. Yet there is an easier and more
 convenient way to run a benchmark: by using an IDE plugin.
 
-Using an IDE plugin {#using-an-ide-plugin .header-title}
+Using an IDE plugin
 -------------------
 
 All major Java supporting IDEs have such a plugin. We will demonstrate
@@ -177,7 +177,7 @@ There are many benchmark parameters that allow for fine-tuning the
 measurements for the particular needs of the task at hand. We are going
 to present only the major ones.
 
-Mode {#mode .header-title}
+Mode
 ----
 
 The first set of parameters defines the performance aspect (mode) the
@@ -219,7 +219,7 @@ The described parameters and all the parameters we are going to discuss
 later in this chapter can be set at the method and/or class level. The
 method-level set value overrides the class-level value.
 
-Output time unit {#output-time-unit .header-title}
+Output time unit
 ----------------
 
 The unit of time used for presenting the results can be specified using
@@ -233,7 +233,7 @@ the [\@OutputTimeUnit] annotation:
 The possible time units come from
 the [java.util.concurrent.TimeUnit] enum.
 
-Iterations {#iterations .header-title}
+Iterations
 ----------
 
 Another group of parameters defines the iterations used for the warmups
@@ -245,7 +245,7 @@ and measurements. For example: 
 @Measurement(iterations = 5, time = 100, timeUnit = TimeUnit.MILLISECONDS)
 ```
 
-Forking {#forking .header-title}
+Forking
 -------
 
 While running several tests, the [\@Fork] annotation allows you to
@@ -339,7 +339,7 @@ The results are mostly different around sampling and single-shot
 running. You can play with these methods and change the forking and
 number of warmups. 
 
-Using the \@State annotation {#using-the-state-annotation .header-title}
+Using the \@State annotation
 ----------------------------
 
 This JMH feature allows you to hide the source of the data from the
@@ -378,7 +378,7 @@ The data has changed again. Notice that the average time for execution
 has increased three-fold which indicates that more JVM optimization was
 not applied.
 
-Using the Blackhole object {#using-the-blackhole-object .header-title}
+Using the Blackhole object
 --------------------------
 
 This JMH feature allows for simulating the results usage, thus
@@ -407,7 +407,7 @@ This time, the results look not that different. Apparently, the constant
 folding optimization was neutralized even before the [Blackhole]
 usage was added. 
 
-Using the \@CompilerControl annotation {#using-the-compilercontrol-annotation .header-title}
+Using the \@CompilerControl annotation
 --------------------------------------
 
 Another way to tune up the benchmark is to tell the compiler to compile,
@@ -444,7 +444,7 @@ compilation/inlining affects the performance, we can set the
 -   [Mode.DONT\_INLINE]: To avoid this method inlining
 -   [Mode.EXCLUDE]: To avoid this method compiling
 
-Using the \@Param annotation {#using-the-param-annotation .header-title}
+Using the \@Param annotation
 ----------------------------
 
 Sometimes, it is necessary to run the same benchmark for a different set

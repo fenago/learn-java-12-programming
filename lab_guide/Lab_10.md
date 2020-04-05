@@ -385,7 +385,7 @@ Let\'s now take a closer look at
 the [java.net.ServerSocket] and [java.net.Socket] classes,
 and then run some examples of their usage.
 
-The java.net.ServerSocket class {#the-java.net.serversocket-class .header-title}
+The java.net.ServerSocket class
 -------------------------------
 
 The [java.net.ServerSocket] class has four constructors:
@@ -515,7 +515,7 @@ side immediately encounters an error.
 
 Now let\'s review an example of a TCP-client implementation.
 
-The java.net.Socket class {#the-java.net.socket-class .header-title}
+The java.net.Socket class
 -------------------------
 
 The [java.net.Socket] class should now be familiar to you since it
@@ -612,7 +612,7 @@ dynamic management of the socket connection. You can read the online
 documentation of the class to understand the available options in more
 detail.
 
-Running the examples {#running-the-examples .header-title}
+Running the examples
 --------------------
 
 Let\'s now run the [TcpServer] and [TcpClient] programs. If
@@ -708,7 +708,7 @@ In this section, we will briefly explain the different parts that make
 up a URL and demonstrate how it can be used programmatically to request
 data from a website (or a file) or to send (post) data to a website.
 
-The URL syntax {#the-url-syntax .header-title}
+The URL syntax
 --------------
 
 Generally speaking, the URL syntax complies with the syntax of
@@ -785,7 +785,7 @@ of [protocol] and [resource] values.
 
 Let\'s now take a look at the programmatic usage of URLs in Java.
 
-The java.net.URL class {#the-java.net.url-class .header-title}
+The java.net.URL class
 ----------------------
 
 In Java, a URL is represented by an object of the [java.net.URL]
@@ -1141,7 +1141,7 @@ the [java.net.http] package to learn more about these and other
 related classes and interfaces. Next, we will take a look at and discuss
 some examples of HTTP API usage.
 
-Blocking HTTP requests {#blocking-http-requests .header-title}
+Blocking HTTP requests
 ----------------------
 
 The following code is an example of a simple HTTP client that sends a
@@ -1248,7 +1248,7 @@ URL-based communication that we saw in the previous section. Now we are
 going to use the [HttpClient] methods that are not available in
 the URL streams.
 
-Non-blocking (asynchronous) HTTP requests {#non-blocking-asynchronous-http-requests .header-title}
+Non-blocking (asynchronous) HTTP requests
 -----------------------------------------
 
 The [sendAsync()] method of the [HttpClient] class allows
@@ -1505,7 +1505,7 @@ Similarly to the executor, several other objects can be set on the
 [HttpClient] object to configure the connection to handle
 authentication, request redirection, cookies management, and more.
 
-Server push functionality {#server-push-functionality .header-title}
+Server push functionality
 -------------------------
 
 The second (after multiplexing) significant advantage of the HTTP 2
@@ -1566,7 +1566,7 @@ loading. It also can be used for updating the information on the page.
 You can find many code examples of a server that sends push requests;
 all major browsers support this feature too.
 
-WebSocket support {#websocket-support .header-title}
+WebSocket support
 -----------------
 
 HTTP is based on the request-response model. A client requests

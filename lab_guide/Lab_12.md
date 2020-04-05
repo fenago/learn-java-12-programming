@@ -134,13 +134,13 @@ classes and interfaces that have [Stream]-creating methods. We did
 it for the reader\'s convenience, so it would be easier for the reader
 to remember and find them if need be.
 
-Stream interface {#stream-interface .header-title}
+Stream interface
 ----------------
 
 This group of [Stream] factories is composed of static methods
 that belong to the [Stream] interface.
 
-empty() {#empty .header-title}
+empty()
 -------
 
 The [Stream\<T\> empty()] method creates an empty stream that does
@@ -171,7 +171,7 @@ Without any element emitted, nothing happens. We will discuss
 the [Stream] method [forEach()] in the *Terminal operations*
 section.
 
-of(T\... values) {#oft...-values .header-title}
+of(T\... values)
 ----------------
 
 The [of(T\... values)] method accepts varargs and can also create
@@ -265,7 +265,7 @@ transform it. By returning an element as the result of the
 [[flatMap()]] operation, we tell the pipeline to treat the
 return value as a [[Stream]] object.
 
-ofNullable(T t) {#ofnullablet-t .header-title}
+ofNullable(T t)
 ---------------
 
 The [ofNullable(T t)] method returns a [Stream\<T\>]
@@ -328,7 +328,7 @@ void printList4(List<String> list){
 }
 ```
 
-iterate(Object, UnaryOperator) {#iterateobject-unaryoperator .header-title}
+iterate(Object, UnaryOperator)
 ------------------------------
 
 Two static methods of the [Stream] interface allow generating a
@@ -365,7 +365,7 @@ n)] to the first pipeline to avoid generating an infinite number
 of generated values. We will talk more about this method in
 the *Intermediate operations* section. 
 
-concat (Stream a, Stream b) {#concat-stream-a-stream-b .header-title}
+concat (Stream a, Stream b)
 ---------------------------
 
 The [Stream\<T\> concat(Stream\<\> a, Stream\<T\> b)] static
@@ -386,7 +386,7 @@ Stream.concat(stream1, stream2)
 Notice that element [2] is present in both original streams and
 consequently is emitted twice by the resulting stream.
 
-generate (Supplier) {#generate-supplier .header-title}
+generate (Supplier)
 -------------------
 
 The static method [Stream\<T\> generate(Supplier\<T\> supplier)]
@@ -415,7 +415,7 @@ n)] operation that allows only the specified number of stream
 elements to flow through. We will talk more about this method in
 the *Intermediate operations* section. 
 
-Stream.Builder interface {#stream.builder-interface .header-title}
+Stream.Builder interface
 ------------------------
 
 The [Stream.Builder\<T\> builder()] static method returns an
@@ -492,7 +492,7 @@ the created stream contains only the [cat] and
 use [\<String\>] generics to make sure that all the stream
 elements are of the [String] type.
 
-Other classes and interfaces {#other-classes-and-interfaces .header-title}
+Other classes and interfaces
 ----------------------------
 
 In Java 8, two default methods were added to the
@@ -689,7 +689,7 @@ especially helpful in the case of a large amount of data processed on a
 multi-core computer. We will discuss it in the *Parallel streams*
 section.
 
-Intermediate operations {#intermediate-operations .header-title}
+Intermediate operations
 -----------------------
 
 As we have mentioned already, an intermediate operation returns a
@@ -700,7 +700,7 @@ The intermediate operations can be grouped by their functionality in
 four categories of operations that perform **filtering**, **mapping**,
 **sorting**, or **peeking**.
 
-Filtering {#filtering .header-title}
+Filtering
 ---------
 
 This group includes operations that remove duplicates, skip some of the
@@ -751,7 +751,7 @@ Notice that we were able to reuse the source [List\<String\>]
 object, but could not reuse the [Stream] object. Once a
 [Stream] object is closed, it cannot be reopened.
 
-Mapping {#mapping .header-title}
+Mapping
 -------
 
 This group includes arguably the most important intermediate operations.
@@ -840,7 +840,7 @@ processing. But in real life, each [map()] or [flatMap()]
 operation typically accepts a more complex function that does something
 more useful.
 
-Sorting {#sorting .header-title}
+Sorting
 -------
 
 The following two intermediate operations sort the stream elements, as
@@ -866,7 +866,7 @@ list.stream().sorted(Comparator.reverseOrder())
              .forEach(System.out::print);           //prints: 54321
 ```
 
-Peeking {#peeking .header-title}
+Peeking
 -------
 
 An intermediate [Stream\<T\> peek(Consumer\<T\> action)]
@@ -883,7 +883,7 @@ list.stream()
  .forEach(System.out::print); //prints: 0102330405
 ```
 
-Terminal operations {#terminal-operations .header-title}
+Terminal operations
 -------------------
 
 **Terminal operations** are the most important operations in a stream
@@ -958,7 +958,7 @@ public class Person {
 }
 ```
 
-Processing each element {#processing-each-element .header-title}
+Processing each element
 -----------------------
 
 There are two terminal operations in this group, as follows:
@@ -1077,7 +1077,7 @@ the [Collector] function created by
 the [Collectors.toList()] method. We will see more functions
 created by the [Collectors] class in the *Collect* subsection.
 
-Counting all elements {#counting-all-elements .header-title}
+Counting all elements
 ---------------------
 
 The [long count()] terminal operation of
@@ -1133,7 +1133,7 @@ the [count()] operation. It just applies the passed-in collector
 to the stream. And the collector just counts the elements provided to it
 by the [collect()] operation.
 
-Match all, any, none {#match-all-any-none .header-title}
+Match all, any, none
 --------------------
 
 There are three seemingly very similar terminal operations that allow us
@@ -1177,7 +1177,7 @@ System.out.println(allMatch);                            //prints: false
 Please notice that all these operations are optimized so as not to
 process all the stream elements if the result can be determined early.
 
-Find any or first {#find-any-or-first .header-title}
+Find any or first
 -----------------
 
 The following terminal operations allow finding any element or the first
@@ -1222,7 +1222,7 @@ element only in one of the processing threads.
 
 Now let\'s talk about [class java.util.Optional] in more detail.
 
-Optional class {#optional-class .header-title}
+Optional class
 --------------
 
 The object of [java.util.Optional] is used to avoid returning
@@ -1277,7 +1277,7 @@ following applies, as follows:
     another one that does something else in the case the
     [Optional] object is empty.
 
-Min and max {#min-and-max .header-title}
+Min and max
 -----------
 
 The following terminal operations return the minimum or maximum value of
@@ -1356,7 +1356,7 @@ Person theOldest = persons.stream()
 System.out.println(theOldest);    //prints: Person{name='Jim', age=33}
 ```
 
-To array {#to-array .header-title}
+To array
 --------
 
 The following two terminal operations generate an array that contains
@@ -1432,7 +1432,7 @@ The only difference is that the [toArray()] of the [Stream]
 interface accepts a function, while the [toArray()] of the
 [Collection] interface takes an array.
 
-Reduce {#reduce .header-title}
+Reduce
 ------
 
 This terminal operation is called [reduce] because it processes
@@ -1684,7 +1684,7 @@ As you can see, we have set the identity to [0], so every
 subsequence will get it, but the total is not affected when the result
 from all the processing threads is assembled by the combinator.
 
-Collect {#collect .header-title}
+Collect
 -------
 
 Some of the usages of the [collect()] operation are very simple
@@ -1840,7 +1840,7 @@ next section, ready-to-use collectors cover the vast majority of
 processing needs in mainstream programming, and there is a good chance
 you will never need to create a custom collector. 
 
-Collectors {#collectors .header-title}
+Collectors
 ----------
 
 The [java.util.stream.Collectors] class provides more than 40
@@ -2065,14 +2065,14 @@ follows:
 -   The [sum()] and [average()] terminal
     operations calculate the sum and average of numeric stream elements
 
-Creating a stream {#creating-a-stream .header-title}
+Creating a stream
 -----------------
 
 In addition to the methods of the [Stream] interface that create
 streams, the [IntStream] and [LongStream] interfaces allow
 creating a stream from the values in the specified range.
 
-Intermediate operations {#intermediate-operations .header-title}
+Intermediate operations
 -----------------------
 
 In addition to the intermediate operations of the [Stream]
@@ -2082,7 +2082,7 @@ operations: [boxed()], [mapToObj()], [mapToInt()],
 [mapToLong()], [mapToDouble()], [flatMapToInt()],
 [flatMapToLong()], and [flatMapToDouble()].
 
-boxed(), mapToObj() {#boxed-maptoobj .header-title}
+boxed(), mapToObj()
 -------------------
 
 The [boxed()] intermediate operation converts (boxes) elements of
@@ -2153,7 +2153,7 @@ that produces [Person] objects, we have demonstrated how the
 [mapToObj()] operation can be used to create an object of any
 type. 
 
-mapToInt(), mapToLong(), mapToDouble() {#maptoint-maptolong-maptodouble .header-title}
+mapToInt(), mapToLong(), mapToDouble()
 --------------------------------------
 
 The [mapToInt()], [mapToLong()], [mapToDouble()]
@@ -2203,7 +2203,7 @@ list.stream().map(String::length)
         .forEach(System.out::print);      //prints: 335
 ```
 
-flatMapToInt(), flatMapToLong(), flatMapToDouble() {#flatmaptoint-flatmaptolong-flatmaptodouble .header-title}
+flatMapToInt(), flatMapToLong(), flatMapToDouble()
 --------------------------------------------------
 
 The [flatMapToInt()], [flatMapToLong()],
@@ -2237,7 +2237,7 @@ List.of("one", "two", "three")
     .forEach(System.out::print);             //prints: 12312312345
 ```
 
-Terminal operations {#terminal-operations .header-title}
+Terminal operations
 -------------------
 
 Numeric-specific terminal operations are pretty straightforward. There
@@ -2255,7 +2255,7 @@ can lead to incorrect results if the code was not written and tested for
 processing a parallel stream. The following are a few more
 considerations related to parallel streams.
 
-Stateless and stateful operations {#stateless-and-stateful-operations .header-title}
+Stateless and stateful operations
 ---------------------------------
 
 There are **stateless operations**, such as [filter()],
@@ -2286,7 +2286,7 @@ a parallel streams lightly. If stateful operations are involved, the
 code has to be designed and tested to be able to perform parallel stream
 processing without negative effects.
 
-Sequential or parallel processing? {#sequential-or-parallel-processing .header-title}
+Sequential or parallel processing?
 ----------------------------------
 
 As we indicated in the previous section, parallel processing may or may

@@ -87,7 +87,7 @@ the function was called a **combiner**.
 Let\'s compare the performance of sequential and parallel streams using
 an example.
 
-Sequential and parallel streams {#sequential-and-parallel-streams .header-title}
+Sequential and parallel streams
 -------------------------------
 
 To demonstrate the difference between sequential and parallel
@@ -184,7 +184,7 @@ talking about. But, before writing such a code, let\'s look at the
 the [java.util.concurrent] package. It does everything described,
 and even more.
 
-Using the CompletableFuture object {#using-the-completablefuture-object .header-title}
+Using the CompletableFuture object
 ----------------------------------
 
 Using the [CompletableFuture] object, we can separate sending the
@@ -271,7 +271,7 @@ the application is implemented: it does not dedicate an execution thread
 to each of the requests but provides several lightweight worker threads
 that do the processing asynchronously and concurrently. 
 
-The java.io package versus the java.nio package {#the-java.io-package-versus-the-java.nio-package .header-title}
+The java.io package versus the java.nio package
 -----------------------------------------------
 
 Writing and reading data to and from an external memory (a hard drive,
@@ -312,7 +312,7 @@ a **non-blocking I/O** and later was applied to other processes, the
 most prominent being the *event processing in an event loop*, also
 called a **run loop**.
 
-The event/run loop {#the-eventrun-loop .header-title}
+The event/run loop
 ------------------
 
 Many non-blocking systems are based on the **event** (or **run**) loop
@@ -411,7 +411,7 @@ declared in the Reactive Manifesto
 as building reactive systems that are *responsive*, *resilient*,
 *elastic*, and *message-driven*.
 
-Responsive {#responsive .header-title}
+Responsive
 ----------
 
 It seems that this term is self-explanatory. The ability to respond in a
@@ -428,7 +428,7 @@ as any other familiar skill.
 We will see quite a few examples of reactive programming in the
 following sections.
 
-Resilient {#resilient .header-title}
+Resilient
 ---------
 
 Failures are inevitable. The hardware crashes, the software has defects,
@@ -450,7 +450,7 @@ another using messages allows better tuning of the duplication of the
 most critical parts and creates more opportunities for their isolation
 and the potential failure containment.
 
-Elastic {#elastic .header-title}
+Elastic
 -------
 
 The ability to sustain the biggest possible load is usually associated
@@ -470,7 +470,7 @@ can comprise a reactive system that can be both scalable and elastic. We
 will talk about such architecture in more details in the following
 sections and the next chapter.
 
-Message-driven {#message-driven .header-title}
+Message-driven
 --------------
 
 We have established already that components isolation and system
@@ -680,7 +680,7 @@ using an [Observable] object. Such methods are often also called
 use these three terms, methods, operations, and operators,
 interchangeably as synonyms. 
 
-Observable types {#observable-types .header-title}
+Observable types
 ----------------
 
 Talking about RxJava 2 API (notice that is it quite different than
@@ -717,7 +717,7 @@ values that can be emitted, an ability to defer the returning of the
 result, or returning the flag of the task completion only, and because
 of their ability to handle backpressure.
 
-Blocking versus non-blocking {#blocking-versus-non-blocking .header-title}
+Blocking versus non-blocking
 ----------------------------
 
 To demonstrate this behavior, we create an observable that emits five
@@ -873,7 +873,7 @@ implement the required functionality using non-blocking operations only.
 The main thrust of reactive programming is to strive to process all
 requests asynchronously in a non-blocking style. 
 
-Cold versus hot {#cold-versus-hot .header-title}
+Cold versus hot
 ---------------
 
 All the examples we have seen so far demonstrated only a [cold]
@@ -1025,7 +1025,7 @@ an output fragment:
 We will talk about other backpressure strategies in the *Operators*
 section, in the overview of the corresponding operators.
 
-Disposable {#disposable .header-title}
+Disposable
 ----------
 
 Please notice that a [subscribe()] method actually returns
@@ -1108,7 +1108,7 @@ on the [CompositeDisposable] object. It will remove the
 collected [Disposable] objects and call the [dispose()]
 method on each of them.
 
-Creating an observable {#creating-an-observable .header-title}
+Creating an observable
 ----------------------
 
 You have seen already a few methods of creating an observable in our
@@ -1240,7 +1240,7 @@ We review them in the following sections.
 You will see examples of other factory methods used in our
 examples throughout other sections of this chapter.
 
-Operators {#operators .header-title}
+Operators
 ---------
 
 There are literally hundreds (if we count all the overloaded versions)
@@ -1264,7 +1264,7 @@ more in the online documentation
 (<http://reactivex.io/RxJava/2.x/javadoc/index.html>).
 
 
-Transforming {#transforming .header-title}
+Transforming
 ------------
 
 These operators transform the values emitted by an observable:
@@ -1312,7 +1312,7 @@ System.out.println(os);                  //prints: [o, o]
 System.out.println(noto);                //prints: [n, e, t, w]
 ```
 
-Filtering  {#filtering .header-title}
+Filtering 
 ----------
 
 The following operators (and their multiple overloaded versions) select
@@ -1362,7 +1362,7 @@ Observable.interval(5, TimeUnit.MILLISECONDS)
 pauseMs(50);
 ```
 
-Combining {#combining .header-title}
+Combining
 ---------
 
 The following operators (and their multiple overloaded versions) create
@@ -1418,7 +1418,7 @@ Observable.zip(obs1, obs2, obs1,  (x,y,z) -> "("+x+y+z+")")
           .subscribe(System.out::print);       //prints: (oto)(nwn)(eoe) 
 ```
 
-Converting from XXX {#converting-from-xxx .header-title}
+Converting from XXX
 -------------------
 
 These operators are pretty straightforward. Here is the list of from-XXX
@@ -1449,7 +1449,7 @@ operators of the [Observable] class:
 -   [fromPublisher(Publisher\<T\> publisher)]: Creates an
     [Observable] from a [Publisher] object
 
-Exceptions handling {#exceptions-handling .header-title}
+Exceptions handling
 -------------------
 
 The [subscribe()] operator has an overloaded version that accepts
@@ -1494,7 +1494,7 @@ Observable.error(new RuntimeException("MyException"))
           .subscribe(System.out::print);          //prints: 42
 ```
 
-Life cycle events handling {#life-cycle-events-handling .header-title}
+Life cycle events handling
 --------------------------
 
 These operators are invoked each on a certain event that happened
@@ -1569,7 +1569,7 @@ If we run this code, the output will be as follows:
 You will also see other examples of these operators\' usage in the
 *Multithreading (scheduler)* section.
 
-Utilities {#utilities .header-title}
+Utilities
 ---------
 
 Various useful operators (and their multiple overloaded versions) can be
@@ -1638,7 +1638,7 @@ the [DISPOSED] signal to the [using] operator (the
 third parameter), so the [Consumer] function we pass as the third
 parameter can dispose of the resource used by the pipeline. 
 
-Conditional and Boolean {#conditional-and-boolean .header-title}
+Conditional and Boolean
 -----------------------
 
 The following operators (and their multiple overloaded versions) allow
@@ -1693,7 +1693,7 @@ equal = Observable.sequenceEqual(Observable.just("one"),
 System.out.println(equal.blockingGet());           //prints: false
 ```
 
-Backpressure {#backpressure .header-title}
+Backpressure
 ------------
 
 We have discussed and demonstrated the **backpressure** effect and the
@@ -1716,7 +1716,7 @@ process the emitted values on time) and emit the next value on request.
 The backpressure operators are available only in the [Flowable]
 class.
 
-Connectable  {#connectable .header-title}
+Connectable 
 ------------
 
 The operators of this category allow connecting observables and thus
@@ -1738,7 +1738,7 @@ We have demonstrated how [ConnectableObservable] works in the
 [ConnectableObservable] does not start emitting value until its
 [connect] operator is called.
 
-Multithreading (scheduler) {#multithreading-scheduler .header-title}
+Multithreading (scheduler)
 --------------------------
 
 RxJava is single-threaded by default. This means that the source

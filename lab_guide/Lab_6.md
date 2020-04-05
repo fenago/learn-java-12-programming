@@ -120,7 +120,7 @@ described algorithm of using the hash value will not work.
 And finally, before talking about the [java.util] interfaces, a
 few words about generics.
 
-Generics {#generics .header-title}
+Generics
 --------
 
 You can see these most often in such declarations:
@@ -176,7 +176,7 @@ initialized. To demonstrate the methods of these two interfaces, we will
 use two classes: an [ArrayList] (implements [List]) and
 [HashSet] (implements [Set]).
 
-How to initialize List and Set {#how-to-initialize-list-and-set .header-title}
+How to initialize List and Set
 ------------------------------
 
 Since Java 9, the [List] or [Set] interfaces have
@@ -345,7 +345,7 @@ System.out.println(list3);      //prints: [s1, s2]
 Now, after we have learned how a collection can be initialized, we can
 turn to other methods in the [List] and [Set] interfaces.
 
-java.lang.Iterable interface {#java.lang.iterable-interface .header-title}
+java.lang.Iterable interface
 ----------------------------
 
 The [Collection] interface extends
@@ -389,7 +389,7 @@ list.forEach(e -> System.out.print(e + " ")); //prints: s1 s2 s3
     implementing methods that allow parallel processing and is outside
     the scope of this book. 
 
-Collection interface {#collection-interface .header-title}
+Collection interface
 --------------------
 
 As we have mentioned already, the [List] and
@@ -513,7 +513,7 @@ System.out.println(set1.equals(set3));  //prints: false
     possibly parallel [Stream] object (we talk about streams in *Java
     Standard Streams*).
 
-List interface {#list-interface .header-title}
+List interface
 --------------
 
 The [List] interface has several other methods that do not belong
@@ -649,7 +649,7 @@ implementing is called **functional programming***,* which we will
 discuss in more detail in  *Functional
 Programming.*
 
-Set interface  {#set-interface .header-title}
+Set interface 
 --------------
 
 The [Set] interface has the following methods that do not belong
@@ -663,7 +663,7 @@ to any of its parent interfaces:
     \<E\> List\<E\> copyOf(Collection\<E\> coll)] method described
     in the *Interface List* section.
 
-Map interface {#map-interface .header-title}
+Map interface
 -------------
 
 The [Map] interface has many methods similar to the [List]
@@ -810,7 +810,7 @@ order of the elements between different code executions. Such a design
 was done to make sure a programmer does not rely on a certain order of
 [Set] elements, which is not guaranteed for a set. 
 
-Unmodifiable collections {#unmodifiable-collections .header-title}
+Unmodifiable collections
 ------------------------
 
 Please note that collections produced by the [of()] factory
@@ -871,7 +871,7 @@ The fact that the methods are static means they do not depend on the
 object state, so they are also called **stateless methods**, or
 **utilities methods**.
 
-java.util.Collections class {#java.util.collections-class .header-title}
+java.util.Collections class
 ---------------------------
 
 There are many methods in the [Collections] class that manage
@@ -993,7 +993,7 @@ As we have mentioned already, there are many more utilities in
 the [Collections] class, so we recommend you look through the
 related documentation at least once and understand all its capabilities.
 
-CollectionUtils class {#collectionutils-class .header-title}
+CollectionUtils class
 ---------------------
 
 The [org.apache.commons.collections4.CollectionUtils] class in the
@@ -1048,7 +1048,7 @@ very popular and helpful:
 
 We will briefly review each of them.
 
-java.util.Arrays class {#java.util.arrays-class .header-title}
+java.util.Arrays class
 ----------------------
 
 We have already used the [java.util.Arrays] class several times.
@@ -1137,7 +1137,7 @@ equals the element of another array in the same position, while
 the [Arrays.equals()] method does the same, but for
 one-dimensional arrays only.
 
-ArrayUtils class {#arrayutils-class .header-title}
+ArrayUtils class
 ----------------
 
 The [org.apache.commons.lang3.ArrayUtils] class complements
@@ -1198,7 +1198,7 @@ The two utilities described in this section are as follows:
 They are especially useful during class creation, so we will concentrate
 largely on the methods related to this task.
 
-java.util.Objects class {#java.util.objects-class .header-title}
+java.util.Objects class
 -----------------------
 
 The [Objects] class has only 17 methods that are all static.
@@ -1413,7 +1413,7 @@ As of the time of writing, the [Objects] class has 17 methods. We
 recommend you become familiar with them so as to avoid writing your own
 utilities in the event that the same utility already exists. 
 
-ObjectUtils class {#objectutils-class .header-title}
+ObjectUtils class
 -----------------
 
 The last statement of the previous section applies to
@@ -1482,7 +1482,7 @@ as its sub-packages, are rich in various functionality that cover all
 practical cases. But we are not going to discuss all of them; we will
 just introduce the basics and the most popular use cases.
 
-LocalDate class {#localdate-class .header-title}
+LocalDate class
 ---------------
 
 [LocalDate] class does not carry time. It represents a date in ISO
@@ -1660,7 +1660,7 @@ you have to work with dates, we recommend that you read the API of this
 class and other classes of the [java.time] package and its
 sub-packages.
 
-LocalTime class {#localtime-class .header-title}
+LocalTime class
 ---------------
 
 The [LocalTime] class contains time without a date. It has similar
@@ -1730,7 +1730,7 @@ you have to work with dates, we recommend that you read the API of this
 class and other classes of the [java.time] package and its
 sub-packages.
 
-LocalDateTime class {#localdatetime-class .header-title}
+LocalDateTime class
 -------------------
 
 The [LocalDateTime] class contains both the date and time and has
@@ -1769,7 +1769,7 @@ class. If you have to work with dates, we recommend that you read the
 API of this class and other classes of the [java.time] package and
 its sub-packages.
 
-Period and Duration classes {#period-and-duration-classes .header-title}
+Period and Duration classes
 ---------------------------
 
 The [java.time.Period] and [java.time.Duration] classes are

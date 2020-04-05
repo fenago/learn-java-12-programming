@@ -78,7 +78,7 @@ going to discuss the ones that are used most often. You can find and
 study the full list of idioms in the official Java documentation
 (<https://docs.oracle.com/javase/tutorial>).
 
-The equals() and hashCode() methods {#the-equals-and-hashcode-methods .header-title}
+The equals() and hashCode() methods
 -----------------------------------
 
 The default implementation of the [equals()] and
@@ -212,7 +212,7 @@ Debugging such cases has proved much more difficult and costly than just
 adding the [\@Override] annotation, which generates an error if
 the method does not override anything.
 
-The compareTo() method {#the-compareto-method .header-title}
+The compareTo() method
 ----------------------
 
 In  *Data
@@ -327,7 +327,7 @@ if [obj1.equals(obj2)] then [obj1.compareTo(obj2) == 0] and,
 at the same time, if [obj1.compareTo(obj2) ==
 0] then [obj1.equals(obj2)].
 
-The clone() method {#the-clone-method .header-title}
+The clone() method
 ------------------
 
 The [clone()] method implementation in the
@@ -545,7 +545,7 @@ and has less chance of unexpected consequences.
 Fortunately, the [clone()] method is not used very often. In fact,
 you may never encounter a need to use it.
 
-The StringBuffer and StringBuilder classes {#the-stringbuffer-and-stringbuilder-classes .header-title}
+The StringBuffer and StringBuilder classes
 ------------------------------------------
 
 We have talked about the difference between the [StringBuffer] and
@@ -555,7 +555,7 @@ it here. Instead, we will just mention that, in a single-threaded
 process (which is the vast majority of cases), the [StringBuilder]
 class is a preferred choice because it is faster.
 
-Try, catch, and finally clauses {#try-catch-and-finally-clauses .header-title}
+Try, catch, and finally clauses
 -------------------------------
 
 This book contains *Exception
@@ -586,7 +586,7 @@ particular code area requires more resources than others.
 
 We will start with higher-level design decisions in no particular order.
 
-Identifying loosely coupled functional areas {#identifying-loosely-coupled-functional-areas .header-title}
+Identifying loosely coupled functional areas
 --------------------------------------------
 
 These design decisions can be made very early on, based just on the
@@ -600,7 +600,7 @@ benefits of doing this:
 -   Parallel development of parts
 -   A better understanding of data flow
 
-Breaking the functional area into traditional tiers {#breaking-the-functional-area-into-traditional-tiers .header-title}
+Breaking the functional area into traditional tiers
 ---------------------------------------------------
 
 With each functional area in place, there can be specializations based
@@ -617,7 +617,7 @@ The benefits of doing this include the following:
 -   Programmer specialization based on their expertise
 -   Parallel development of parts
 
-Coding to an interface {#coding-to-an-interface .header-title}
+Coding to an interface
 ----------------------
 
 The specialized parts, based on the decisions described in the previous
@@ -628,7 +628,7 @@ in
 *Java Object-Oriented Programming (OOP)*, so we are not going to repeat
 it here.
 
-Using factories {#using-factories .header-title}
+Using factories
 ---------------
 
 We talked about this
@@ -638,7 +638,7 @@ does not and cannot describe the constructor of a class that implements
 the interface. Using factories allows you to close this gap and expose
 just an interface to a client. 
 
-Preferring composition over inheritance {#preferring-composition-over-inheritance .header-title}
+Preferring composition over inheritance
 ---------------------------------------
 
 Originally, object-oriented programming was focused on inheritance as
@@ -663,7 +663,7 @@ functionality of the class to use and which to ignore. It also allows
 the object to stay light and not be burdened by the inheritance. Such a
 design is more flexible, more extensible, and more predictable.
 
-Using libraries {#using-libraries .header-title}
+Using libraries
 ---------------
 
 Throughout the book, we mentioned many times that using the **Java Class

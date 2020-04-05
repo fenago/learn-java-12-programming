@@ -1060,7 +1060,7 @@ variable as the way to achieve thread-safe concurrent access to a
 property. Then we will also demonstrate two methods of thread
 synchronization.
 
-Atomic variable {#atomic-variable .header-title}
+Atomic variable
 ---------------
 
 An **atomic variable** is a that can be updated only when its current
@@ -1137,7 +1137,7 @@ provide synchronization support too:
 -   [Exchanger]: Allows two threads to exchange objects at a
     rendezvous point and is useful in several pipeline designs
 
-Synchronized method {#synchronized-method .header-title}
+Synchronized method
 -------------------
 
 Another way to solve the problem is to use a synchronized method. Here
@@ -1178,7 +1178,7 @@ may cause performance degradation if the method takes a long time to
 execute. In such cases, a synchronized block can be used, which wraps
 only several lines of code in an atomic operation.
 
-Synchronized block {#synchronized-block .header-title}
+Synchronized block
 ------------------
 
 Here is an example of a synchronized block used to solve the problem of
@@ -1233,7 +1233,7 @@ and [notifyAll()] methods from the base object. These methods can
 also be used to control the threads\' behavior and their access to the
 locks.
 
-Concurrent collections  {#concurrent-collections .header-title}
+Concurrent collections 
 -----------------------
 
 Another way to address concurrency is to use a thread-safe collection
@@ -1342,7 +1342,7 @@ The output this code produces looks as follows:
 As you can see, the list was modified without an exception, but not the
 currently iterated copy. That is the behavior you can use if needed.
 
-Addressing memory consistency error {#addressing-memory-consistency-error .header-title}
+Addressing memory consistency error
 -----------------------------------
 
 Memory consistency errors can have many forms and causes in a

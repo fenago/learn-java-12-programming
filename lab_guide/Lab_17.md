@@ -156,7 +156,7 @@ subsections:
 -   Concise method bodies
 -   Lambda leftovers
 
-Data class {#data-class .header-title}
+Data class
 ----------
 
 There are classes that carry data only. Their purpose is to keep several
@@ -206,7 +206,7 @@ attempt to limit the scope and still provide a value to the language.
 
 Stay tuned. 
 
-Pattern match {#pattern-match .header-title}
+Pattern match
 -------------
 
 From time to time, almost every programmer encounters the need to switch
@@ -267,7 +267,7 @@ if (value instanceof String v && v.length() > 4) {
 This new syntax will first be allowed in an [if] statement and
 later added to a [switch] statement too.
 
-Raw string literals {#raw-string-literals .header-title}
+Raw string literals
 -------------------
 
 Once in a while, you may wish to have an output indented, so it will
@@ -323,7 +323,7 @@ Runtime.getRuntime().exec(`"C:\Program Files\foo" bar`);
 
 Again, it is easier to write and to read.
 
-Concise method bodies {#concise-method-bodies .header-title}
+Concise method bodies
 ---------------------
 
 The idea of this feature was expired by the lambda expressions syntax,
@@ -373,7 +373,7 @@ int getNameLength(String name) = String::length;
 But, as of this writing (March 2019), this proposal is still in the
 early stages, and many things can be changed in the final release.
 
-Lambda leftovers {#lambda-leftovers .header-title}
+Lambda leftovers
 ----------------
 
 The Amber project plans three additions to the lambda expressions
@@ -383,7 +383,7 @@ syntax:
 -   Netter disambiguation of functional expressions
 -   Using an underscore to indicate a not-used parameter
 
-Using an underscore instead of a parameter name  {#using-an-underscore-instead-of-a-parameter-name .header-title}
+Using an underscore instead of a parameter name 
 ------------------------------------------------
 
 In many other programming languages, an underscore ([\_]) in a
@@ -413,7 +413,7 @@ BiFunction<Integer, String, String> f = (_, s) -> s.substring(3);
 This way, it is more difficult to miss the fact that one input value is
 not used.
 
-Shadowing a local variable {#shadowing-a-local-variable .header-title}
+Shadowing a local variable
 --------------------------
 
 Currently, it is not possible to give a parameter of a lambda expression
@@ -429,7 +429,7 @@ BiFunction<Integer, String, String> f = (i, s) -> s.substring(3); //error
 
 In future releases, such name reuse will be possible.
 
-Better disambiguation of functional expressions {#better-disambiguation-of-functional-expressions .header-title}
+Better disambiguation of functional expressions
 -----------------------------------------------
 
 As of this writing, it is possible to have a method overloaded as

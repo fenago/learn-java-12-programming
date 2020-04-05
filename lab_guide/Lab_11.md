@@ -171,7 +171,7 @@ collection, in parallel or not, depending on the internal processing
 algorithm. So, it is the library\'s responsibility to organize parallel
 processing.
 
-What is a functional interface? {#what-is-a-functional-interface .header-title}
+What is a functional interface?
 -------------------------------
 
 When we define a function, we, in fact, provide an implementation of an
@@ -282,7 +282,7 @@ that has to be implemented. The compiler and Java runtime can figure it
 out. All we need is to provide the new functionality. The** **lambda
 expressions were introduced especially for this purpose.
 
-What is a lambda expression? {#what-is-a-lambda-expression .header-title}
+What is a lambda expression?
 ----------------------------
 
 The term lambda comes from lambda calculus---a universal model of
@@ -346,7 +346,7 @@ package are specializations of the following four interfaces:
 and [Function\<T,R\>]. Let\'s review them and then look at a short
 overview of the other 39 standard functional interfaces.
 
-Consumer\<T\> {#consumert .header-title}
+Consumer\<T\>
 -------------
 
 By looking at the [Consumer\<T\>] interface definition, you can
@@ -455,7 +455,7 @@ This way, it is possible to create a whole processing pipe of the
 operations that transform the properties of an object that is passed
 through the pipe. 
 
-Predicate\<T\> {#predicatet .header-title}
+Predicate\<T\>
 --------------
 
 This functional interface, [Predicate\<T\>], has one abstract
@@ -536,7 +536,7 @@ The predicate objects can be chained into more complex logical
 statements and include all necessary external data, as was demonstrated
 before.
 
-Supplier\<T\> {#suppliert .header-title}
+Supplier\<T\>
 -------------
 
 This functional interface, [Supplier\<T\>], has only one abstract
@@ -567,7 +567,7 @@ printResult.accept(String.valueOf(isLessThan10.test(supply7.get())));
  The [Supplier\<T\>] function is typically used as an entry point
 of data going into a processing pipeline.
 
-Function\<T, R\> {#functiont-r .header-title}
+Function\<T, R\>
 ----------------
 
 The notation of this and other functional interfaces that return values,
@@ -728,7 +728,7 @@ System.out.println(r);                      //prints: -5
 As you can see, now the [multiplyByTwo()] function does nothing,
 and the final result is different.
 
-Other standard functional interfaces {#other-standard-functional-interfaces .header-title}
+Other standard functional interfaces
 ------------------------------------
 
 The other 39 functional interfaces in the [java.util.function]

@@ -344,7 +344,7 @@ To demonstrate how it all works, we will also write a program that
 generates HTTP requests to the system and allows you to test the system
 from outside.
 
-The HTTP server {#the-http-server .header-title}
+The HTTP server
 ---------------
 
 Let\'s assume that the entry point into the reactive system
@@ -530,7 +530,7 @@ message. But before implementing the corresponding route handlers,
 let\'s create a verticle that is going to receive the [EventBus]
 messages.
 
-The EventBus message receiver  {#the-eventbus-message-receiver .header-title}
+The EventBus message receiver 
 ------------------------------
 
 The implementation of the message receiver is pretty straightforward:
@@ -619,7 +619,7 @@ executed, while the created pipeline and the functions we have passed to
 its operators are waiting for the message to be sent. So, let\'s go
 ahead and do that now.
 
-The EventBus message senders  {#the-eventbus-message-senders .header-title}
+The EventBus message senders 
 -----------------------------
 
 As we have promised, we will now reimplement the handlers of
@@ -773,7 +773,7 @@ In the next section, we will deploy several instances of the sender and
 receiver and examine the difference between the message distribution by
 the [rxSend()] and [publish()] methods.
 
-The reactive system demonstration {#the-reactive-system-demonstration .header-title}
+The reactive system demonstration
 ---------------------------------
 
 Let\'s now assemble and deploy a small reactive system using the

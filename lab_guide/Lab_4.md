@@ -37,7 +37,7 @@ You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch04_exceptions.TryCatchFinally`
 
 
-Java exceptions framework {#exception-handling .header-title}
+Java exceptions framework
 ==================
 
 An unexpected condition can cause

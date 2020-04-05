@@ -53,7 +53,7 @@ the [main(String\[\])] method using IntelliJ IDEA. In this
 chapter, we will just repeat some of what has been said already and add
 other variations that might be helpful for you.
 
-Using an IDE {#using-an-ide .header-title}
+Using an IDE
 ------------
 
 Any IDE allows for running the [main()] method. In IntelliJ IDEA,
@@ -168,7 +168,7 @@ There are other parameters of the [java] command that can be set
 on the [Edit Configurations] screen, too. We encourage
 you to spend some time on that screen and view the possible options.
 
-Using the command line with classes {#using-the-command-line-with-classes .header-title}
+Using the command line with classes
 -----------------------------------
 
 Now, let\'s run [MyApplication] from a command line. To remind
@@ -308,7 +308,7 @@ The result is as follows:
 There is no need to list folders that contain classes from the **Java
 Class Library** (**JCL**). The JVM knows where to find them.
 
-Using the command line with JAR files {#using-the-command-line-with-jar-files .header-title}
+Using the command line with JAR files
 -------------------------------------
 
 Keeping the compiled files in a folder as [.class] files is not
@@ -368,7 +368,7 @@ java -cp src/main/java/* com.lv.learnjava.ch09_jvm.MyApplication
  As you can see, the wildcard symbol has to be added after the folder
 name.
 
-Using the command line with an executable JAR file {#using-the-command-line-with-an-executable-jar-file .header-title}
+Using the command line with an executable JAR file
 --------------------------------------------------
 
 It is possible to avoid specifying the main class in the command line.
@@ -528,7 +528,7 @@ solutions or, at least, that\'s how it looks at a high level. 
 With this in mind, let\'s discuss each of the seven processes listed
 previously in more detail.
 
-Class loading {#class-loading .header-title}
+Class loading
 -------------
 
 According to the JVM specification, the loading phase includes finding
@@ -597,7 +597,7 @@ three tasks:
 -   Creating an instance of [java.lang.Class] with the class
     metadata
 
-Class linking {#class-linking .header-title}
+Class linking
 -------------
 
 According to the JVM specification, the linking resolves the references
@@ -643,7 +643,7 @@ to the method area, which is done by the resolution process. If the
 referred interfaces and classes are not loaded yet, the classloader
 finds them and loads as needed.
 
-Class initialization {#class-initialization .header-title}
+Class initialization
 --------------------
 
 According to the JVM specification, the initialization is accomplished
@@ -659,7 +659,7 @@ access the same class concurrently. So, **coordination** (called also
 **synchronization**) between different threads is required, which
 substantially complicates the JVM implementation.
 
-Class instantiation {#class-instantiation .header-title}
+Class instantiation
 -------------------
 
 This step may never happen. Technically, an instantiation process,
@@ -681,7 +681,7 @@ created, where every method call is captured in a stack frame. For
 example, if an exception happens, we get data from the current stack
 frames when we call the [printStackTrace()] method.
 
-Method execution {#method-execution .header-title}
+Method execution
 ----------------
 
 The first application thread (called **main thread**) is created when
@@ -702,7 +702,7 @@ instruction are maintained in the **program counter** (**PC**)
 registers. Each thread has its own dedicated PC registers. It also
 improves performance and keeps track of the execution.
 
-Garbage collection {#garbage-collection .header-title}
+Garbage collection
 ------------------
 
 The **garbage collector** (**GC**) runs the process that identifies the
@@ -715,7 +715,7 @@ guaranteed. Every GC cycle affects the application performance, so the
 JVM has to maintain a balance between memory availability and the
 ability to execute the bytecodes quickly enough.
 
-Application termination {#application-termination .header-title}
+Application termination
 -----------------------
 
 There are several ways an application can be terminated (and the JVM
@@ -821,7 +821,7 @@ JVM structure can be described in terms of the runtime data structure in
 the memory and in terms of the two subsystems that use the runtime data
 -- the classloader and the execution engine.
 
-Runtime data areas {#runtime-data-areas .header-title}
+Runtime data areas
 ------------------
 
 Each of the runtime data areas of JVM memory belongs to one of two
@@ -852,7 +852,7 @@ possibility of the concurrent modification of the same data. On the
 bright side, though, such a shared a area can be and often is used as
 the method of communication between threads. 
 
-Classloaders {#classloaders .header-title}
+Classloaders
 ------------
 
 The classloader performs the following three functions:
@@ -861,7 +861,7 @@ The classloader performs the following three functions:
 -   Populates the method area
 -   Initializes static fields not initialized by a programmer
 
-Execution engine {#execution-engine .header-title}
+Execution engine
 ----------------
 
 The execution engine does the following:
@@ -885,7 +885,7 @@ the programmer from the need to do it programmatically. In Java, the
 process that cleans up memory and allows it to be reused is called
 a **garbage collection**.
 
-Responsiveness, throughput, and stop-the-world {#responsiveness-throughput-and-stop-the-world .header-title}
+Responsiveness, throughput, and stop-the-world
 ----------------------------------------------
 
 The effectiveness of GC affects two major application characteristics
@@ -917,7 +917,7 @@ instead on a high-level view of the main activity of a GC inspecting
 objects in the heap and removing those that don\'t have references in
 any thread stack.
 
-Object age and generations {#object-age-and-generations .header-title}
+Object age and generations
 --------------------------
 
 The basic GC algorithm determines *how old* each object is. The term
@@ -953,7 +953,7 @@ several minor collections). The unreferenced objects are removed and the
 memory is defragmented. This cleaning of the old generation is
 considered a major collection.
 
-When stop-the-world is unavoidable {#when-stop-the-world-is-unavoidable .header-title}
+When stop-the-world is unavoidable
 ----------------------------------
 
 Some collections of the objects in the old generation are done
