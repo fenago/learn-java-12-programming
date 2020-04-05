@@ -3,134 +3,134 @@ Quiz
 
 
 1.  What is the Java Class Library? Select all that apply:
-    a.  Collection of compiled classes.
-    b.  Packages that come with Java installation.
-    c.  A [.jar] file that Maven adds to the classpath
+    1.  Collection of compiled classes.
+    2.  Packages that come with Java installation.
+    3.  A [.jar] file that Maven adds to the classpath
         automatically.
-    d.  Any library written in Java.
+    4.  Any library written in Java.
 
 
 2.  What is the Java external library? Select all that apply:
 
--   a.  A [.jar] file that is not included with Java installation.
-    b.  A [.jar] file that has to be added as a dependency in
+    1.  A [.jar] file that is not included with Java installation.
+    2.  A [.jar] file that has to be added as a dependency in
         [pom.xml] before it can be used.
-    c.  Classes not written by the authors of JVM.
-    d.  Classes that do not belong to JCL.
+    3.  Classes not written by the authors of JVM.
+    4.  Classes that do not belong to JCL.
 
 3.  What is the functionality included in the [java.lang] package?
     Select all that apply:
 
--   a.  It is the only package that contains Java language
+    1.  It is the only package that contains Java language
         implementation.
-    b.  It contains the most often used classes of JCL.
-    c.  It contains the [Object] class that is the base class for
+    2.  It contains the most often used classes of JCL.
+    3.  It contains the [Object] class that is the base class for
         any Java class.
-    d.  It contains all types listed in the Java Language Specification.
+    4.  It contains all types listed in the Java Language Specification.
 
 4.  What is the functionality included in the [java.util] package?
     Select all that apply: 
 
--   a.  All implementations of Java collection interfaces
-    b.  All interfaces of the Java collections framework
-    c.  All utilities of JCL
-    d.  Classes [Arrays], [Objects], [Properties]
+    1.  All implementations of Java collection interfaces
+    2.  All interfaces of the Java collections framework
+    3.  All utilities of JCL
+    4.  Classes [Arrays], [Objects], [Properties]
 
 5.  What is the functionality included in the [java.time] package?
     Select all that apply:
 
--   a.  Classes that manage date.
-    b.  It is the only package that manages time.
-    c.  Classes that represent date and time.
-    d.  It is the only package that manages date.
+    1.  Classes that manage date.
+    2.  It is the only package that manages time.
+    3.  Classes that represent date and time.
+    4.  It is the only package that manages date.
 
 6.  What is the functionality included in the [java.io] package?
     Select all that apply: 
 
--   a.  Processing of streams of binary data
-    b.  Processing of streams of characters
-    c.  Processing of streams of bytes
-    d.  Processing of streams of numbers
+    1.  Processing of streams of binary data
+    2.  Processing of streams of characters
+    3.  Processing of streams of bytes
+    4.  Processing of streams of numbers
 
 7.  What is the functionality included in the [java.sql] package?
     Select all that apply:
 
--   a.  Supports database connection pooling
-    b.  Supports database statement execution
-    c.  Provides the capability to read/write data from/to a database
-    d.  Supports database transactions
+    1.  Supports database connection pooling
+    2.  Supports database statement execution
+    3.  Provides the capability to read/write data from/to a database
+    4.  Supports database transactions
 
 8.  What is the functionality included in the [java.net] package?
     Select all that apply:
 
--   a.  Supports .NET programming
-    b.  Supports sockets communication
-    c.  Supports URL-based communication
-    d.  Supports RMI-based communication
+    1.  Supports .NET programming
+    2.  Supports sockets communication
+    3.  Supports URL-based communication
+    4.  Supports RMI-based communication
 
 9.  What is the functionality included in the [java.math] package?
     Select all that apply: 
 
--   a.  Supports minimum and maximum calculations
-    b.  Supports big numbers
-    c.  Supports logarithms
-    d.  Supports square root calculations
+    1.  Supports minimum and maximum calculations
+    2.  Supports big numbers
+    3.  Supports logarithms
+    4.  Supports square root calculations
 
 10. What is the functionality included in the [javafx] package?
     Select all that apply:
 
--   a.  Supports fax-message sending
-    b.  Supports fax-message receiving
-    c.  Supports graphic user interface programming
-    d.  Supports animation
+    1.  Supports fax-message sending
+    2.  Supports fax-message receiving
+    3.  Supports graphic user interface programming
+    4.  Supports animation
 
 11. What is the functionality included in the [org.junit] package?
     Select all that apply:
 
--   a.  Supports testing of Java classes
-    b.  Supports Java units of measure
-    c.  Supports unit testing
-    d.  Supports organizational unity
+    1.  Supports testing of Java classes
+    2.  Supports Java units of measure
+    3.  Supports unit testing
+    4.  Supports organizational unity
 
 12. What is the functionality included in
     the [org.mockito] package? Select all that apply:
 
--   a.  Supports Mockito protocol
-    b.  Allows simulating a method behavior
-    c.  Supports a static method simulation
-    d.  Generates objects that behave like third-party classes
+    1.  Supports Mockito protocol
+    2.  Allows simulating a method behavior
+    3.  Supports a static method simulation
+    4.  Generates objects that behave like third-party classes
 
 13. What is the functionality included in
     the [org.apache.log4j] package? Select all that apply:
 
--   a.  Supports writing messages to a file
-    b.  Supports reading messages from a file
-    c.  Supports the LOG4 protocol for Java
-    d.  Supports control of the number and size of log files
+    1.  Supports writing messages to a file
+    2.  Supports reading messages from a file
+    3.  Supports the LOG4 protocol for Java
+    4.  Supports control of the number and size of log files
 
 14. What is the functionality included in
     the [org.apache.commons.lang3] package? Select all that apply:
 
--   a.  Supports Java language version 3
-    b.  Complements the [java.lang] classes
-    c.  Contains the [ArrayUtils], [ObjectUtils],
+    1.  Supports Java language version 3
+    2.  Complements the [java.lang] classes
+    3.  Contains the [ArrayUtils], [ObjectUtils],
         [StringUtils] classes
-    d.  Contains the [SystemUtils] class
+    4.  Contains the [SystemUtils] class
 
 15. What is the functionality included in the
     [org.apache.commons.collections4] package? Select all that
     apply:
 
--   a.  Various implementations of Java collections framework interfaces
-    b.  Various utilities for Java collections framework implementations
-    c.  The [Vault] interface and its implementations
-    d.  Contains the [CollectionUtils] class
+    1.  Various implementations of Java collections framework interfaces
+    2.  Various utilities for Java collections framework implementations
+    3.  The [Vault] interface and its implementations
+    4.  Contains the [CollectionUtils] class
 
 16. What is the functionality included in the
     [org.apache.commons.codec.binary] package? Select all that
     apply:
 
--   a.  Supports sending binary data across the network
-    b.  Allows encoding and decoding of data
-    c.  Supports data encryption
-    d.  Contains the [StringUtils] class
+    1.  Supports sending binary data across the network
+    2.  Allows encoding and decoding of data
+    3.  Supports data encryption
+    4.  Contains the [StringUtils] class

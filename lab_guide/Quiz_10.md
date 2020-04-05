@@ -21,10 +21,10 @@ Quiz
 14. Which of the following are the components of a URI? Select all that
     apply:
 
--   a.  Fragment
-    b.  Title
-    c.  Authority
-    d.  Query
+    1.  Fragment
+    2.  Title
+    3.  Authority
+    4.  Query
 
 15. What is the difference between [scheme] and [protocol]?
 16. What is the difference between a URI and a URL?

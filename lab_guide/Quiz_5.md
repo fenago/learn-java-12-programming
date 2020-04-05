@@ -10,10 +10,10 @@ String str = "&8a!L";
 System.out.println(str.indexOf("a!L"));
 ```
 
-1.  a.  3
-    b.  2
-    c.  1
-    d.  0
+    1.  3
+    2.  2
+    3.  1
+    4.  0
 
 2.  What does the following code print?
 
@@ -25,9 +25,9 @@ System.out.println(s1.equals(s2));
 ```
 
 2.  a.  Error
-    b.  Exception
-    c.  true
-    d.  false
+    2.  Exception
+    3.  true
+    4.  false
 
 3.  What does the following code print?
 
@@ -36,10 +36,10 @@ System.out.println(s1.equals(s2));
 System.out.println("%wx6".substring(2));
 ```
 
--   a.  wx
-    b.  x6
-    c.  %w
-    d.  Exception
+    1.  wx
+    2.  x6
+    3.  %w
+    4.  Exception
 
 4.  What does the following code print?
 
@@ -48,10 +48,10 @@ System.out.println("%wx6".substring(2));
 System.out.println("ab"+"42".repeat(2));
 ```
 
-1.  a.  ab4242
-    b.  ab42ab42
-    c.  ab422
-    d.  Error
+    1.  ab4242
+    2.  ab42ab42
+    3.  ab422
+    4.  Error
 
 
 5.  What does the following code print?
@@ -62,34 +62,34 @@ String s = "  ";
 System.out.println(s.isBlank()+" "+s.isEmpty());
 ```
 
--   a.  false false
-    b.  false true
-    c.  true true
-    d.  true false
+    1.  false false
+    2.  false true
+    3.  true true
+    4.  true false
 
 6.  Select all correct statements:\
-    a.  A stream can represent a data source
-    b.  An input stream can write to a file
-    c.  A stream can represent a data destination
-    d.  An output stream can display data on a screen
+    1.  A stream can represent a data source
+    2.  An input stream can write to a file
+    3.  A stream can represent a data destination
+    4.  An output stream can display data on a screen
 7.  Select all correct statements about classes of [java.io]
     package:
-    a.  Reader extends [InputStream]
-    b.  Reader extends [OutputStream]
-    c.  Reader extends [java.lang.Object]
-    d.  Reader extends [java.lang.Input]
+    1.  Reader extends [InputStream]
+    2.  Reader extends [OutputStream]
+    3.  Reader extends [java.lang.Object]
+    4.  Reader extends [java.lang.Input]
 8.  Select all correct statements about classes
     of [java.io] package:
-    a.  Writer extends [FilterOutputStream]
-    b.  Writer extends [OutputStream]
-    c.  Writer extends [java.lang.Output]
-    d.  Writer extends [java.lang.Object]
+    1.  Writer extends [FilterOutputStream]
+    2.  Writer extends [OutputStream]
+    3.  Writer extends [java.lang.Output]
+    4.  Writer extends [java.lang.Object]
 9.  Select all correct statements about classes
     of [java.io] package:
-    a.  [PrintStream] extends [FilterOutputStream]
-    b.  [PrintStream] extends [OutputStream]
-    c.  [PrintStream] extends [java.lang.Object]
-    d.  [PrintStream] extends [java.lang.Output]
+    1.  [PrintStream] extends [FilterOutputStream]
+    2.  [PrintStream] extends [OutputStream]
+    3.  [PrintStream] extends [java.lang.Object]
+    4.  [PrintStream] extends [java.lang.Output]
 
 
 10. What does the following code do?
@@ -107,7 +107,7 @@ try {
 } 
 ```
 
--   a.  Creates two directories and a file in [demo2] directory
-    b.  Creates one directory and a file in it
-    c.  Does not create any directory
-    d.  Exception
+    1.  Creates two directories and a file in [demo2] directory
+    2.  Creates one directory and a file in it
+    3.  Does not create any directory
+    4.  Exception

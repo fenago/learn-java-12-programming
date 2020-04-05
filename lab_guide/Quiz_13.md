@@ -3,10 +3,10 @@ Quiz
 
 1.  Select all the correct statements:
 
--   a.  Asynchronous processing always provides results later.
-    b.  Asynchronous processing always provides responses quickly.
-    c.  Asynchronous processing can use parallel processing.
-    d.  Asynchronous processing always provides results faster than a
+    1.  Asynchronous processing always provides results later.
+    2.  Asynchronous processing always provides responses quickly.
+    3.  Asynchronous processing can use parallel processing.
+    4.  Asynchronous processing always provides results faster than a
         blocking call.
 
 2.  Can [CompletableFuture] be used without using a thread pool?
@@ -18,10 +18,10 @@ Quiz
     reactive streams?
 7.  Select all classes from the following list that can represent an
     observable in a reactive stream:
-    a.  [Flowable]
-    b.  [Probably]
-    c.  [CompletableFuture]
-    d.  [Single]
+    1.  [Flowable]
+    2.  [Probably]
+    3.  [CompletableFuture]
+    4.  [Single]
 
 
 8.  How do you know that the particular method (operator) of the
@@ -33,10 +33,10 @@ Quiz
 11. Select all the names of the methods that create an
     [Observable] object:
 
--   a.  [interval()]
-    b.  [new()]
-    c.  [generate()]
-    d.  [defer()]
+    1.  [interval()]
+    2.  [new()]
+    3.  [generate()]
+    4.  [defer()]
 
 12. Name two transforming [Observable] operators.
 13. Name two filtering [Observable] operators.

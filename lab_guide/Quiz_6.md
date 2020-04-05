@@ -2,90 +2,90 @@ Quiz
 ================================================
 
 1.  What is a Java collections framework? Select all that apply:
-    a.  A collection of frameworks
-    b.  Classes and interfaces of the [java.util] package
-    c.  [List], [Set], and [Map] Interfaces
-    d.  Classes and interfaces that implement a collection data
+    1.  A collection of frameworks
+    2.  Classes and interfaces of the [java.util] package
+    3.  [List], [Set], and [Map] Interfaces
+    4.  Classes and interfaces that implement a collection data
         structure
 
 
 2.  What is generics in a collection? Select all that apply:
 
--   a.  A collection structure definition
-    b.  The element type declaration
-    c.  The type generalization
-    d.  The mechanism that provides compile-time safety
+    1.  A collection structure definition
+    2.  The element type declaration
+    3.  The type generalization
+    4.  The mechanism that provides compile-time safety
 
 3.  What are the limitations of the collection of [of()] factory
     methods? Select all that apply:
-    a.  They do not allow a [null] element.
-    b.  They do not allow elements to be added to the initialized
+    1.  They do not allow a [null] element.
+    2.  They do not allow elements to be added to the initialized
         collection.
-    c.  They do not allow elements to be added to the initialized
+    3.  They do not allow elements to be added to the initialized
         collection.
-    d.  They do not allow modification of elements in relation to the
+    4.  They do not allow modification of elements in relation to the
         initialized collection.
 
 
 4.  What does the implementation of the [java.lang.Iterable]
     interface allow? Select all that apply:
-    a.  It allows elements of the collection to be accessed one by one.
-    b.  It allows the collection to be used in [FOR] statements.
-    c.  It allows the collection to be used in [WHILE] statements.
-    d.  It allows the collection to be used in [DO\...WHILE]
+    1.  It allows elements of the collection to be accessed one by one.
+    2.  It allows the collection to be used in [FOR] statements.
+    3.  It allows the collection to be used in [WHILE] statements.
+    4.  It allows the collection to be used in [DO\...WHILE]
         statements.
 
 
 5.  What does the implementation of
     the [java.util.Collection] interface allow? Select all that
     apply:
-    a.  Addition to the collection of elements from another collection
-    b.  Removal from the collection of objects that are elements of
+    1.  Addition to the collection of elements from another collection
+    2.  Removal from the collection of objects that are elements of
         another collection
-    c.  Modification of just only those elements of the collection that
+    3.  Modification of just only those elements of the collection that
         belong to another collection
-    d.  Removal from the collection of objects that do not belong to
+    4.  Removal from the collection of objects that do not belong to
         another collection
 
 
 6.  Select all the correct statements pertaining to the
     [List] interface methods:
 
--   a.  [E get(int index)]: This returns the element at the
+    1.  [E get(int index)]: This returns the element at the
         specified position in the list.
-    b.  [E remove(int index)]: This removes the element at the
+    2.  [E remove(int index)]: This removes the element at the
         specified position in the list; it returns the removed element.
-    c.  [static List\<E\> copyOf(Collection\<E\> coll)]: This
+    3.  [static List\<E\> copyOf(Collection\<E\> coll)]: This
         returns an unmodifiable [List] containing the elements of
         the given [Collection] and preserves their order.
-    d.  [int indexOf(Object o)]: This returns the position of the
+    4.  [int indexOf(Object o)]: This returns the position of the
         specified element in the list.
 
 7.  Select all the correct statements pertaining to the
     [Set] interface methods:
 
--   a.  [E get(int index)]: This returns the element at the
+    1.  [E get(int index)]: This returns the element at the
         specified position in the list.
-    b.  [E remove(int index)]: This removes the element at the
+    2.  [E remove(int index)]: This removes the element at the
         specified position in the list; it returns the removed element.
-    c.  [static Set\<E\> copyOf(Collection\<E\> coll)]: This
+    3.  [static Set\<E\> copyOf(Collection\<E\> coll)]: This
         returns an unmodifiable [Set] containing the elements of
         the given [Collection].
-    d.  [int indexOf(Object o)]: This returns the position of the
+    4.  [int indexOf(Object o)]: This returns the position of the
         specified element in the list.
 
 8.  Select all the correct statements pertaining to the
     [Map] interface methods:
-    a.  [int size()]: This returns the count of key-value pairs
+    1.  [int size()]: This returns the count of key-value pairs
         stored in the map; when the [isEmpty()] method
         returns [true], this method returns [0].
-    b.  [V remove(Object key)]: This removes both key and value
+    2.  [V remove(Object key)]: This removes both key and value
         from the map; returns value, or [null] if there is no such
         key or the value is [null].
-    c.  [default boolean remove(Object key, Object value)]: This
+    3.  [default boolean remove(Object key, Object value)]: This
         removes the key-value pair if such a pair exists in the map;
         returns [true] if the value is removed.
-    d.  [default boolean replace(K key, V oldValue, V newValue)]:
+    4.  [default boolean replace(K key, V oldValue, V newValue)]:
         This replaces the [oldValue] value with
         the [newValue] provided if the key provided is currently
         mapped to the [oldValue]; it returns [true] if
@@ -96,14 +96,14 @@ Quiz
 9.  Select all correct statements pertaining to the [static void
     sort(List\<T\> list, Comparator\<T\> comparator)] method of
     the [Collections] class:
-    a.  It sorts the list\'s natural order if the list elements
+    1.  It sorts the list\'s natural order if the list elements
         implement the [Comparable] interface.
-    b.  It sorts the list\'s order according to
+    2.  It sorts the list\'s order according to
         the [Comparator] object provided.
-    c.  It sorts the list\'s order according to
+    3.  It sorts the list\'s order according to
         the [Comparator] object provided if list elements
         implement the [Comparable] interface.
-    d.  It sorts the list\'s order according to the
+    4.  It sorts the list\'s order according to the
         provided [Comparator] object irrespective of whether the
         list elements implement the [Comparable] interface.
 
@@ -118,20 +118,20 @@ Collections.copy(list1, list2);
 System.out.println(list1);    
 ```
 
--   a.  [\[s1, s2, s3, s4\]]
-    b.  [\[s3, s4, s3\]]
-    c.  [\[s1, s2, s3, s3, s4\]]
-    d.  [\[s3, s4\]]
+    1.  [\[s1, s2, s3, s4\]]
+    2.  [\[s3, s4, s3\]]
+    3.  [\[s1, s2, s3, s3, s4\]]
+    4.  [\[s3, s4\]]
 
 11. What is the functionality of the [CollectionUtils] class
     methods? Select all that apply:
-    a.  It matches the functionality of the [Collections] class
+    1.  It matches the functionality of the [Collections] class
         methods, but by handling [null.]
-    b.  It complements the functionality of
+    2.  It complements the functionality of
         the [Collections] class methods.
-    c.  It searches, processes, and compares Java collections in a way
+    3.  It searches, processes, and compares Java collections in a way
         that the [Collections] class methods do not do.
-    d.  It duplicates the functionality of the [Collections] class
+    4.  It duplicates the functionality of the [Collections] class
         methods.
 
 
@@ -145,10 +145,10 @@ System.out.print(Arrays.equals(ar1, ar2) + " ");
 System.out.println(Arrays.deepEquals(arr3, arr4)); 
 ```
 
--   a.  false true
-    b.  false false
-    c.  true false
-    d.  true true
+    1.  false true
+    2.  false false
+    3.  true false
+    4.  true true
 
 13. What is the result of executing the following code?
 
@@ -164,10 +164,10 @@ System.out.print(ArrayUtils.isEmpty(arr2) + " ");
 System.out.print(ArrayUtils.isEmpty(arr3));
 ```
 
--   a.  1 2 0 false true
-    b.  2 1 1 false true
-    c.  2 1 0 false true
-    d.  2 1 0 true false
+    1.  1 2 0 false true
+    2.  2 1 1 false true
+    3.  2 1 0 false true
+    4.  2 1 0 true false
 
 14. What is the result of executing the following code?
 
@@ -181,10 +181,10 @@ System.out.print(ArrayUtils.isEmpty(arr3));
  System.out.println(Objects.hashCode(str2) + " "); 
 ```
 
--   a.  true 0 0
-    b.  Error
-    c.  false -1 0
-    d.  false 31 0
+    1.  true 0 0
+    2.  Error
+    3.  false -1 0
+    4.  false 31 0
 
 15. What is the result of executing the following code?
 
@@ -196,10 +196,10 @@ System.out.print(ObjectUtils.median(arr) + " ");
 System.out.println(ObjectUtils.max(arr));
 ```
 
--   a.  c x a
-    b.  a c x
-    c.  x c a
-    d.  a x c
+    1.  c x a
+    2.  a c x
+    3.  x c a
+    4.  a x c
 
 16. What is the result of executing the following code?
 
@@ -209,10 +209,10 @@ LocalDate lc = LocalDate.parse("1900-02-23");
 System.out.println(lc.withYear(21)); 
 ```
 
--   a.  [1921-02-23]
-    b.  [21-02-23]
-    c.  [0021-02-23]
-    d.  Error
+    1.  [1921-02-23]
+    2.  [21-02-23]
+    3.  [0021-02-23]
+    4.  Error
 
 17. What is the result of executing the following code?
 
@@ -222,10 +222,10 @@ LocalTime lt2 = LocalTime.of(20, 23, 12);
 System.out.println(lt2.withNano(300));      
 ```
 
--   a.  [20:23:12.000000300]
-    b.  [20:23:12.300]
-    c.  [20:23:12:300]
-    d.  Error
+    1.  [20:23:12.000000300]
+    2.  [20:23:12.300]
+    3.  [20:23:12:300]
+    4.  Error
 
 18. What is the result of executing the following code?
 
@@ -237,10 +237,10 @@ LocalDateTime ldt = LocalDateTime.of(ld, lt);
 System.out.println(ldt);                
 ```
 
--   a.  [2020-02-23 20:23:12]
-    b.  [2020-02-23T20:23:12]
-    c.  [2020-02-23:20:23:12]
-    d.  Error
+    1.  [2020-02-23 20:23:12]
+    2.  [2020-02-23T20:23:12]
+    3.  [2020-02-23:20:23:12]
+    4.  Error
 
 19. What is the result of executing the following code?
 
@@ -252,11 +252,11 @@ System.out.print(ldt.plus(Duration.ofMinutes(12)) + " ");
 System.out.println(ldt);
 ```
 
--   a.  [2020-02-23T20:23:12 2020-02-23T20:23:12
+    1.  [2020-02-23T20:23:12 2020-02-23T20:23:12
         2020-02-23T20:23:12]
-    b.  [2020-02-23T20:23:12 2020-02-23T20:35:12
+    2.  [2020-02-23T20:23:12 2020-02-23T20:35:12
         2020-02-23T20:35:12]
-    c.  [2018-02-23T20:23:12 2020-02-23T20:35:12
+    3.  [2018-02-23T20:23:12 2020-02-23T20:35:12
         2020-02-23T20:23:12]
-    d.  [2018-02-23T20:23:12 2020-02-23T20:35:12
+    4.  [2018-02-23T20:23:12 2020-02-23T20:35:12
         2018-02-23T20:35:12]

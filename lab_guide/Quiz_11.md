@@ -4,18 +4,18 @@ Quiz
 
 1.  What is a functional interface? Select all that apply:
 
--   a.  A collection of functions
-    b.  An interface that has only one method
-    c.  Any interface that has only one abstract method
-    d.  Any library written in Java
+    1.  A collection of functions
+    2.  An interface that has only one method
+    3.  Any interface that has only one abstract method
+    4.  Any library written in Java
 
 2.  What is a lambda expression? Select all that apply:
 
--   a.  A function, implemented as an anonymous method without
+    1.  A function, implemented as an anonymous method without
         modifiers, return types, and parameter types
-    b.  A functional interface implementation
-    c.  Any implementation in a lambda calculus style
-    d.  The notation that includes the list of parameters, an arrow
+    2.  A functional interface implementation
+    3.  Any implementation in a lambda calculus style
+    4.  The notation that includes the list of parameters, an arrow
         token [-\>], and a body that consists of a single
         statement or a block of statements
 

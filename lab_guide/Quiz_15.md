@@ -5,12 +5,12 @@ Quiz
 
 1.  Select all the correct statements:
 
--   a.  JMH is useless since it runs methods outside the production
+    1.  JMH is useless since it runs methods outside the production
         context.
-    b.  JMH is able to work around some of the JVM optimizations.
-    c.  JMH allows for measuring not only average performance time but
+    2.  JMH is able to work around some of the JVM optimizations.
+    3.  JMH allows for measuring not only average performance time but
         other performance characteristics too.
-    d.  JMH can be used to measure the performance of small applications
+    4.  JMH can be used to measure the performance of small applications
         too.
 
 2.  Name two steps necessary to start using JMH.

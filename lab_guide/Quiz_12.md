@@ -3,11 +3,11 @@ Quiz
 
 1.  What is the difference between I/O streams and
     [java.util.stream.Stream]? Select all that apply:
-    a.  I/O streams are oriented toward data delivery, while
+    1.  I/O streams are oriented toward data delivery, while
         [Stream] is oriented toward data processing
-    b.  Some I/O streams can be transformed into [Stream]
-    c.  I/O streams can read from a file, while [Stream] cannot
-    d.  I/O streams can write to a file, while [Stream] cannot
+    2.  Some I/O streams can be transformed into [Stream]
+    3.  I/O streams can read from a file, while [Stream] cannot
+    4.  I/O streams can write to a file, while [Stream] cannot
 
 
 2.  What do the [empty()] and [of(T\...

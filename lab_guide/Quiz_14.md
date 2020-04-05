@@ -6,11 +6,11 @@ Quiz
 
 1.  Select all the correct statements:
 
--   a.  Microservices allow more refined scaling.
-    b.  Microservice deployment is easier than a monolith.
-    c.  Microservices facilitate choosing technologies that are best
+    1.  Microservices allow more refined scaling.
+    2.  Microservice deployment is easier than a monolith.
+    3.  Microservices facilitate choosing technologies that are best
         suited for the job.
-    d.  Microservice programming is much easier than any other
+    4.  Microservice programming is much easier than any other
         application programming.
 
 2.  Can a microservice be bigger than some of the monolith

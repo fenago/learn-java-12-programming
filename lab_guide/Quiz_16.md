@@ -2,10 +2,10 @@ Quiz
 ============================================
 
 1.  Select all the correct statements:
-    a.  Idioms can be used to communicate the code intent.
-    b.  Idioms can be used to explain what the code does.
-    c.  Idioms can be misused and obscure the topic of conversation.
-    d.  Idioms should be avoided in order to express the idea clearly.
+    1.  Idioms can be used to communicate the code intent.
+    2.  Idioms can be used to explain what the code does.
+    3.  Idioms can be misused and obscure the topic of conversation.
+    4.  Idioms should be avoided in order to express the idea clearly.
 
 
 2.  Is it necessary to implement [hasCode()] every time
