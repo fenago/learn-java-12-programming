@@ -81,7 +81,7 @@ that this method performance has to be measured. If you run the
 preceding [main()] method, you will see an output similar to the
 following:
 
-![](3_files/8cf2a413-6e94-42cf-b760-5bac88352ab9.png)
+![]./images_15/8cf2a413-6e94-42cf-b760-5bac88352ab9.png)
 
 This is only one segment of an extensive output that includes multiple
 iterations under different conditions with the goal being to avoid or
@@ -123,17 +123,17 @@ Here are the steps to follow:
     comma (*,*) together, or just click the wrench symbol (with the
     hover text [Preferences]) in the top horizontal menu:
 
-![](4_files/67f87d51-7c5c-4ae9-85ee-c91f295fb68a.png)
+![]./images_15/67f87d51-7c5c-4ae9-85ee-c91f295fb68a.png)
 
 2.  It will open a window with the following menu in the left pane:
 
-![](4_files/6ddd9f3e-54ed-4f7e-89b3-b413df46a830.png)
+![]./images_15/6ddd9f3e-54ed-4f7e-89b3-b413df46a830.png)
 
 3.  Select [Plugins], as shown in the preceding
     screenshot, and observe the window with the following top horizontal
     menu:
 
-![](4_files/e2ded099-6c47-47d1-b383-efac99c97441.png)
+![]./images_15/e2ded099-6c47-47d1-b383-efac99c97441.png)
 
 4.  Select [Marketplace], type *JMH* in the [Search
     plugins in marketplace] input field ,and press
@@ -141,12 +141,12 @@ Here are the steps to follow:
     plugin] symbol, similar to the one shown in this
     screenshot:
 
-![](4_files/4568f422-e926-4b6f-85eb-7f18ec19ff3c.png)
+![]./images_15/4568f422-e926-4b6f-85eb-7f18ec19ff3c.png)
 
 5.  Click the [Install] button and then, after it turns
     into [Restart IDE], click it again:
 
-![](4_files/dd5d33ea-3840-4dfe-a35e-af7de541b6ab.png)
+![]./images_15/dd5d33ea-3840-4dfe-a35e-af7de541b6ab.png)
 
 6.  After the IDE restarts, the plugin is ready to be used. Now you can
     not only run the [main()] method but you can also pick and
@@ -155,17 +155,17 @@ Here are the steps to follow:
     [Run\...] from the [Run] drop-down
     menu: 
 
-![](4_files/2e57d8cc-a7f8-4480-ac61-124081d68fbb.png)
+![]./images_15/2e57d8cc-a7f8-4480-ac61-124081d68fbb.png)
 
 7.  It will bring up a window with a selection of methods you can run:
 
-![](4_files/c07a7829-63e1-4c45-acc8-c497ffea438c.png)
+![]./images_15/c07a7829-63e1-4c45-acc8-c497ffea438c.png)
 
 8.  Select the one you would like to run and it will be executed. After
     you have run a method at least once, you can just right-click on it
     and execute it from the pop-up menu:
 
-![](4_files/22448345-125d-4ae3-8871-8674274d49f8.png)
+![]./images_15/22448345-125d-4ae3-8871-8674274d49f8.png)
 
 9.  You can also use the shortcuts shown to the right of each menu item.
 
@@ -314,7 +314,7 @@ characteristics and to use nanoseconds while presenting the results. On
 our system, the test execution took around 20 minutes and the final
 results summary looked like this:
 
-![](6_files/62c11d86-476a-4035-bbf8-d2a5fd1568e3.png)
+![]./images_15/62c11d86-476a-4035-bbf8-d2a5fd1568e3.png)
 
 Let\'s now change the test as follows:
 
@@ -334,7 +334,7 @@ public void testTheMethod1() {
 If we run the [testTheMethod1()] now, the results will be slightly
 different:
 
-![](6_files/8747d606-da4d-4a4d-b01d-96088f549b40.png)
+![]./images_15/8747d606-da4d-4a4d-b01d-96088f549b40.png)
 
 The results are mostly different around sampling and single-shot
 running. You can play with these methods and change the forking and
@@ -373,7 +373,7 @@ tests.
 
 When we ran this version of the test, we got the following results:
 
-![](6_files/f9ad62fa-9eaa-4440-92ac-6f12f6d9b9a8.png)
+![]./images_15/f9ad62fa-9eaa-4440-92ac-6f12f6d9b9a8.png)
 
 The data has changed again. Notice that the average time for execution
 has increased three-fold which indicates that more JVM optimization was
@@ -402,7 +402,7 @@ result of the tested method is used.
 
 When we ran this version of the test, we got the following results:
 
-![](6_files/e8a98ecd-bae1-48f3-b702-7aeac4bdd6f8.png)
+![]./images_15/e8a98ecd-bae1-48f3-b702-7aeac4bdd6f8.png)
 
 This time, the results look not that different. Apparently, the constant
 folding optimization was neutralized even before the [Blackhole]
@@ -496,7 +496,7 @@ that JVM code evolves and differs from one implementation to another.
 The authors of JMH acknowledge this fact by printing the following
 warning along with the test results:
 
-![](7_files/2d571174-2cf6-402a-ae45-3c5d5aed6a36.png)
+![]./images_15/2d571174-2cf6-402a-ae45-3c5d5aed6a36.png)
 
 The description of the profilers and their usage can be found in
 the [openjdk] project

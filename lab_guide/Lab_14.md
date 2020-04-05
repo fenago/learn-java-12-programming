@@ -408,7 +408,7 @@ RxHelper.deployVerticle(vertx, new HttpServerVert(8082));
 
 The result will look as follows:
 
-![](5_files/6a9865ef-f640-4632-8312-8a3a10ab57bb.png)
+![]./images_14/6a9865ef-f640-4632-8312-8a3a10ab57bb.png)
 
 Notice that the [\...is waiting\...] message appears
 immediately, even before any request has come in -- that is
@@ -420,7 +420,7 @@ event loop thread, [0].
 Now we can issue a request to the deployed server using the
 [curl] command; the response will be as follows:
 
-![](5_files/b77b5912-f35b-4c21-bc2f-ac00c0f66193.png)
+![]./images_14/b77b5912-f35b-4c21-bc2f-ac00c0f66193.png)
 
 As you can see, we have issued the HTTP [GET] (default) request
 and got back the expected [Hello\...] message with the
@@ -510,7 +510,7 @@ private void processPostSomePathPublish(RoutingContext ctx){
 If we deploy our server again and issue HTTP requests to hit each of the
 routes, we will see the following screenshot:
 
-![](5_files/68a096d9-aa53-46ec-bcf9-46ead574665e.png)
+![]./images_14/68a096d9-aa53-46ec-bcf9-46ead574665e.png)
 
 The preceding screenshot illustrates that we sent the expected message
 to the first HTTP [GET] request, but received [Resource not
@@ -609,7 +609,7 @@ RxHelper.deployVerticle(vertx, new MessageRcvVert("1", address));
 
 If we run this code, the following message will be displayed:
 
-![](5_files/e3cc9abf-7464-4004-9b0c-95ee5d1222ae.png)
+![]./images_14/e3cc9abf-7464-4004-9b0c-95ee5d1222ae.png)
 
 As you can see, the last line of [MessageRcvVert] is reached and
 executed, while the created pipeline and the functions we have passed to
@@ -666,19 +666,19 @@ RxHelper.deployVerticle(vertx, new HttpServerVert(8082));
 When we run the preceding code, the screen displays the following
 messages:
 
-![](5_files/9147a3b3-bdba-434f-b445-aa2da2220750.png)
+![]./images_14/9147a3b3-bdba-434f-b445-aa2da2220750.png)
 
 Notice that each of the verticles is run on its own thread. Now we can
 submit the HTTP [GET] request using the [curl] command; the
 result is as follows:
 
-![](5_files/a03c549b-9608-47f9-924f-86a618539d88.png)
+![]./images_14/a03c549b-9608-47f9-924f-86a618539d88.png)
 
 This is how the interaction is viewed from outside our demonstration
 system. Inside, we can also see the following messages, which allow us
 to trace how our verticles interact and send messages to each other:
 
-![](5_files/9c4d13ca-055a-4f38-b511-6c8f6bdaea33.png)
+![]./images_14/9c4d13ca-055a-4f38-b511-6c8f6bdaea33.png)
 
 The result looks exactly as expected.
 
@@ -715,12 +715,12 @@ the [HttpServerVert] and [MessageRcvVert] verticles again,
 and then issue the HTTP [POST] request with a payload; the result
 will be as follows:
 
-![](5_files/652808d6-e5e1-4bb0-b9a9-6f162aee7c25.png)
+![]./images_14/652808d6-e5e1-4bb0-b9a9-6f162aee7c25.png)
 
 This looks exactly like the result of the HTTP [GET] request, as
 was designed. At the backend, the following messages are displayed:
 
-![](5_files/91a113d0-7d25-4a5e-89d3-830deed992c4.png)
+![]./images_14/91a113d0-7d25-4a5e-89d3-830deed992c4.png)
 
 There is nothing new in these messages either, except that the JSON
 format is displayed.
@@ -755,11 +755,11 @@ registered with this address. If we issue an HTTP [POST] request
 with the [/some/path/publish] path, the result looks slightly
 different:
 
-![](5_files/cbedb401-7297-4385-8836-1a3ed34cf924.png)
+![]./images_14/cbedb401-7297-4385-8836-1a3ed34cf924.png)
 
 Additionally, the messages on the backend look different too:
 
-![](5_files/ce7293eb-7a64-4bf3-a836-a2a93d2ab3d5.png)
+![]./images_14/ce7293eb-7a64-4bf3-a836-a2a93d2ab3d5.png)
 
 All of these differences are related to the fact that the server cannot
 get back a reply, even though the receiver sends it in exactly the same
@@ -798,12 +798,12 @@ As you can see, we are going to deploy two verticles that use the same
 [Two] address. If we run the preceding program, the screen will
 display the following messages:
 
-![](5_files/3731c2ca-7f5e-4fa9-b551-43d5a8768b98.png)
+![]./images_14/3731c2ca-7f5e-4fa9-b551-43d5a8768b98.png)
 
 Let\'s now start sending HTTP requests to our system. First, let\'s send
 the same HTTP [GET] request three times:
 
-![](5_files/972fcc65-11d5-4ec7-bd29-d429f0f8a00e.png)
+![]./images_14/972fcc65-11d5-4ec7-bd29-d429f0f8a00e.png)
 
 As we have mentioned already, if there are several verticles registered
 with the same address, the [rxSend()] method uses a round-robin
@@ -815,19 +815,19 @@ request went to the receiver with [ID=\"1\"] again.
 We get the same results using the HTTP [POST] request for the
 [/some/path/send] path:
 
-![](5_files/8aeac40a-f5b2-4ba7-8e36-92e1f1bb5419.png)
+![]./images_14/8aeac40a-f5b2-4ba7-8e36-92e1f1bb5419.png)
 
 Again, the receiver of the message is rotated using the round-robin
 algorithm.
 
 Now, let\'s publish a message to our system twice:
 
-![](5_files/e91f046b-cb69-4e98-be7d-dc4b98fdf760.png)
+![]./images_14/e91f046b-cb69-4e98-be7d-dc4b98fdf760.png)
 
 Since the receiver\'s reply cannot propagate back to the system user, we
 need to take a look at the messages that are logged on the backend:
 
-![](5_files/c7b6b962-ede1-4808-ba8b-37ae7f0dc81f.png)
+![]./images_14/c7b6b962-ede1-4808-ba8b-37ae7f0dc81f.png)
 
 As you can see, the [publish()] method sends the message to all
 verticles that are registered to the specified address. And note that

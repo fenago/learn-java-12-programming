@@ -1094,7 +1094,7 @@ System.out.print(count);          //prints: 5
 
 If we run the preceding code, the result will look as follows:
 
-![](4_files/e04347d3-776e-41c2-86c1-c0618d4dfd3a.png)
+![]./images_12/e04347d3-776e-41c2-86c1-c0618d4dfd3a.png)
 
 As you see, the code that implements the [count()] method was able
 to determine the stream size without executing all the pipeline.
@@ -1121,7 +1121,7 @@ System.out.println(count);                          //prints: 5
 The following screenshot that shows what happens after the preceding
 code example has been run:
 
-![](4_files/7197acc9-da9c-4d3c-a9f2-afd8c19c919b.png)
+![]./images_12/7197acc9-da9c-4d3c-a9f2-afd8c19c919b.png)
 
 As you can see, the [collect()] operation does not calculate the
 stream size at the source. That is because

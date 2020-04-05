@@ -272,7 +272,7 @@ list.stream().forEach(System.out::println);
 
 The result looks as follows:
 
-![](2_files/b6365f22-331c-40fb-b118-4a93037468a6.png)
+![]./images_16/b6365f22-331c-40fb-b118-4a93037468a6.png)
 
 There are three things worth noting:
 

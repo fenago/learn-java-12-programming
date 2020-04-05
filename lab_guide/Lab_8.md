@@ -162,7 +162,7 @@ If we run the preceding code, we see something like the following
 screenshot (The thread [id] may be different in different
 operating systems.):
 
-![](4_files/64070a3c-f2f0-4470-9c9d-f0bf79dee502.png)
+![]./images_8/64070a3c-f2f0-4470-9c9d-f0bf79dee502.png)
 
 The preceding screenshot shows that the daemon thread exits
 automatically as soon as the last user thread (main thread in our
@@ -229,7 +229,7 @@ The following screenshot proves that the behavior of
 the [MyRunnable] class is similar to the behavior of the
 [MyThread] class:
 
-![](5_files/f0ae87f4-c7cf-4ae8-88ad-2f9352b9f80a.png)
+![]./images_8/f0ae87f4-c7cf-4ae8-88ad-2f9352b9f80a.png)
 
 The daemon thread (named [Two]) exits after the last user thread
 exists---exactly how it happened with the [MyThread] class.
@@ -474,7 +474,7 @@ The attempt to add another thread to the pool after
 
 The execution of the preceding code produces the following results:
 
-![](7_files/49f678c8-65f3-478d-bd52-ba09e44f6068.png)
+![]./images_8/49f678c8-65f3-478d-bd52-ba09e44f6068.png)
 
 Notice the [Thread.currentThread().isInterrupted()=false] message
 in the preceding screenshot. The thread was interrupted. We know it
@@ -518,7 +518,7 @@ class MyRunnable implements Runnable {
 Now, if we run this thread using the same [ExecutorService] pool
 again, the result will be:
 
-![](7_files/bf2e32e0-1742-4d59-b187-c309615e6f19.png)
+![]./images_8/bf2e32e0-1742-4d59-b187-c309615e6f19.png)
 
 As you can see, now the value returned by the [isInterrupted()]
 method is [true] and corresponds to what has happened. To be fair,
@@ -756,7 +756,7 @@ try{
 
 The output of this code you can see on this screenshot:
 
-![](8_files/65e86f9d-ee6e-4dc2-8eff-ffc4176a6b2d.png)
+![]./images_8/65e86f9d-ee6e-4dc2-8eff-ffc4176a6b2d.png)
 
 As expected, the [get()] method of the [Future] object
 returns [null], because [run()] method of [Runnable]
@@ -809,7 +809,7 @@ try{
 
 If we execute the preceding code, the output is going to be as follows:
 
-![](8_files/439dde2c-24e8-4b83-94a2-f63463680d1d.png)
+![]./images_8/439dde2c-24e8-4b83-94a2-f63463680d1d.png)
 
 As was expected, the [get()] method of [Future] returns the
 object passed in as a parameter.
@@ -845,7 +845,7 @@ class MyCallable implements Callable {
 
 The result of the preceding code is as follows:
 
-![](8_files/23c8f3be-7d43-4712-a80d-f4a08f581a89.png)
+![]./images_8/23c8f3be-7d43-4712-a80d-f4a08f581a89.png)
 
 As you can see, the [get()] method of the [Future] returns
 the value produced by the [call()] method of the
@@ -1040,7 +1040,7 @@ class MyCallable implements Callable<Result> {
 Here is the result we got from one of our runs of
 [invokeAllCallables(new CalculatorNoSync())]:
 
-![](10_files/ee4ffa39-aed6-4bc1-8ade-3010abd580d8.png)
+![]./images_8/ee4ffa39-aed6-4bc1-8ade-3010abd580d8.png)
 
 The actual numbers are slightly different every time we run the
 preceding code, but the result of task [One] never equals the
@@ -1114,7 +1114,7 @@ while the thread was sleeping. The following is the screenshot of the
 messages produced when we run [invokeAllCallables(new
 CalculatorAtomicRef())]:
 
-![](10_files/8788646d-40f2-42d0-81a7-e508f491d793.png)
+![]./images_8/8788646d-40f2-42d0-81a7-e508f491d793.png)
 
 Now the results produced by the threads are the same.
 
@@ -1164,7 +1164,7 @@ We have just added the [synchronized] keyword in front of the
 CalculatorSyncMethod())], the results of both threads are always
 going to be the same:
 
-![](10_files/e46785a3-45cb-4e57-a6e9-4703d6dac73a.png)
+![]./images_8/e46785a3-45cb-4e57-a6e9-4703d6dac73a.png)
 
 This is because another thread cannot enter the synchronized method
 until the current thread (the one that has entered the method already)
@@ -1216,7 +1216,7 @@ fewer chances to become a bottleneck.
 If we run [invokeAllCallables(new CalculatorSyncBlock())], the
 results are as follows:
 
-![](10_files/a6abe37c-0940-4d27-aaa7-f73573a310f8.png)
+![]./images_8/a6abe37c-0940-4d27-aaa7-f73573a310f8.png)
 
 As you can see, the results are exactly the same as in the previous two
 examples. Different types of locks for different needs and with
@@ -1332,7 +1332,7 @@ System.out.println("\n" + list);   //prints: [One, Two, Three, Three]
 
 The output this code produces looks as follows:
 
-![](10_files/b7b971e8-31b9-4dd8-9bc0-f7128165d117.png)
+![]./images_8/b7b971e8-31b9-4dd8-9bc0-f7128165d117.png)
 
 As you can see, the list was modified without an exception, but not the
 currently iterated copy. That is the behavior you can use if needed.

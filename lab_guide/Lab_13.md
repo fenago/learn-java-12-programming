@@ -641,7 +641,7 @@ the [doOnNext()] operation was called twice, which means the
 observable object emitted values twice, once for each processing
 pipeline:
 
-![](6_files/acc3327d-5a97-4801-868f-30cb0ec98179.png)
+![]./images_13/acc3327d-5a97-4801-868f-30cb0ec98179.png)
 
 If we do not want [Observable] running twice, we can cache its
 data, by adding the [cache()] operation:
@@ -665,7 +665,7 @@ observable
 As you can see, the second usage of the same [Observable] took
 advantage of the cached data, thus allowing for better performance:
 
-![](6_files/3ec2a6d2-6903-489f-8d6c-52cffc64cfe0.png)
+![]./images_13/3ec2a6d2-6903-489f-8d6c-52cffc64cfe0.png)
 
 RxJava provides such a rich functionality that there is no way we can
 review it all in detail in this book. Instead, we will try to cover the
@@ -743,7 +743,7 @@ In this example, we select only even numbers, print the selected
 element, then calculate the square root and wait for 100 ms (imitating a
 long-running calculation). The result of this example looks as follows:
 
-![](6_files/05b15d75-8715-4bba-9f7a-dd6bb4bf7f11.png)
+![]./images_13/05b15d75-8715-4bba-9f7a-dd6bb4bf7f11.png)
 
 The non-blocking version of the same functionality looks as follows:
 
@@ -841,7 +841,7 @@ a timeout:
 The result of the preceding code is presented in the following
 screenshot:
 
-![](6_files/91ef13a4-dd77-4c60-9509-1005bc323e87.png) 
+![]./images_13/91ef13a4-dd77-4c60-9509-1005bc323e87.png) 
 
 The first [Run] message comes from line 2 in response to
 the call of the blocking [blockingGet()] method. The first
@@ -905,7 +905,7 @@ void pauseMs(long ms){
 
 If we run the preceding example, the output will be as follows:
 
-![](6_files/d1fc35cc-61d1-4bea-890d-b04cd6ebf4a0.png)
+![]./images_13/d1fc35cc-61d1-4bea-890d-b04cd6ebf4a0.png)
 
 As you can see, each of the pipelines processed every value emitted by
 the cold observable.
@@ -930,7 +930,7 @@ As you can see, we have to call the [connect()] method in order
 that the [ConnectableObservable] object starts emitting values.
 The output looks like the following:
 
-![](6_files/bb0c0666-56f5-4ae7-b5e8-50f33d697ae1.png)
+![]./images_13/bb0c0666-56f5-4ae7-b5e8-50f33d697ae1.png)
 
 The output shows that the second pipeline did not receive the first
 three values because it has subscribed to the observable later. So, the
@@ -972,7 +972,7 @@ If we run the preceding example, it will print successfully the first
 127 values and then will throw [MissingBackpressureException], as
 shown on the following screenshot:
 
-![](6_files/9978a4cb-5329-42f5-88b1-8035f01d4c2b.png)
+![]./images_13/9978a4cb-5329-42f5-88b1-8035f01d4c2b.png)
 
 The message in the exception provides a clue: [Could not emit value due
 to lack of requests]*.* Apparently, the rate of emitting the
@@ -1016,7 +1016,7 @@ created [Schedulers.io()] thread.
 The output shows that many of the emitted values were dropped. Here is
 an output fragment:
 
-![](6_files/bde4ce8b-9e32-408f-99b3-b81a27bda6c2.png)
+![]./images_13/bde4ce8b-9e32-408f-99b3-b81a27bda6c2.png)
 
 We will talk about other backpressure strategies in the *Operators*
 section, in the overview of the corresponding operators.
@@ -1223,7 +1223,7 @@ third is called when the source emits an [onComplete()] signal.
 After creating the pipeline, we have paused for 100 ms to give the
 asynchronous process a chance to finish. The result looks as follows:
 
-![](6_files/32e93418-0fbd-49e6-a192-45d44769fd0c.png)
+![]./images_13/32e93418-0fbd-49e6-a192-45d44769fd0c.png)
 
 If we remove the line [emitter.onComplete()] from the emitter
 implementation, only message [Two] will be displayed.
@@ -1560,7 +1560,7 @@ pauseMs(25);
 
 If we run this code, the output will be as follows:
 
-![](6_files/929070d6-779c-4885-b06c-e1b7cfcd6664.png)
+![]./images_13/929070d6-779c-4885-b06c-e1b7cfcd6664.png)
 
 You will also see other examples of these operators\' usage in the
 *Multithreading (scheduler)* section.
@@ -1627,7 +1627,7 @@ pauseMs(25);
 
 If we run all these examples, the output will look as follows:
 
-![](6_files/df074538-1f00-4620-b111-cd98c848471e.png)
+![]./images_13/df074538-1f00-4620-b111-cd98c848471e.png)
 
 As you can see, the pipeline, when completed, sends
 the [DISPOSED] signal to the [using] operator (the
@@ -1826,7 +1826,7 @@ In this example, we decided to create a sub-flow of characters from each
 emitted word and let a dedicated thread process characters of each word.
 The output of this example looks as follows:
 
-![](6_files/57d488fe-4d0a-4ded-a88f-ec5cee99e3ad.png)
+![]./images_13/57d488fe-4d0a-4ded-a88f-ec5cee99e3ad.png)
 
 As you can see, the main thread was used to emit the words, and the
 characters of each word were processed by a dedicated thread. Please
@@ -1857,7 +1857,7 @@ pauseMs(100);
 
 The output of this example is as follows:
 
-![](6_files/24e6722c-156c-4952-97c9-0542c0115dd9.png)
+![]./images_13/24e6722c-156c-4952-97c9-0542c0115dd9.png)
 
 As you can see, the main thread does not emit the words anymore.
 
@@ -1891,7 +1891,7 @@ scheduler (for processing the characters) inside the [flatMap()]
 operator. It can be set outside it -- just in the main pipeline, which
 makes the code simpler. The result looks like this:
 
-![](6_files/0d9a69ea-9164-4067-a4cf-a0c788ccc54b.png)
+![]./images_13/0d9a69ea-9164-4067-a4cf-a0c788ccc54b.png)
 
 As for the [subscribeOn()] operator, its location in the pipeline
 does not play any role. Wherever it is placed, it still tells the
@@ -1910,7 +1910,7 @@ pauseMs(100);
 
 The result looks like this:
 
-![](6_files/247bfa6a-3899-46f7-865e-bbe7a13cff8f.png)
+![]./images_13/247bfa6a-3899-46f7-865e-bbe7a13cff8f.png)
 
 Even if we change the location of the [subscribeOn()] operator as
 in the following example, the result does not change:
@@ -1943,7 +1943,7 @@ pauseMs(100);
 The result now shows that two threads are used: one for subscribing and
 another for observing:
 
-![](6_files/0a8ab8db-ecac-44f0-8bbc-b9ff7235b83d.png)
+![]./images_13/0a8ab8db-ecac-44f0-8bbc-b9ff7235b83d.png)
 
 This concludes our short overview of RxJava, which is a big and
 still-growing library with a lot of possibilities, many of which we just

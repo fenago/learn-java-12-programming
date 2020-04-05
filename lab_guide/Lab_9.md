@@ -67,30 +67,30 @@ it can be done in three ways:
 
 1.  Click the green triangle next to the [main()] method name:
 
-![](2_files/829439d1-e909-48ff-a189-71fce8cb6af5.png)
+![]./images_9/829439d1-e909-48ff-a189-71fce8cb6af5.png)
 
 2.  After you have executed the [main()] method using the green
     triangle at least once, the name of the class will be added to the
     drop-down menu (on the top line, to the left of the green
     triangle): 
 
-![](2_files/71cdf33e-cbe3-49ec-9d55-26a848c9931a.png)
+![]./images_9/71cdf33e-cbe3-49ec-9d55-26a848c9931a.png)
 
 Select it and click the green triangle to the right of the menu:
 
-![](2_files/23dac37d-0992-4cce-a224-a679bf302002.png)
+![]./images_9/23dac37d-0992-4cce-a224-a679bf302002.png)
 
 -   Open the [Run] menu and select the name of the class.
     There are several different options to select:
 
-![](2_files/6620dd27-71ea-4fd8-8588-bcf98ad4c439.png)
+![]./images_9/6620dd27-71ea-4fd8-8588-bcf98ad4c439.png)
 
 In the previous screenshot, you can also see the option to [Edit
 Configurations\...]. It can be used for setting the
 [Program arguments] that are passed to the [main()]
 method at the start, and some other options:
 
-![](2_files/eaedb621-b0f8-44ee-b192-d60698cc327e.png)
+![]./images_9/eaedb621-b0f8-44ee-b192-d60698cc327e.png)
 
 The [VM options] field allows for setting [java]
 command options. For example, if you input the [-Xlog:gc], the IDE
@@ -115,13 +115,13 @@ for the application\'s execution.
 For this demonstration, let\'s set [VM options] as
 follows:
 
-![](2_files/d603fc35-dd88-4aec-b8d3-d0a84927edec.png)
+![]./images_9/d603fc35-dd88-4aec-b8d3-d0a84927edec.png)
 
 The [Program arguments] field allows for setting a
 parameter in the [java] command. For example, let\'s set [one two
 three] in this field:
 
-![](2_files/cd547d91-4c36-4297-bb09-0346fb50c096.png)
+![]./images_9/cd547d91-4c36-4297-bb09-0346fb50c096.png)
 
 This setting will result in the following [java] command:
 
@@ -148,13 +148,13 @@ public static void main(String... args){
 Another possible setting on the [Edit Configurations]
 screen is in the [Environment variables] field:
 
-![](2_files/8639cad1-7de2-479e-8cc6-74e1862adf51.png)
+![]./images_9/8639cad1-7de2-479e-8cc6-74e1862adf51.png)
 
 That is the way to set environment variables that can be accessed from
 the application using [System.getenv()]. For example, let\'s set
 the environment variables [x] and [y] , as follows:
 
-![](2_files/a393641c-7893-4909-8f91-66d724efb7fb.png)
+![]./images_9/a393641c-7893-4909-8f91-66d724efb7fb.png)
 
 If done as shown in the preceding screenshot, the values of
 [x] and [y] can be read not only in the [main()]
@@ -226,7 +226,7 @@ Notice that [-cp] points to the folder [src/main/java] (the
 path is relative to the current folder), where the package of the main
 class starts. The result is as follows:
 
-![](2_files/144a8b21-fd49-4124-8dc0-00ecc4760228.png)
+![]./images_9/144a8b21-fd49-4124-8dc0-00ecc4760228.png)
 
 If the application uses other [.class] files located in different
 folders, all the paths to these folders (relative to the current folder)
@@ -286,7 +286,7 @@ javac src/main/java/com/packt/learnjava/ch09_jvm/MyApplication.java
 
 The result is the following error:
 
-![](2_files/bf5e1e37-390b-4e3f-830c-75681d9983ec.png)
+![]./images_9/bf5e1e37-390b-4e3f-830c-75681d9983ec.png)
 
 It means that the compiler cannot find the [ExampleClass.class]
 file. We need to compile it and put on the classpath:
@@ -309,7 +309,7 @@ java -cp src/main/java com.packt.learnjava.ch09_jvm.MyApplication
 
 The result is as follows:
 
-![](2_files/df156ae4-c544-41cd-94e0-c12be9f98cfb.png)
+![]./images_9/df156ae4-c544-41cd-94e0-c12be9f98cfb.png)
 
 There is no need to list folders that contain classes from the **Java
 Class Library** (**JCL**). The JVM knows where to find them.

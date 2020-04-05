@@ -94,7 +94,7 @@ try {
 
 The output of this code is as follows:
 
-![](2_files/b6233885-2fec-411e-9075-2bebd845835b.png)
+![]./images_4/b6233885-2fec-411e-9075-2bebd845835b.png)
 
 What you see in red on the screenshot is called a **stack trace**. The
 name comes from the way the method calls are stored (as a stack) in JVM

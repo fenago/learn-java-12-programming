@@ -286,7 +286,7 @@ Raw string literals {#raw-string-literals .header-title}
 Once in a while, you may wish to have an output indented, so it will
 look something like this, for example:
 
-![](5_files/a637643d-9433-4819-9aff-9df0b3156aac.png)
+![]./images_17/a637643d-9433-4819-9aff-9df0b3156aac.png)
 
 To achieve it, the code looks as follows:
 

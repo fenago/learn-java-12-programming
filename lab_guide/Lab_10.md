@@ -247,7 +247,7 @@ listens on port [3333], but there is no message coming -- so it
 waits. Then, we run the sender and the receiver displays the following
 message:
 
-![](3_files/19c064a6-7d2d-4c70-99f3-90d07208b57f.png)
+![]./images_10/19c064a6-7d2d-4c70-99f3-90d07208b57f.png)
 
 Since the buffer is smaller than the message, it was only partially
 received -- the rest of the message is lost. We can create an infinite
@@ -267,7 +267,7 @@ while(true){
 By doing so, we can run the sender several times; here is what the
 receiver prints if we run the sender three times:
 
-![](3_files/891f896e-6289-42c2-8ddc-e0fdebb3ef79.png)
+![]./images_10/891f896e-6289-42c2-8ddc-e0fdebb3ef79.png)
 
 As you can see, all three messages are received; however, only the first
 16 bytes of each message are captured by the receiver. 
@@ -281,7 +281,7 @@ DatagramPacket dp = new DatagramPacket(new byte[30], 30);
 
 If we send the same message now, the result will be as follows:
 
-![](3_files/9cd256d1-287b-4758-a27e-0183b42c639c.png)
+![]./images_10/9cd256d1-287b-4758-a27e-0183b42c639c.png)
 
 To avoid processing empty buffer elements, you can use
 the [getLength()] method of the [DatagramPacket] class,
@@ -301,7 +301,7 @@ for(byte b: dp.getData()){
 
 The result of the preceding code will be as follows:
 
-![](3_files/025f0a32-52f2-4051-bc37-f07729fea109.png)
+![]./images_10/025f0a32-52f2-4051-bc37-f07729fea109.png)
 
 So, this is the basic idea of the UDP protocol. The sender sends a
 message to a certain address and port even if there is no socket that
@@ -617,33 +617,33 @@ program first. When it starts, no messages are displayed, instead, it
 just waits until the client connects. So, we then start
 [TcpClient] and see the following message on the screen:
 
-![](4_files/b2dbbcd5-c089-4aa0-a3d1-e67764cf1f73.png)
+![]./images_10/b2dbbcd5-c089-4aa0-a3d1-e67764cf1f73.png)
 
 We type [Hello!] and click on *Enter*:
 
-![](4_files/fe9d26c4-3329-4e17-8b8f-fc75a249aa89.png)
+![]./images_10/fe9d26c4-3329-4e17-8b8f-fc75a249aa89.png)
 
 Now let\'s look at the server-side screen:
 
-![](4_files/4dc09de3-7adf-4072-84bb-a78abd970b84.png)
+![]./images_10/4dc09de3-7adf-4072-84bb-a78abd970b84.png)
 
 We type [Hi!] on the server-side screen and click on *Enter*:
 
-![](4_files/856f1d6e-55bc-45d1-be77-27d3927f9295.png)
+![]./images_10/856f1d6e-55bc-45d1-be77-27d3927f9295.png)
 
 On the client-side screen, we see the following messages:
 
-![](4_files/57f0bd93-ea43-43fb-9529-bbea8b385d1f.png)
+![]./images_10/57f0bd93-ea43-43fb-9529-bbea8b385d1f.png)
 
 We can continue this dialog indefinitely until the server or the client
 sends the message, [end]. Let\'s make the client do it; the client
 says [end] and then exits:
 
-![](4_files/858b4dd4-c4aa-498f-a8a3-60a59d95f00c.png)
+![]./images_10/858b4dd4-c4aa-498f-a8a3-60a59d95f00c.png)
 
 Then, the server follows suit:
 
-![](4_files/0d7f3ac1-836b-494a-9b8d-c805ff96f46f.png)
+![]./images_10/0d7f3ac1-836b-494a-9b8d-c805ff96f46f.png)
 
 That\'s all we wanted to demonstrate while discussing the TCP protocol.
 Now let\'s review the differences between the UDP and TCP protocols.
@@ -924,7 +924,7 @@ the online HTML
 Formatter (<https://jsonformatter.org/html-pretty-print>), and ran it.
 The result is presented in the following screenshot:
 
-![](6_files/33a2fd66-c044-4389-aac4-9ee29e5042b3.png)
+![]./images_10/33a2fd66-c044-4389-aac4-9ee29e5042b3.png)
 
 As you can see, it looks like a typical page with the search results,
 except there is no *Google* image in the upper-left corner with the
@@ -1051,14 +1051,14 @@ starts listening on port [3333] and blocks until the request comes
 with the [\"/something\"] path. Then, we execute the client and
 observe the following output on the server-side screen:
 
-![](6_files/95016957-df28-413a-b185-1aedb3fe11f5.png)
+![]./images_10/95016957-df28-413a-b185-1aedb3fe11f5.png)
 
 As you can see, the server received the parameters (or any other message
 for that matter) successfully. Now it can parse them and use as needed.
 
 If we look at the client-side screen, we will see the following output:
 
-![](6_files/b5058307-eeaa-49d0-b573-75178e2250a1.png)
+![]./images_10/b5058307-eeaa-49d0-b573-75178e2250a1.png)
 
 This means that the client received the message from the server and
 exited as expected. Notice that the server in our example does not exit
@@ -1195,13 +1195,13 @@ try(BufferedReader in = new BufferedReader(
 If we launch this server and run the preceding client\'s code, the
 server prints the following message on its screen:
 
-![](7_files/4bba9491-4c29-4164-aca8-7c98e54d9de9.png)
+![]./images_10/4bba9491-4c29-4164-aca8-7c98e54d9de9.png)
 
 The client did not send a message because it used the HTTP [GET]
 method. Nevertheless, the server responds, and the client\'s screen
 shows the following message:
 
-![](7_files/12c75012-a1b1-4c84-b4a4-d5342e9a71c9.png)
+![]./images_10/12c75012-a1b1-4c84-b4a4-d5342e9a71c9.png)
 
 The [send()] method of the [HttpClient] class is blocked
 until the response has come back from the server. 
@@ -1231,12 +1231,12 @@ try {
 As you can see, this time the client posts the message [Hi
 there!], and the server\'s screen shows the following:
 
-![](7_files/d01764c8-17cd-4864-a9a3-83d83f398360.png)
+![]./images_10/d01764c8-17cd-4864-a9a3-83d83f398360.png)
 
 The [send()] method of the [HttpClient] class is blocked
 until the same response has come back from the server:
 
-![](7_files/1e54d212-a93e-44d6-b445-11661de6bf1e.png) 
+![]./images_10/1e54d212-a93e-44d6-b445-11661de6bf1e.png) 
 
 So far, the demonstrated functionality was not much different from the
 URL-based communication that we saw in the previous section. Now we are
@@ -1340,11 +1340,11 @@ returns.
 If we run the client, the server\'s screen shows the following message
 again with the blocking HTTP [GET] request:
 
-![](7_files/27141e5f-a4cc-45ab-83a7-a428697ca974.png)
+![]./images_10/27141e5f-a4cc-45ab-83a7-a428697ca974.png)
 
 The client\'s screen displays the following message:
 
-![](7_files/88b6701c-2806-4396-bb81-e6addbbdec1e.png)
+![]./images_10/88b6701c-2806-4396-bb81-e6addbbdec1e.png)
 
 As you can see, [The request was sent
 asynchronously\...] message appears before the response
@@ -1374,7 +1374,7 @@ Now the [get()] method returns the value produced by the [resp -\>
 return the server message body; let\'s run this code and see the
 result: 
 
-![](7_files/ab28350c-290a-481a-b89e-d13257fa5177.png)
+![]./images_10/ab28350c-290a-481a-b89e-d13257fa5177.png)
 
 Now the [get()] method returns the server\'s message as expected,
 and it is presented by the function and passed as a parameter into
@@ -1406,12 +1406,12 @@ System.out.println("Exit the client...");
 The only difference from the previous example is that the server now
 displays the received client\'s message:
 
-![](7_files/19fb5128-e536-423e-a23a-73661089c990.png)
+![]./images_10/19fb5128-e536-423e-a23a-73661089c990.png)
 
 The client\'s screen displays the same message as in the case of the
 [GET] method:
 
-![](7_files/58f4e3cb-6ea1-4862-8f4c-ae75a3b037d5.png)
+![]./images_10/58f4e3cb-6ea1-4862-8f4c-ae75a3b037d5.png)
 
 The advantage of asynchronous requests is that they can be sent quickly
 and without needing to wait for each of them to complete. The HTTP 2
@@ -1448,7 +1448,7 @@ System.out.println("Exit the client...");
 
 The server\'s screen shows the following messages:
 
-![](7_files/6cb821a0-24db-40e6-814b-4e9ea91c2d08.png)
+![]./images_10/6cb821a0-24db-40e6-814b-4e9ea91c2d08.png)
 
 Notice the arbitrary sequence of the incoming requests; this is because
 the client uses a pool of
@@ -1667,7 +1667,7 @@ continues until either side sends a **Close** message. That is why our
 client waits for 200 milliseconds, and then sends the **Close** message
 and exits. If we run this code, we will see the following messages:
 
-![](7_files/a10745d2-c8c9-4bb5-bb1c-db505f9cd953.png) 
+![]./images_10/a10745d2-c8c9-4bb5-bb1c-db505f9cd953.png) 
 
 As you can see, the client behaves as expected. To finish our
 discussion, we would like to mention that all modern web browsers

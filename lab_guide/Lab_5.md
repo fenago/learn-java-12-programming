@@ -421,7 +421,7 @@ line.lines().forEach(System.out::println);
 
 The output of the preceding code is as follows:
 
-![](2_files/8f2bbd68-c6f9-4a27-a068-acfffb9f045f.png)
+![]./images_5/8f2bbd68-c6f9-4a27-a068-acfffb9f045f.png)
 
 We will talk about streams in [Chapter
 14](https://subscription.packtpub.com/book/programming/9781789957051/14), *Java
@@ -809,7 +809,7 @@ the [hello.txt] file that has only one line in
 it---[Hello!]. The output of the preceding example looks as
 follows:
 
-![](3_files/fd95e8e0-7abb-49f5-a0cc-55cd6f1a5a9a.png)
+![]./images_5/fd95e8e0-7abb-49f5-a0cc-55cd6f1a5a9a.png)
 
 Since we are running this example inside the IDE, it is executed in the
 project root directory. In order to find where your code is executed,
@@ -1391,7 +1391,7 @@ public class ConsoleDemo {
 If we run it from the IDE, as we usually do, the result will be as
 follows:
 
-![](3_files/b42df196-3db6-4b7f-adf8-83f57dc12cd6.png)
+![]./images_5/b42df196-3db6-4b7f-adf8-83f57dc12cd6.png)
 
 That is because the JVM was launched not from the command line. In order
 to do it, let\'s compile our application and create a [.jar] file
@@ -1415,7 +1415,7 @@ The preceding command is shown in two lines because the page width
 cannot accommodate it. But if you would like to run it, make sure you do
 it as one line. The result will be as follows:
 
-![](3_files/3a5892a1-6668-4a19-be3d-fab7176e37dc.png)
+![]./images_5/3a5892a1-6668-4a19-be3d-fab7176e37dc.png)
 
 It tells us that we have the [Console] class object now. Let\'s
 see what we can do with it. The class has the following methods:
@@ -1459,7 +1459,7 @@ System.out.println("Entered 6: " + new String(password));
 
 The result of the preceding example is as follows:
 
-![](3_files/4d6b7a3b-239f-44fa-bb04-c7c998b8c63b.png)
+![]./images_5/4d6b7a3b-239f-44fa-bb04-c7c998b8c63b.png)
 
 Another group of [Console] class methods can be used in
 conjunction with the just demonstrated methods:
@@ -1517,7 +1517,7 @@ console.flush();
 
 The result of the preceding code looks as follows:
 
-![](3_files/92c1540a-8bcc-4cee-84b6-3a5583feb26e.png)
+![]./images_5/92c1540a-8bcc-4cee-84b6-3a5583feb26e.png)
 
 [Reader] and [PrintWriter] can also be used to create other
 [Input] and [Output] streams we have been talking about in
@@ -1594,7 +1594,7 @@ try(FileReader fr = new FileReader(filePath);
 
 If we run this code, the result will be the following:
 
-![](3_files/5c49e7b2-57b3-4051-8f8b-1b48146f9fca.png) 
+![]./images_5/5c49e7b2-57b3-4051-8f8b-1b48146f9fca.png) 
 
 We have used the [BufferedReader] class, which is a good practice
 for higher efficiency, but in our case, we could easily avoid it like
@@ -1716,7 +1716,7 @@ printInfo(osc1);
 
 The result will be as follows:
 
-![](3_files/a73baeb7-d8d3-499f-b99b-aae3ada88d4b.png)
+![]./images_5/a73baeb7-d8d3-499f-b99b-aae3ada88d4b.png)
 
 As you can see, there is information about the class name and all field
 names and types. There are also two other methods that can be called
@@ -1762,7 +1762,7 @@ printInfo(osc3);
 
 If we run the preceding example, the result will be as follows:
 
-![](3_files/8bc4d72a-a088-4154-a23d-b801babc1c0f.png)
+![]./images_5/8bc4d72a-a088-4154-a23d-b801babc1c0f.png)
 
 From a non-serializable object, we were able to extract information
 about the class, but not about the fields.
@@ -1796,7 +1796,7 @@ while(sc.hasNext()){
 It accepts many lines (each line ends after the key *Enter* is pressed)
 until the line [*end*] is entered as follows:
 
-![](3_files/939602f5-20c6-4ddd-9c15-ea53bb0e8b1e.png)
+![]./images_5/939602f5-20c6-4ddd-9c15-ea53bb0e8b1e.png)
 
 Alternatively, [Scanner] can read lines from a file:
 
@@ -1815,7 +1815,7 @@ try(Scanner sc = new Scanner(new File(filePath))){
 As you can see, we have used the [tokens.txt] file again. The
 results are as follows:
 
-![](3_files/d636780d-a330-43a9-b3d5-dd527c988591.png)
+![]./images_5/d636780d-a330-43a9-b3d5-dd527c988591.png)
 
 To demonstrate [Scanner] breaking the input by a delimiter, let\'s
 run the following code:
@@ -1831,7 +1831,7 @@ while(sc.hasNext()){
 
 The result is as follows:
 
-![](3_files/912666b8-c3f5-453f-be4a-d45aec47dd0d.png)
+![]./images_5/912666b8-c3f5-453f-be4a-d45aec47dd0d.png)
 
 To use another delimiter, it can be set as follows:
 
@@ -1846,7 +1846,7 @@ while(sc.hasNext()){
 
 The result remains the same:
 
-![](3_files/4b59a98e-30bb-44e8-bfc8-43026a7a3c3c.png)
+![]./images_5/4b59a98e-30bb-44e8-bfc8-43026a7a3c3c.png)
 
 It is also possible to use a regular expression for extracting the
 tokens, but this topic is outside the scope of this book.
@@ -2063,7 +2063,7 @@ for(File f: File.listRoots()){
 
 The result should be as follows:
 
-![](4_files/c20b7299-6f08-4375-834d-a5dfae9732d5.png)
+![]./images_5/c20b7299-6f08-4375-834d-a5dfae9732d5.png)
 
 The demonstrated methods can be enhanced by adding the following filters
 to them, so they will list only the files and directories that match the
