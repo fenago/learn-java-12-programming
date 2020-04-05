@@ -210,8 +210,7 @@ the same behavior but different states. That is one way to achieve code
 reusability. It may not be flexible enough when the object behavior has
 to change dynamically. In such cases, object composition (bringing
 behavior from other classes) or functional programming would be more
-appropriate (see [Chapter
-13](https://subscription.packtpub.com/book/programming/9781789957051/13),
+appropriate (see 
 *Functional Programming*).
 
 It is possible to make a child behave differently than the inherited
@@ -490,8 +489,7 @@ the declared properties. If there is no constructor declared in the
 class, JVM just assigns to the properties default values. We have talked
 about the default values for primitive types: it is 0 for integral
 types, 0.0 for floating-point types, and false for boolean types. For
-other Java reference types (see [Chapter
-3](https://subscription.packtpub.com/book/programming/9781789957051/3),
+other Java reference types (see 
 *Java Fundamentals), *the default value is null, which means that the
 property of a reference type is not assigned any value.
 
@@ -716,8 +714,7 @@ void someMethod(){
 As soon as the execution of the someMethod() method is completed, the
 object of SomeClass is not accessible anymore. That's what the garbage
 collector notices and releases the memory occupied by this object. We
-will talk about the garbage collection process in [Chapter
-9](https://subscription.packtpub.com/book/programming/9781789957051/9),
+will talk about the garbage collection process in 
 *JVM Structure and Garbage Collection*.
 
 Class java.lang.Object
@@ -727,8 +724,7 @@ In Java, all classes are children of the Object class by default, even
 if you do not specify it implicitly. The Object class is declared in
 the java.lang package of the standard JDK library. We will define what
 *package* is in the *Packages, importing, and access* section and
-describe libraries in [Chapter
-7](https://subscription.packtpub.com/book/programming/9781789957051/7),
+describe libraries in 
 *Java Standard and External Libraries*.
 
 Let's look back at the example we have provided in
@@ -823,8 +819,7 @@ That is why the toString() method is often overridden and even included
 in the services of an IDE.
 
 We will talk about the hashCode() and equals() methods in more detail in
-[Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+ *Data
 Structures, Generics, and Popular Utilities*.
 
 The getClass() and clone() methods are used not as often. The
@@ -925,8 +920,7 @@ When an object is declared a static final class property, it does not
 mean all its properties become final automatically. It only protects the
 property from assigning another object of the same type. We will discuss
 the complicated procedure of concurrent access of an object property
-in [Chapter
-8](https://subscription.packtpub.com/book/programming/9781789957051/8), *Multithreading
+in  *Multithreading
 and Concurrent Processing*. Nevertheless, programmers often use static
 final objects to store the values that are read-only just by the way
 they are used in the application. A typical example would be an

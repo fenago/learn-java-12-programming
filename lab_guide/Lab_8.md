@@ -1360,10 +1360,8 @@ Concurrency problems are not easy to solve. That is why it is not
 surprising that more and more developers now take a more radical
 approach. Instead of managing an object state, they prefer processing
 data in a set of stateless operations. We will see examples of such code
-in [Chapter
-13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
-Programming* and [Chapter
-14](https://subscription.packtpub.com/book/programming/9781789957051/14),
+in  *Functional
+Programming* and 
 *Java Standard Streams*. It seems that Java and many modern languages
 and computer systems are evolving in this direction.
 

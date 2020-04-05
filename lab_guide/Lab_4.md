@@ -92,8 +92,7 @@ name comes from the way the method calls are stored (as a stack) in JVM
 memory: one method calls another, which in turns calls another, and so
 on. After the most inner method returns, the stack is walked back, and
 the returned method (**stack frame**) is removed from the stack. We will
-talk more about JVM memory structure in [Chapter
-9](https://subscription.packtpub.com/book/programming/9781789957051/9),
+talk more about JVM memory structure in 
 *JVM Structure and Garbage Collection*. When an exception happens, all
 the stack content (stack frames) are returned as the stack trace. It
 allows us to track down the line of code that caused the problem.

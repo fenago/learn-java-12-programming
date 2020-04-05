@@ -68,10 +68,7 @@ object periodically and, when the result is ready, retrieves it using
 another method on the same object. The advantage of asynchronous
 processing is that the requestor can do other things while waiting.
 
-In
-[](https://subscription.packtpub.com/book/programming/9781789957051/8)[Chapter
-8](https://subscription.packtpub.com/book/programming/9781789957051/8),
-*Multithreading and Concurrent Processing*, we have demonstrated how
+In *Multithreading and Concurrent Processing*, we have demonstrated how
 a child thread can be created. Such a child thread then sends a
 non-asynchronous (blocking) request and waits for its return doing
 nothing. The main thread, meanwhile, continues executing and
@@ -1789,7 +1786,7 @@ configuration:
     provided executor (thread pool), which allows for better controlling
     the max number of threads and their life cycles. We talked about
     thread pools in [Chapter
-    8](https://subscription.packtpub.com/book/programming/9781789957051/8),
+    8]
     *Multithreading and Concurrent Processing*. To remind you, here are
     the pools we have discussed:
 

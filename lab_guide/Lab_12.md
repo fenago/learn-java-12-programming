@@ -6,7 +6,7 @@ Numeric stream interfaces
 
 In this chapter, we will talk about processing data streams, which are
 different from the I/O streams we reviewed in
-[Chapter 5](https://subscription.packtpub.com/book/programming/9781789957051/5), *Strings,
+[Chapter 5] *Strings,
 Input/Output, and Files*. We will define what data streams are, how to
 process their elements using methods (operations) of
 the [java.util.stream.Stream] object, and how to chain (connect)
@@ -62,7 +62,6 @@ such a library is [java.util.stream], which is going to be the
 focus of this chapter.
 
 In
-[](https://subscription.packtpub.com/book/programming/9781789957051/5)[Chapter 5](https://subscription.packtpub.com/book/programming/9781789957051/5),
 *Strings, Input/Output, and Files*, we talked about I/O streams as the
 source of data, but beyond that, they are not of much help for the
 further processing of the data. And they are byte- or character-based,
@@ -76,8 +75,7 @@ converts the underlying character-based stream into a
 [Stream\<String\>] object.
 
 The streams of the [java.util.stream] package, on the other hand,
-are oriented on processing collections of objects. In [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6),
+are oriented on processing collections of objects. In 
 *Data Structures, Generics, and Popular Utilities,* we described two
 methods of the [Collection] interface that allow reading
 collection elements as elements of a stream: [default Stream\<E\>
@@ -2316,7 +2314,7 @@ Summary
 
 In this chapter, we have talked about data-streams processing, which is
 different from processing the I/O streams we reviewed in
-[Chapter 5](https://subscription.packtpub.com/book/programming/9781789957051/5), *Strings,
+[Chapter 5] *Strings,
 Input/Output, and Files*. We defined what the data streams are, how to
 process their elements using stream operations, and how to chain
 (connect) stream operations in a pipeline. We also discussed stream

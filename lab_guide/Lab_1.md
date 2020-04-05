@@ -468,11 +468,7 @@ Let's create our first program using the following steps:
 
 ![](./images_1/8c82e44f-3399-484a-9a79-e3350ea292b5.png)
 
-The package reflects the Java class location in the filesystem. We will
-talk about it in
-[](https://subscription.packtpub.com/book/programming/9781789957051/2)[Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
-*Java Object-Oriented Programming (OOP)*. Now, in order to run a
+The package reflects the Java class location in the filesystem. Now, in order to run a
 program, we create a main() method. If present, this method can be
 executed and serve as an entry point into the application. It has a
 certain format, as follows:
@@ -491,8 +487,7 @@ It should also be the following:
 
 -   Return void (nothing).
 -   Accept a String array as an input or varargs as we have done. We
-    will talk about varargs in [Chapter
-    2](https://cdp.packtpub.com/learn_java_12_programming/wp-admin/post.php?post=24&action=edit#post_25), *Java
+    will talk about varargs in *Java
     Object-Oriented Programming (OOP)*. For now, suffice to say
     that String[] args and String... args define essentially the same
     input format. 
@@ -898,8 +893,7 @@ Default values of primitive types
 
 In some cases, a variable has to be assigned a value even when a
 programmer did not want to do that. We will talk about such cases
-in [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+in 
 *Java Object-Oriented Programming (OOP)*. The default primitive type
 value in such cases is as follows:
 
@@ -1125,8 +1119,7 @@ We will not describe the not-often-used assignment operators &=,
 them in the Java specification
 ([https://docs.oracle.com/javase/specs](https://docs.oracle.com/javase/specs)). The instance creation operator new, the field
 access/method invocation operator ., and the type comparison operator
-instanceof will be discussed in [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+instanceof will be discussed in 
 *Java Object-Oriented Programming (OOP)*. As for the cast operator, we
 have described it already in the *Integral types* section.
 
@@ -1353,8 +1346,7 @@ value. It is described by a **class**, which serves as a template for
 creating an **object**, a memory area that contains the values and
 methods (the processing code) defined in the class. An object is created
 by the new operator. We will talk about classes and objects in more
-detail in [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2), *Java
+detail in  *Java
 Object-Oriented Programming (OOP)*. 
 
 In this chapter, we will talk about one of the reference types called
@@ -1373,8 +1365,7 @@ where the object resides, hence the name.
 
 This nature of the reference type requires particular attention when a
 reference-type variable is passed into a method as a parameter. We will
-discuss this in more detail in [Chapter
-3](https://subscription.packtpub.com/book/programming/9781789957051/3),
+discuss this in more detail in 
 *Java Fundamentals*. For now, in relation to String, we will see how
 String, being a reference type, helps to optimize the memory usage by
 storing each String value only once.
@@ -1574,10 +1565,7 @@ Other limitations are as follows:
 
 -   The first symbol of an identifier cannot be a digit.
 -   An identifier cannot have the same spelling as a keyword (see Java
-    keywords in
-    [](https://subscription.packtpub.com/book/programming/9781789957051/3)[Chapter
-    3](https://subscription.packtpub.com/book/programming/9781789957051/3),
-    *Java Fundamentals*).
+    keywords in *Java Fundamentals*).
 -   It cannot be spelled as the boolean literal true or false, and or as
     the literal null.
 -   And, since Java 9, an identifier cannot be just an underscore (\_).
@@ -1653,7 +1641,7 @@ Here is the list of Java statement types:
 -   An empty statement that consists of only one symbol, ; (semicolon)
 -   A class or interface declaration statement (we will talk about this
     in [Chapter
-    2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+    2]
     *Java Object-Oriented Programming (OOP)*)
 -   A local variable declaration statement: int x;
 -   A synchronized statement: this is beyond the scope of this book
@@ -1722,7 +1710,7 @@ something.\
 -   A binary operator expression: x\*y, for example
 -   A ternary operator expression: x \> y ? true : false, for example
 -   A lambda expression: x -\> x + 1 (see [Chapter
-    14](https://subscription.packtpub.com/book/programming/9781789957051/13),
+    14]
     *Functional Programming*)
 
 If an expression consists of other expressions, the parenthesis is often
@@ -2053,8 +2041,7 @@ for (String s: list){
 }
 ```
 
-We will talk about collections in [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+We will talk about collections in  *Data
 Structures, Generics, and Popular Utilities*.
 
 Exception-handling statements
@@ -2067,8 +2054,7 @@ ArrayIndexOutOfBoundsException, to name a few.
 
 All the exception classes extend the java.lang.Exception class, which,
 in turn, extends the java.lang.Throwable class (we will explain what
-this means in [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+this means in 
 *Java Object-Oriented Programming (OOP))*. That's why all exception
 objects have a common behavior. They contain information about the cause
 of the exceptional condition and the location of its origination (line
@@ -2126,8 +2112,7 @@ try {
 }
 ```
 
-We will talk about exception handling in more detail in [Chapter
-4](https://subscription.packtpub.com/book/programming/9781789957051/4),
+We will talk about exception handling in more detail in 
 *Exception Handling*.
 
 Branching statements

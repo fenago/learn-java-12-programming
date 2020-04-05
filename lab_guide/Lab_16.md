@@ -144,8 +144,7 @@ are equal because they point to the same object (the same area of the
 memory, and the same address), while the [person3] reference
 points to another object.
 
-In practice, though, as we have described in [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+In practice, though, as we have described in  *Data
 Structures, Generics, and Popular Utilities*, we would like the equality
 of the object to be based on the value of all or some of the object
 properties, so here is a typical implementation of the [equals()]
@@ -194,8 +193,7 @@ equal but makes equal two different objects with the same values of the
 properties too. Furthermore, the hash code value is now based on the
 values of the same properties as well.
 
-In [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+In  *Data
 Structures, Generics, and Popular Utilities*, we explained why it is
 important to implement the [hasCode()] method while implementing
 the [equals()] method.
@@ -217,8 +215,7 @@ the method does not override anything.
 The compareTo() method {#the-compareto-method .header-title}
 ----------------------
 
-In [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+In  *Data
 Structures, Generics, and Popular Utilities*, we used
 the [compareTo()] method (the only method of the
 [Comparable] interface) extensively and pointed out that the order
@@ -296,7 +293,7 @@ There are three things worth noting:
 -   We have put the result of [List.of()] into a [new
     ArrayList()] object. We did so because, as we have mentioned
     already in [Chapter
-    6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+    6] *Data
     Structures, Generics, and Popular Utilities*, the collection created
     by a factory method [of()] is unmodifiable. No elements can be
     added or removed from it and the order of the elements cannot be
@@ -552,8 +549,7 @@ The StringBuffer and StringBuilder classes {#the-stringbuffer-and-stringbuilder-
 ------------------------------------------
 
 We have talked about the difference between the [StringBuffer] and
-[StringBuilder] classes in [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+[StringBuilder] classes in  *Data
 Structures, Generics, and Popular Utilities.* We are not going to repeat
 it here. Instead, we will just mention that, in a single-threaded
 process (which is the vast majority of cases), the [StringBuilder]
@@ -562,9 +558,7 @@ class is a preferred choice because it is faster.
 Try, catch, and finally clauses {#try-catch-and-finally-clauses .header-title}
 -------------------------------
 
-This book contains
-[](https://subscription.packtpub.com/book/programming/9781789957051/4)[Chapter
-4](https://subscription.packtpub.com/book/programming/9781789957051/4), *Exception
+This book contains *Exception
 Handling*, dedicated to the usage of [try], [catch],
 and [finally] clauses, so we are not going to repeat it here. We
 would like just to repeat again that using a try-with-resources
@@ -630,8 +624,7 @@ The specialized parts, based on the decisions described in the previous
 two subsections, have to be described in an interface that hides the
 implementation details. The benefits of such a design lie in the
 foundations of object-oriented programming and are described in detail
-in [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+in 
 *Java Object-Oriented Programming (OOP)*, so we are not going to repeat
 it here.
 
@@ -639,8 +632,7 @@ Using factories {#using-factories .header-title}
 ---------------
 
 We talked about this
-in [](https://subscription.packtpub.com/book/programming/9781789957051/2)[Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2), *Java
+in *Java
 Object-Oriented Programming (OOP)*, too. An interface, by definition,
 does not and cannot describe the constructor of a class that implements
 the interface. Using factories allows you to close this gap and expose
@@ -652,8 +644,7 @@ Preferring composition over inheritance {#preferring-composition-over-inheritanc
 Originally, object-oriented programming was focused on inheritance as
 the way to share the common functionality between objects. Inheritance
 is even one of the four object-oriented programming principles as we
-have described them in [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+have described them in 
 *Java Object-Oriented Programming (OOP)*. In practice, however, this
 method of functionality sharing creates too much of the dependency
 between classes included in the same inheritance line. The evolution of
@@ -678,14 +669,12 @@ Using libraries {#using-libraries .header-title}
 Throughout the book, we mentioned many times that using the **Java Class
 Library** (**JCL**) and external (to the **Java Development Kit**
 (**JDK**) Java libraries makes programming much easier and produces a
-code of higher quality. There is even a dedicated chapter, [Chapter
-7](https://subscription.packtpub.com/book/programming/9781789957051/7), *Java
+code of higher quality. There is even a dedicated chapter,  *Java
 Standard and External Libraries*, which contains an overview of the most
 popular Java libraries. People who create libraries invest a lot of time
 and effort, so you should take advantage of them any time you can.
 
-In [Chapter
-13](https://subscription.packtpub.com/book/programming/9781789957051/13),
+In 
 *Functional Programming*, we described standard functional interfaces
 that reside in the [java.util.function] package of JCL. That is
 another way to take advantage of a library---by using the set of
@@ -707,10 +696,7 @@ if at all.
 Since then, we have made a lot of progress in both hardware and
 programming. The modern compiler went a long way towards making the
 submitted code work as fast as possible, even when a programmer did not
-think about it. We talked about it with specific examples in the
-previous
-chapter, [Chapter 1](https://subscription.packtpub.com/book/programming/9781789957051/17)[7](https://subscription.packtpub.com/book/programming/9781789957051/17),
-*Java Microbenchmark Harness*. 
+think about it.
 
 It allowed programmers to write more lines of code without thinking much
 about the optimization. But tradition and many books about programming

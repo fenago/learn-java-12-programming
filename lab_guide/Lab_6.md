@@ -373,7 +373,7 @@ for(String e: list){
     element of the collection until all elements have been processed or
     the function throws an exception. What function is, we will discuss
     this in [Chapter
-    13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
+    13] *Functional
     Programming;* for now, we will just provide an example:
 
 
@@ -484,7 +484,7 @@ System.out.println(set1.equals(set3));  //prints: false
     This attempts to remove from the collection all the elements that
     satisfy the given predicate; it is a function we are going to
     describe in [Chapter
-    13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
+    13] *Functional
     Programming*; it returns [true] if at least one element was
     removed
 
@@ -503,16 +503,14 @@ System.out.println(set1.equals(set3));  //prints: false
 -   [default T\[\] toArray(IntFunction\<T\[\]\>
     generator)]: This converts the collection to an array, using
     the function provided; we are going to explain functions in [Chapter
-    13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
+    13] *Functional
     Programming*.
 -   [default Stream\<E\> stream()]: This returns
     a [Stream] object (we talk about streams in [Chapter
-    14](https://subscription.packtpub.com/book/programming/9781789957051/14), *Java
+    14] *Java
     Standard Streams*).
 -   [default Stream\<E\> parallelStream()]: This returns a
-    possibly parallel [Stream] object (we talk about streams in
-    [](https://subscription.packtpub.com/book/programming/9781789957051/14)[Chapter
-    14](https://subscription.packtpub.com/book/programming/9781789957051/14), *Java
+    possibly parallel [Stream] object (we talk about streams in *Java
     Standard Streams*).
 
 List interface {#list-interface .header-title}
@@ -570,9 +568,7 @@ System.out.println(set2);         //prints: [s1, s2, s3]
     element replaced.
 -   [default void replaceAll(UnaryOperator\<E\> operator)]: This
     transforms the list by applying the function provided to each
-    element; the [UnaryOperator] function will be described in
-    [](https://subscription.packtpub.com/book/programming/9781789957051/13)[Chapter
-    13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
+    element; the [UnaryOperator] function will be described in *Functional
     Programming.*
 -   [ListIterator\<E\> listIterator()]: Returns
     a [ListIterator] object that allows the list to be traversed
@@ -650,8 +646,7 @@ in the [String] class. As you can see, this implementation
 provided the same sort order as
 [Comparator.nullsFirst(Comparator.naturalOrder())]. This style of
 implementing is called **functional programming***,* which we will
-discuss in more detail in [Chapter
-13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
+discuss in more detail in  *Functional
 Programming.*
 
 Set interface  {#set-interface .header-title}
@@ -766,7 +761,7 @@ one to be created:
     concatenating the following string values: [map.merge(key, value,
     String::concat)]; we will explain what
     [String::concat] means in [Chapter
-    13](https://subscription.packtpub.com/book/programming/9781789957051/13),
+    13]
     *Functional Programming.*
 -   [default V compute(K key, BiFunction\<K,V,V\>
     remappingFunction)]: It computes a new value using the
@@ -1107,7 +1102,7 @@ the [Arrays] class functionality:
     according to the range of indices).
 -   [stream()]: This generates a stream of array elements or some
     of them (specified according to the range of indices); see [Chapter
-    14](https://subscription.packtpub.com/book/programming/9781789957051/14),
+    14]
     *Java Standard Streams.*
 
 All of these methods are helpful, but we would like to draw your

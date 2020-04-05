@@ -127,8 +127,7 @@ more letters only.
 Strings comparison {#strings-comparison .header-title}
 ------------------
 
-In [Chapter
-3](https://subscription.packtpub.com/book/programming/9781789957051/3),
+In 
 *Java Fundamentals*, we have already talked about
 the [equals()] method that returns [true] only when
 two [String] objects or literals are spelled exactly the same way.
@@ -238,8 +237,7 @@ character [A] ([65]) by [32]. 
 The given example also shows that the
 [codePointAt()] method returns the code point of the character
 located in the string at the specified position. The code points were
-described in the *Integral types* section of [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
+described in the *Integral types* section of 
 *Getting Started with Java*.
 
 Strings transformation {#strings-transformation .header-title}
@@ -358,8 +356,7 @@ System.out.println(sf);         //prints: 23.42
 There are also [()] and [getChars()] methods that transform
 a string to an array of a corresponding type, while
 the [chars()] method creates an [IntStream] of characters
-(their code points). We will talk about streams in [Chapter
-14](https://subscription.packtpub.com/book/programming/9781789957051/14), *Java
+(their code points). We will talk about streams in  *Java
 Standard Streams*.
 
 Methods added with Java 11 {#methods-added-with-java-11 .header-title}
@@ -419,8 +416,7 @@ The output of the preceding code is as follows:
 
 ![]./images_5/8f2bbd68-c6f9-4a27-a068-acfffb9f045f.png)
 
-We will talk about streams in [Chapter
-14](https://subscription.packtpub.com/book/programming/9781789957051/14), *Java
+We will talk about streams in  *Java
 Standard Streams*.
 
 String utilities {#string-utilities .header-title}
@@ -432,9 +428,7 @@ useful is the [StringUtils] class of
 the [org.apache.commons.lang3] package from a project called
 an **Apache Commons**, maintained by an open source community of
 programmers called **Apache Software Foundation**. We will talk more
-about this project and its libraries in
-[](https://subscription.packtpub.com/book/programming/9781789957051/7)[Chapter
-7](https://subscription.packtpub.com/book/programming/9781789957051/7), *Java
+about this project and its libraries in *Java
 Standard and External Libraries*. To use it in your project, add the
 following dependency in the [pom.xml] file:
 
@@ -586,9 +580,7 @@ Classes of the [java.nio] package have pretty much the same
 functionality as the classes of [java.io] packages. But, in
 addition, they can work in *a non-blocking* mode, which can
 substantially increase the performance in certain situations. We will
-talk about non-blocking processing in
-[](https://subscription.packtpub.com/book/programming/9781789957051/15)Chapter
-15, *Reactive Programming*.
+talk about non-blocking processing in *Reactive Programming*.
 
 Stream data {#stream-data .header-title}
 -----------
@@ -1039,8 +1031,7 @@ the [Thread] object executes the [run()] method of the
 passed in [Runnable]. And we see the results we have expected; the
 [PipedInputWorker] prints all the bytes written to the piped
 stream by the [PipedOutputWorker]. We will get into more details
-about threads in [Chapter
-8](https://subscription.packtpub.com/book/programming/9781789957051/8), *Multithreading
+about threads in  *Multithreading
 and Concurrent Processing.*
 
 SequenceInputStream {#sequenceinputstream .header-title}

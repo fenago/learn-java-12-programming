@@ -43,8 +43,7 @@ What is functional programming?
 ======================
 
 We have actually used functional programming in the preceding chapters.
-In [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6),
+In 
 *Data Structures, Generics and Popular Utilities*, we talked about the
 [Iterable] interface and its [default void forEach (Consumer\<T\>
 function)] method and provided the following example:
@@ -105,8 +104,7 @@ It takes two [String] parameters, then compares the first one to
 returns [-1]; otherwise, it compares the first parameter and the
 second one using the [compareTo()] method.
 
-In [Chapter
-11](https://subscription.packtpub.com/book/programming/9781789957051/11),
+In 
 *Network Programming*, we looked at the following code:
 
 
@@ -134,8 +132,7 @@ calls its [apply()] method :
 BodySubscriber<T> apply​(ResponseInfo responseInfo)
 ```
 
-Finally, in [Chapter
-12](https://subscription.packtpub.com/book/programming/9781789957051/12),
+Finally, in 
 *Java GUI Programming*, we used an [EventHandler] function as a
 parameter in the following code snippet:
 

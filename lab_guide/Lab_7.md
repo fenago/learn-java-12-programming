@@ -164,8 +164,7 @@ supporting Java collections:
 -   Many other collection interfaces, classes, and related utilities.
 
 We have talked about Java collections and saw examples of their usage in
-[Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6),
+
 *Data Structures, Generics, and Popular Utilities*.
 
 The [java.util] package also includes several other useful
@@ -173,17 +172,15 @@ classes:
 
 -   [Objects]: Provides various object-related utility methods,
     some of which we have over-viewed in [Chapter
-    6](https://subscription.packtpub.com/book/programming/9781789957051/6),
+    6]
     *Data Structures, Generics, and Popular Utilities.*
 -   [Arrays]: Contains some 160 static methods to manipulate
     arrays, some of which we have over-viewed in
-    [](https://subscription.packtpub.com/book/programming/9781789957051/6)[Chapter
-    6](https://subscription.packtpub.com/book/programming/9781789957051/6),
     *Data Structures, Generics, and Popular Utilities.*
 -   [Formatter]: Allows formatting of any primitive type,
     [String], [Date], and other types; we have demonstrated
     the examples of its usage in [Chapter
-    6](https://subscription.packtpub.com/book/programming/9781789957051/6),
+    6]
     *Data Structures, Generics, and Popular Utilities.*
 -   [Optional], [OptionalInt], [OptionalLong], and
     [OptionalDouble]: These classes help to avoid
@@ -225,8 +222,7 @@ periods, and durations. The package includes the following:
     *YYYY-MM-DD* and similar
 -    some other classes that support date and time manipulation
 
-We discussed most of these classes in [Chapter
-6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+We discussed most of these classes in  *Data
 Structures, Generics, and Popular Utilities.*
 
 java.io and java.nio {#java.io-and-java.nio .header-title}
@@ -239,7 +235,7 @@ packages is as follows:
 
 -   The [java.io] package classes allow reading/writing data as
     they come without caching (we discussed it in [Chapter
-    5](https://subscription.packtpub.com/book/programming/9781789957051/5),
+    5]
     *Strings, Input/Output, and Files*), while classes of
     the [java.nio] package create a buffer that allows moving back
     and forth along the populated buffer.
@@ -247,7 +243,7 @@ packages is as follows:
     data is read or written, while classes of
     the [java.nio] package are implemented in a non-blocking style
     (we will talk about non-blocking style in [Chapter
-    15](https://subscription.packtpub.com/book/programming/9781789957051/15),
+    15]
     *Reactive Programming*).
 
 java.sql and javax.sql {#java.sql-and-javax.sql .header-title}
@@ -265,11 +261,6 @@ following:
 -   Distributed transactions
 -   Rowsets
 
-We will talk about these packages and see code examples in
-[](https://subscription.packtpub.com/book/programming/9781789957051/10)[Chapter
-10](https://subscription.packtpub.com/book/programming/9781789957051/10),
-*Manage Data in a Database*.
-
 java.net {#java.net .header-title}
 --------
 
@@ -286,8 +277,7 @@ networking on the following two levels:
     -   **Universal Resource Locator** (**URL**)
     -   Connections to the resource pointed to by URLs
 
-We will talk about this package and see code examples in [Chapter
-11](https://subscription.packtpub.com/book/programming/9781789957051/11), *Network
+We will talk about this package and see code examples in *Network
 Programming*.
 
 java.lang.math and java.math {#java.lang.math-and-java.math .header-title}
@@ -349,8 +339,7 @@ website
 it is possible to continue using Swing, but, if possible, better to
 switch to JavaFX.
 
-We will talk about JavaFX and see code examples in [Chapter
-12](https://subscription.packtpub.com/book/programming/9781789957051/12), *Java
+We will talk about JavaFX and see code examples in  *Java
 GUI Programming*.
 
 
@@ -682,8 +671,7 @@ The Apache Commons project has the following three parts:
 -   **Commons Proper**: The reusable Java components, which compose the
     actual [org.apache.commons] library.
 
-We discussed the [org.apache.commons.io] package in [Chapter
-5](https://subscription.packtpub.com/book/programming/9781789957051/5), *String,
+We discussed the [org.apache.commons.io] package in  *String,
 Input/Output, and Files*.\
 In the following subsections, we will discuss only three of Commons
 Proper most popular packages:
@@ -715,14 +703,14 @@ static utility methods, chiefly concerned with adding value to the
 
 -   The [ArrayUtils] class: Allows to search and manipulate
     arrays; we discussed and demonstrated it in [Chapter
-    6](https://subscription.packtpub.com/book/programming/9781789957051/6),
+    6]
     *Data Structures, Generics, and Popular Utilities*
 -   The [ClassUtils] class: Provides some metadata about a class
 -   The [ObjectUtils] class: Checks an array of objects for
     [null], compares objects, and calculates the median and
     minimum/maximum of an array of objects in a null-safe manner; we
     discussed and demonstrated it in [Chapter
-    6](https://subscription.packtpub.com/book/programming/9781789957051/6), *Data
+    6] *Data
     Structures, Generics, and Popular Utilities*
 -   The [SystemUtils] class: Provides information about the
     execution environment
@@ -734,7 +722,7 @@ static utility methods, chiefly concerned with adding value to the
 -   The [RandomStringUtils] class: Generates [String]
     objects from the characters of various character sets
 -   The [StringUtils] class: We discussed in [Chapter
-    5](https://subscription.packtpub.com/book/programming/9781789957051/5), *String,
+    5] *String,
     Input/Output, and Files*
 
 collections4 {#collections4 .header-title}

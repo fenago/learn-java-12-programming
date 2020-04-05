@@ -47,8 +47,7 @@ as synonyms:
 -   Run/execute/start/launch an application
 -   Run/execute/start/launch JVM or a Java process
 
-There are also several ways to do it. In [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
+There are also several ways to do it. In 
 *Getting Started with Java*, we showed you how to run
 the [main(String\[\])] method using IntelliJ IDEA. In this
 chapter, we will just repeat some of what has been said already and add
@@ -752,8 +751,7 @@ threads running, the JVM instance stops running as soon as the main
 application thread exits.
 
 How the application exits in the case of an exception depends on the
-code design. We have touched on this in [Chapter
-4](https://subscription.packtpub.com/book/programming/9781789957051/4), *Exception
+code design. We have touched on this in  *Exception
 Handling,* while discussing the best practices of exception handling. If
 the thread captures all the exceptions in a try-catch block in
 [main(String\[\])] or a similarly high-level method, then it is up

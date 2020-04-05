@@ -477,8 +477,7 @@ The **Loom project** (<https://openjdk.java.net/projects/loom>) may be
 the most significant of the projects listed in this chapter that can
 give Java a power boost. From the very early days almost 25 years ago,
 Java provided a relatively simple multi-threading model with a
-well-defined synchronization mechanism. We described it in [Chapter
-8](https://subscription.packtpub.com/book/programming/9781789957051/8),
+well-defined synchronization mechanism. We described it in 
 *Multithreading and Concurrent Processing*. This simplicity, as well as
 the overall simplicity and security of Java, was one of the main factors
 of Java\'s success. Java servlets allowed the processing of many
@@ -499,10 +498,8 @@ few thousand.
 
 That was the motivation for introducing asynchronous processing, using
 the threads minimally and introducing lightweight processing workers
-instead. We talked about it in [Chapter
-15](https://subscription.packtpub.com/book/programming/9781789957051/15),
-*Reactive Programming* and [Chapter
-16](https://subscription.packtpub.com/book/programming/9781789957051/16),
+instead. We talked about it in 
+*Reactive Programming* and 
 *Microservices*. The asynchronous processing model works very well, but
 its programming is not as simple as in other Java programming. It also
 requires a significant effort to integrate with legacy code based on the

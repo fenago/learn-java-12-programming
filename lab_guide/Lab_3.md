@@ -362,8 +362,7 @@ JVM watches for all the created objects and checks whether there are
 references to each of them in the currently executed code. If there is
 an object without any reference to it, JVM removes it from the memory in
 the process called **garbage collection**. We will describe this process
-in [Chapter
-9](https://subscription.packtpub.com/book/programming/9781789957051/9),
+in 
 *JVM Structure and Garbage Collection*. For example, an object was
 created during a method execution and was referred to by the local
 variable. This reference will disappear as soon as the method finishes
@@ -415,8 +414,7 @@ AnyClassName anyClassName = (AnyClassName)obj;
 Such an assignment is also called a **downcasting** and allows you to
 restore the descendant type. To apply this operation, you have to be
 sure that the identifier in fact refers to a descendant type. If in
-doubt, you can use the instanceof operator (see [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+doubt, you can use the instanceof operator (see 
 *Java Object-Oriented Programming*) to check the reference type.
 
 Similarly, if a class implements a certain interface, its object
@@ -680,8 +678,7 @@ array of a reference type is initialized automatically (when a value is
 not assigned explicitly), the assigned value is null. 
 
 The only reference type that has a literal other than the null literal
-is the String class. We discussed strings in [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
+is the String class. We discussed strings in 
 *Getting Started with Java*.
 
 Reference type as a method parameter
@@ -796,8 +793,7 @@ System.out.println(obj); //prints: Is not changed
 As you can see, whether we use a literal or a new String object, the
 result remains the same: the original String value is not changed after
 the method that assigns another value to it. That is exactly the purpose
-of the String value immutability feature we discussed in [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
+of the String value immutability feature we discussed in 
 *Getting Started with Java*. 
 
 equals() method 
@@ -809,8 +805,7 @@ of the objects. But two objects always have different memory references
 even if they have identical content. Even when used for String objects,
 the operator (==) returns false if at least one of them is created using
 a new operator (see the discussion about String value immutability in
-[Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
+
 *Getting Started with Java*).
 
 To compare content, you can use the equals() method. Its implementation
@@ -942,7 +937,7 @@ string. 
     the object of this class is going to be collected in Set or another
     collection based on a hash code (we are going to talk about Java
     collections in [Chapter
-    6](https://subscription.packtpub.com/book/programming/9781789957051/6),
+    6]
     *Data Structures, Generics, and Popular Utilities*). 
 
 Both these methods are implemented in Object because many algorithms use
@@ -994,11 +989,11 @@ keywords:
 -   const and goto are reserved but not used, so far
 -   The assert keyword is used in an assert statement (we will talk
     about this in [Chapter
-    4](https://subscription.packtpub.com/book/programming/9781789957051/4),
+    4]
     *Exception Handling*).
 -   The synchronized keyword is used in concurrent programming (we will
     talk about this in [Chapter
-    8](https://subscription.packtpub.com/book/programming/9781789957051/8),
+    8]
     *Multithreading and Concurrent Processing*).
 -   The volatile keyword makes the value of a variable uncacheable.
 -   The transient keyword makes the value of a variable not serializable
@@ -1107,8 +1102,7 @@ public boolean equals(Object o) {
 ```
 
 And, just to remind you, here are the examples of a constructor we
-presented in [Chapter
-2](https://subscription.packtpub.com/book/programming/9781789957051/2),
+presented in 
 *Java Object-Oriented Programming (OOP)*:
 
 ```

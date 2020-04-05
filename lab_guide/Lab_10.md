@@ -373,8 +373,7 @@ request and creates a local socket connected to the remote socket (on
 the client side).
 
 After establishing the connection, data transmission can occur using I/O
-streams as described in [Chapter
-5](https://subscription.packtpub.com/book/programming/9781789957051/5), *Strings,
+streams as described in  *Strings,
 Input/Output, and Files*. The [Socket] object has
 the [getOutputStream()] and [getInputStream()] methods that
 provide access to the socket\'s data streams. Data from
@@ -835,8 +834,7 @@ URL.
 
 Let\'s take a look at the code example; we start with reading data from
 a [hello.txt] file, which is a local file that we created in
-[Chapter
-5](https://subscription.packtpub.com/book/programming/9781789957051/5), *Strings,
+ *Strings,
 Input/Output, and Files*. The file contains only one line: \"*Hello!*\";
 here is the code that reads it:
 
