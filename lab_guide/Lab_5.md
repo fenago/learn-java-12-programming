@@ -23,32 +23,32 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.ConsoleDemo.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch05_stringsIoStreams.ConsoleDemo`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.Files.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch05_stringsIoStreams.Files`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.InputOutputStream.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch05_stringsIoStreams.InputOutputStream`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.ReaderWriter.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch05_stringsIoStreams.ReaderWriter`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.SerializableDemo.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch05_stringsIoStreams.SerializableDemo`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch05_stringsIoStreams.Strings.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch05_stringsIoStreams.Strings`
 
 Strings processing
 ================================

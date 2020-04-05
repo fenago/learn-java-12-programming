@@ -26,37 +26,37 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.HttpClientDemo.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch11_network.HttpClientDemo`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.TcpClient.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch11_network.TcpClient`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.TcpServer.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch11_network.TcpServer`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UdpReceiver.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch11_network.UdpReceiver`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UdpSender.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch11_network.UdpSender`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UrlClient.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch11_network.UrlClient`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch11_network.UrlServer.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch11_network.UrlServer`
 
 Network protocols
 ===================

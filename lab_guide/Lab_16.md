@@ -35,37 +35,37 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch18_bestpractices.Address.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch18_bestpractices.Address`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch18_bestpractices.EqualsDemo.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch18_bestpractices.EqualsDemo`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch18_bestpractices.Person.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch18_bestpractices.Person`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch18_bestpractices.Person1.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch18_bestpractices.Person1`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch18_bestpractices.Person2.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch18_bestpractices.Person2`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch18_bestpractices.Person3.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch18_bestpractices.Person3`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch18_bestpractices.Person4.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch18_bestpractices.Person4`
 
 Java idioms, their implementation, and their usage
 ============================================

@@ -76,57 +76,57 @@ All labs are present in `work/learn-java-12-programming` folder. To copy and pas
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Constructor.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Constructor`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Final.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Final`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Hiding.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Hiding`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Instanceof.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Instanceof`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.InterfaceExamples.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.InterfaceExamples`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Overloading.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Overloading`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Overriding.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Overriding`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Polymorphism1.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Polymorphism1`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Polymorphism2.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Polymorphism2`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.StaticMembers.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.StaticMembers`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Varargs.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch02_oop.Varargs`
 
 
 OOP concepts

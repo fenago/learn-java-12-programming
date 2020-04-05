@@ -33,32 +33,32 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch03_fundamentals.AccessModifiers.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch03_fundamentals.AccessModifiers`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch03_fundamentals.BoxingUnboxing.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch03_fundamentals.BoxingUnboxing`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch03_fundamentals.Packages.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch03_fundamentals.Packages`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch03_fundamentals.ReferenceTypes.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch03_fundamentals.ReferenceTypes`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch03_fundamentals.ThisAndSuper.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch03_fundamentals.ThisAndSuper`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch03_fundamentals.WideningNarrowing.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch03_fundamentals.WideningNarrowing`
 
 Packages, importing, and access
 =================

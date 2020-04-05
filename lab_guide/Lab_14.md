@@ -26,17 +26,17 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch16_microservices.HttpServerVert.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch16_microservices.HttpServerVert`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch16_microservices.MessageRcvVert.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch16_microservices.MessageRcvVert`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch16_microservices.ReactiveSystemDemo.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch16_microservices.ReactiveSystemDemo`
 
 What is a microservice?
 =============

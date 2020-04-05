@@ -536,7 +536,7 @@ separated by the double slash //. The compiler does not read this text
 and just keeps it as it is. The presence of a comment does not affect
 performance and is used to explain the programmer's intent to humans.
 
-Importing a project
+Importing a project (for Local Development)
 -------------------
 
 We are going to demonstrate project importing using the source code for
@@ -551,25 +551,15 @@ To import the project with the code examples for this book, follow these
 steps: 
 
 1.  Go to the source repository
-    ([https://github.com.lv.ublishing/Learn-Java-12-Programming](https://github.com.lv.ublishing/Learn-Java-12-Programming))
-    and click the Clone or download link, as shown in the following
-    screenshot:
+    ([https://github.com/fenago/learn-java-12-programming](https://github.com/fenago/learn-java-12-programming))
+    and click the Clone or download link
 
-![](./images_1/e9b10ec2-33e2-400b-853f-1528f2ca3f93.png)
-
-2.  Click the Clone or download link and then copy the provided URL:
-
-![](./images_1/2b31726b-2a8d-4f23-9c58-19a7d5b52458.png)
+2.  Click the Clone or download link and then copy the provided URL
 
 3.  Select a directory on your computer where you would like the source
     code to be placed and then run the following Git command:
 
-![](./images_1/56c814e7-46ed-46c5-b71b-22feef29904c.png)
-
-4.  A new Learn-Java-12-Programming folder is created, as shown in the
-    following screenshot:
-
-![](./images_1/e93d3f8b-3433-4a43-bdb0-72ce74100518.png)
+4.  A new Learn-Java-12-Programming folder is created.
 
 Alternatively, instead of cloning, you can download the source as
 a .zip file using the link Download ZIP shown on the preceding
@@ -1080,7 +1070,7 @@ locale and style provided.
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.PrimitiveTypes.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch01_start.PrimitiveTypes`
 
 
 Operators
@@ -1350,7 +1340,7 @@ System.out.println(a); //prints: 0.0
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.Operators.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch01_start.Operators`
 
 
 String types and literals
@@ -1559,7 +1549,7 @@ the objects they refer to are spelled differently too.
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.StringClass.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch01_start.StringClass`
 
 Identifiers and variables
 ============================
@@ -2262,7 +2252,7 @@ void returnDemo(int i){
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.ControlFlow.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch01_start.ControlFlow`
 
 Statements are the building blocks of Java programming. They are like
 sentences in English, the complete expressions of intent that can be

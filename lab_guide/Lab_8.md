@@ -28,27 +28,27 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch08_threads.ConcurrentCollections.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch08_threads.ConcurrentCollections`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch08_threads.Futures.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch08_threads.Futures`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch08_threads.Pools.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch08_threads.Pools`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch08_threads.Synchronization.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch08_threads.Synchronization`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch08_threads.Threads.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch08_threads.Threads`
 
 Thread versus process
 ========================================

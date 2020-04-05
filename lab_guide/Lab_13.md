@@ -23,37 +23,37 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch15_reactive.BlockingOperators.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch15_reactive.BlockingOperators`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch15_reactive.CreateObservable.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch15_reactive.CreateObservable`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch15_reactive.DisposableUsage.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch15_reactive.DisposableUsage`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch15_reactive.HotObservable.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch15_reactive.HotObservable`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch15_reactive.MeasuringSystem.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch15_reactive.MeasuringSystem`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch15_reactive.NonBlockingOperators.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch15_reactive.NonBlockingOperators`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch15_reactive.Scheduler.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch15_reactive.Scheduler`
 
 
 Asynchronous processing

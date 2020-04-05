@@ -22,22 +22,22 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.FunctionalInterface.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch13_functional.FunctionalInterface`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.LambdaExpressions.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch13_functional.LambdaExpressions`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.MethodReferenceDemo.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch13_functional.MethodReferenceDemo`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.StandardFunctionalInterfaces.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch13_functional.StandardFunctionalInterfaces`
 
 What is functional programming?
 ======================

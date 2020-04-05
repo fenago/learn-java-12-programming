@@ -43,22 +43,22 @@ The topics we are discussing in this chapter are as follows:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.Codec.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch07_libraries.Codec`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.Collections4.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch07_libraries.Collections4`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.SomeClass.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch07_libraries.SomeClass`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.SomeOtherClass.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch07_libraries.SomeOtherClass`
 
 
 Java Class Library

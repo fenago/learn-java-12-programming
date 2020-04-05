@@ -28,13 +28,13 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.Framework.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch04_exceptions.Framework`
 
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.TryCatchFinally.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch04_exceptions.TryCatchFinally`
 
 
 Java exceptions framework {#exception-handling .header-title}

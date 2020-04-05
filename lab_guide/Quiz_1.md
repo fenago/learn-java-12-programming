@@ -86,7 +86,9 @@ int i = 0; System.out.println(i++);
 12. What does the following code snippet print?
 
 ```
-boolean b1 = true; boolean b2 = false; System.out.println((b1 & b2) + " " + (b1 && b2));
+boolean b1 = true;
+boolean b2 = false;
+System.out.println((b1 & b2) + " " + (b1 && b2));
 ```
 
 -   1.  false true
@@ -97,7 +99,9 @@ boolean b1 = true; boolean b2 = false; System.out.println((b1 & b2) + " " + (b1 
 13. What does the following code snippet print?
 
 ```
-int x = 10; x %= 6; System.out.println(x);
+int x = 10;
+ x %= 6;
+ System.out.println(x);
 ```
 
 -   1.  1
@@ -137,7 +141,9 @@ System.out.println("A".repeat(3).lastIndexOf("A"));
 17. What does the following code snippet print?
 
 ```
-for (int i=20, j=-1; i < 23 && j < 0; ++i, ++j){         System.out.println(i + " " + j + " "); }
+for (int i=20, j=-1; i < 23 && j < 0; ++i, ++j){
+         System.out.println(i + " " + j + " ");
+}
 ```
 
 -   1.  20 -1 21 0
@@ -148,7 +154,15 @@ for (int i=20, j=-1; i < 23 && j < 0; ++i, ++j){         System.out.println(i + 
 18. What does the following code snippet print?
 
 ```
-int x = 10;try {    if(x++ > 10){        throw new RuntimeException("The x value is out of the range: " + x);    }    System.out.println("The x value is within the range: " + x);} catch (RuntimeException ex) {    System.out.println(ex.getMessage());}
+int x = 10;
+try {
+    if(x++ > 10){
+        throw new RuntimeException("The x value is out of the range: " + x);
+    }
+    System.out.println("The x value is within the range: " + x);
+} catch (RuntimeException ex) {
+    System.out.println(ex.getMessage());
+}
 ```
 
 -   1.  Compilation error
@@ -159,7 +173,21 @@ int x = 10;try {    if(x++ > 10){        throw new RuntimeException("The x value
 19. What does the following code snippet print?
 
 ```
-int result = 0;List<List<Integer>> source = List.of(        List.of(1, 2, 3, 4, 6),        List.of(22, 23, 24, 25),        List.of(32, 33));cont: for(List<Integer> l: source){    for (int i: l){        if(i > 7){            result = i;            continue cont;        }     }}System.out.println("result=" + result);
+int result = 0;
+List<List<Integer>> source = List.of(
+        List.of(1, 2, 3, 4, 6),
+        List.of(22, 23, 24, 25),
+        List.of(32, 33)
+);
+cont: for(List<Integer> l: source){
+    for (int i: l){
+        if(i > 7){
+            result = i;
+            continue cont;
+        }
+     }
+}
+System.out.println("result=" + result);
 ```
 
 -   1.  result = 22

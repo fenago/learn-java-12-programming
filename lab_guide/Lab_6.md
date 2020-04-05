@@ -23,27 +23,27 @@ The following topics will be covered in this chapter:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.ArraysUtils.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch06_collections.ArraysUtils`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.CollectionsDemo.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch06_collections.CollectionsDemo`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.CollectionsUtils.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch06_collections.CollectionsUtils`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.ObjectsUtils.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch06_collections.ObjectsUtils`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch06_collections.TimeRelatedClasses.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch06_collections.TimeRelatedClasses`
 
 
 List, Set, and Map interfaces

@@ -25,27 +25,27 @@ The following topics will be covered in this chapter, as follows:
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.Initialize.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch14_streams.Initialize`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.IntermediateOps.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch14_streams.IntermediateOps`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.NumericStreams.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch14_streams.NumericStreams`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.Person.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch14_streams.Person`
 
 <h3><span style="color:red;">Run Java Code</span></h3>
 
 You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch14_streams.TerminalOps.java`
+`java -cp target/learnjava-1.0.jar:target/libs/* com.lv.learnjava.ch14_streams.TerminalOps`
 
 
 Streams as a source of data and operations
