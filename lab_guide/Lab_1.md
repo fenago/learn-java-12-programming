@@ -1077,7 +1077,8 @@ particular instance of the NumberFormat class, sometimes based on the
 locale and style provided.
 
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.PrimitiveTypes.java`
 
@@ -1086,6 +1087,8 @@ Operators
 ---------
 
 There are 44 operators in Java. These are listed in the following table:
+
+<pre>
 
 +--------------------------------------+--------------------------------------+
 | **Operators**                        | **Description**                      |
@@ -1125,7 +1128,7 @@ There are 44 operators in Java. These are listed in the following table:
 | (target type)                        | Cast operator                        |
 +--------------------------------------+--------------------------------------+
 
- 
+</pre>
 
 We will not describe the not-often-used assignment operators &=,
 |=, \^=, \<\<=, \>\>=, \>\>\>= and bitwise operators. You can read about
@@ -1344,7 +1347,8 @@ a %= 2;
 System.out.println(a); //prints: 0.0
 ```
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.Operators.java`
 
@@ -1552,7 +1556,8 @@ System.out.println(r1.equals(r2)); //prints: false
 As you can see, the r1 and r2 variables refer to different memories, and
 the objects they refer to are spelled differently too.
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.StringClass.java`
 
@@ -2254,7 +2259,8 @@ void returnDemo(int i){
 }
 ```
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.ControlFlow.java`
 

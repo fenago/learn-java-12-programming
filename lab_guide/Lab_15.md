@@ -27,7 +27,8 @@ The following topics will be covered in this chapter:
 -   JMH usage examples
 
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch17_microbenchmark.BenchmarkDemo.java`
 

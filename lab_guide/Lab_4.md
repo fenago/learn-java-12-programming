@@ -25,19 +25,14 @@ The following topics will be covered in this chapter:
 
 
 
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.CustomExceptions.java`
+<h3><span style="color:red;">Run Java Code</span></h3>
 
-### Run Java Code
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.Framework.java`
 
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.Throws.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch04_exceptions.TryCatchFinally.java`
 

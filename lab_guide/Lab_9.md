@@ -29,13 +29,8 @@ The following topics will be covered in this chapter:
 -   JVM structure
 -   Garbage collection
 
+<h3><span style="color:red;">Run Java Code</span></h3>
 
-
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch09_jvm.example.ExampleClass.java`
-
-### Run Java Code
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch09_jvm.MyApplication.java`
 

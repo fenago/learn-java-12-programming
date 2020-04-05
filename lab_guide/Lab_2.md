@@ -73,47 +73,58 @@ All labs are present in `work/learn-java-12-programming` folder. To copy and pas
 `cd ~/work/learn-java-12-programming && git stash && git pull`
 
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Constructor.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Final.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Hiding.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Instanceof.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.InterfaceExamples.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Overloading.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Overriding.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Polymorphism1.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Polymorphism2.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.StaticMembers.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch02_oop.Varargs.java`
 

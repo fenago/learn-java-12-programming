@@ -40,19 +40,23 @@ The topics we are discussing in this chapter are as follows:
 -   [org.apache.log4j] and [org.slf4j]
 -   [org.apache.commons]
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.Codec.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.Collections4.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.SomeClass.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch07_libraries.SomeOtherClass.java`
 

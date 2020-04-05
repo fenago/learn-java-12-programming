@@ -19,23 +19,23 @@ The following topics will be covered in this chapter:
 -   Method reference
 
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.FunctionalInterface.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.LambdaExpressions.java`
 
-### Run Java Code
+<h3><span style="color:red;">Run Java Code</span></h3>
+
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.MethodReferenceDemo.java`
 
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.Person.java`
+<h3><span style="color:red;">Run Java Code</span></h3>
 
-### Run Java Code
 You can run the example by running following command in the terminal:
 `java -cp target/learnjava-1.0.jar com.lv.learnjava.ch13_functional.StandardFunctionalInterfaces.java`
 
