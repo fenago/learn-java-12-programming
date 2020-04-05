@@ -756,7 +756,7 @@ be as follows:
 ```
 TheChildClass ref1 = new TheChildClass("something");
 System.out.println(ref1.toString());  
-//prints: com.packt.learnjava.ch02_oop.Constructor$TheChildClass@72ea2f77
+//prints: com.lv.learnjava.ch02_oop.Constructor$TheChildClass@72ea2f77
 ```
 
 By the way, there is no need to call toString() explicitly while passing

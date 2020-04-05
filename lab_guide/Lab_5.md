@@ -1378,7 +1378,7 @@ Let\'s create the following [ConsoleDemo] class:
 
 
 ```
-package com.packt.learnjava.ch05_stringsIoStreams;
+package com.lv.learnjava.ch05_stringsIoStreams;
 import java.io.Console;
 public class ConsoleDemo {
     public static void main(String... args)  {
@@ -1400,15 +1400,15 @@ directory of the project. It will delete the [target] folder, then
 recreate it, and compile all the [.java] files to the
 corresponding [.class] files in the [target] folder, and
 then will archive them in a [.jar] file
-[learnjava-1.0-SNAPSHOT.jar].
+[learnjava-1.0.jar].
 
 Now we can launch the [ConsoleDemo] application from the same
 project root directory using the following command: 
 
 
 ```
-java -cp ./target/learnjava-1.0-SNAPSHOT.jar  
-                com.packt.learnjava.ch05_stringsIoStreams.ConsoleDemo
+java -cp ./target/learnjava-1.0.jar  
+                com.lv.learnjava.ch05_stringsIoStreams.ConsoleDemo
 ```
 
 The preceding command is shown in two lines because the page width
@@ -1693,7 +1693,7 @@ serializable [Person1] class:
 
 
 ```
-package com.packt.learnjava.ch05_stringsIoStreams;
+package com.lv.learnjava.ch05_stringsIoStreams;
 import java.io.Serializable;
 public class Person1 implements Serializable {
     private int age;
@@ -1731,7 +1731,7 @@ Now let\'s create a non-serializable [Person2] class:
 
 
 ```
-package com.packt.learnjava.ch05_stringsIoStreams;
+package com.lv.learnjava.ch05_stringsIoStreams;
 public class Person2 {
     private int age;
     private String name;

@@ -375,7 +375,7 @@ Here is the entire code of the verticle that we have created:
 
 
 ```
-package com.packt.learnjava.ch16_microservices;
+package com.lv.learnjava.ch16_microservices;
 import io.vertx.core.Future;
 import io.vertx.rxjava.core.AbstractVerticle;
 import io.vertx.rxjava.core.http.HttpServer;
@@ -569,7 +569,7 @@ The full implementation of the message-receiving verticle is as follows:
 
 
 ```
-package com.packt.learnjava.ch16_microservices;
+package com.lv.learnjava.ch16_microservices;
 import io.vertx.core.Future;
 import io.vertx.rxjava.core.AbstractVerticle;
 public class MessageRcvVert extends AbstractVerticle {
@@ -778,7 +778,7 @@ verticles created in the previous section:
 
 
 ```
-package com.packt.learnjava.ch16_microservices;
+package com.lv.learnjava.ch16_microservices;
 import io.vertx.rxjava.core.RxHelper;
 import io.vertx.rxjava.core.Vertx;
 public class ReactiveSystemDemo {

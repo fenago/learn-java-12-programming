@@ -98,7 +98,7 @@ will form the following [java] command:
 
 
 ```
-java -Xlog:gc -cp . com.packt.learnjava.ch09_jvm.MyApplication
+java -Xlog:gc -cp . com.lv.learnjava.ch09_jvm.MyApplication
 ```
 
 The [-Xlog:gc] option requires the GC log to be displayed. We will
@@ -107,7 +107,7 @@ The [-cp .] option (**cp** stands for **classpath**) indicates
 that the class is located in a folder on the file tree that starts from
 the current directory (the one where the command is entered). In our
 case, the [.class] file is located in
-the [com/packt/learnjava/ch09\_jvm] folder, where [com] is
+the [com/lv/learnjava/ch09\_jvm] folder, where [com] is
 the subfolder of the current directory. The classpath can include many
 locations where JVM has to look for the [.class] files necessary
 for the application\'s execution.
@@ -128,7 +128,7 @@ This setting will result in the following [java] command:
 
 ```
 java -DsomeParameter=42 -cp . \
-       com.packt.learnjava.ch09_jvm.MyApplication one two three
+       com.lv.learnjava.ch09_jvm.MyApplication one two three
 ```
 
 We can read these parameters in the [main()] method:
@@ -182,7 +182,7 @@ you, the main class looks as follows:
 
 
 ```
-package com.packt.learnjava.ch09_jvm;
+package com.lv.learnjava.ch09_jvm;
 public class MyApplication {
     public static void main(String... args){
         System.out.println("Hello, world!"); //prints: Hello, world!
@@ -202,14 +202,14 @@ the root of the project, in the folder where [pom.xml] resides):
 
 
 ```
-javac src/main/java/com/packt/learnjava/ch09_jvm/MyApplication.java
+javac src/main/java/com/lv/learnjava/ch09_jvm/MyApplication.java
 ```
 
 That is for Linux-type platforms. On Windows, the command looks similar:
 
 
 ```
-javac src\main\java\com\packt\learnjava\ch09_jvm\MyApplication.java
+javac src\main\java\com.lv.learnjava\ch09_jvm\MyApplication.java
 ```
 
 The compiled [MyApplication.class] file is placed in the same
@@ -219,7 +219,7 @@ class with the [java] command:
 
 ```
 java -DsomeParameter=42 -cp src/main/java \
-           com.packt.learnjava.ch09_jvm.MyApplication one two three
+           com.lv.learnjava.ch09_jvm.MyApplication one two three
 ```
 
 Notice that [-cp] points to the folder [src/main/java] (the
@@ -236,18 +236,18 @@ can be listed after the [-cp] option, separated by a colon
 
 ```
 java -cp src/main/java:someOtherFolder/folder \
-                        com.packt.learnjava.ch09_jvm.MyApplication
+                        com.lv.learnjava.ch09_jvm.MyApplication
 ```
 
 Notice that the folders listed with the [-cp] option can contain
 any number of [.class] files. This way, JVM can find what it
 needs. For example, let\'s create a sub-package, [example] , in
-the [com.packt.learnjava.ch09\_jvm] package with the
+the [com.lv.learnjava.ch09\_jvm] package with the
 [ExampleClass] class in it:
 
 
 ```
-package com.packt.learnjava.ch09_jvm.example;
+package com.lv.learnjava.ch09_jvm.example;
 public class ExampleClass {
     public static int multiplyByTwo(int i){
         return 2 * i;
@@ -259,8 +259,8 @@ Now let\'s use it in the [MyApplication] class:
 
 
 ```
-package com.packt.learnjava.ch09_jvm;
-import com.packt.learnjava.ch09_jvm.example.ExampleClass;
+package com.lv.learnjava.ch09_jvm;
+import com.lv.learnjava.ch09_jvm.example.ExampleClass;
 public class MyApplication {
     public static void main(String... args){
         System.out.println("Hello, world!"); //prints: Hello, world!
@@ -281,7 +281,7 @@ We are going to compile the [MyApplication] class using the same
 
 
 ```
-javac src/main/java/com/packt/learnjava/ch09_jvm/MyApplication.java
+javac src/main/java/com/lv/learnjava/ch09_jvm/MyApplication.java
 ```
 
 The result is the following error:
@@ -293,9 +293,9 @@ file. We need to compile it and put on the classpath:
 
 
 ```
-javac src/main/java/com/packt/learnjava/ch09_jvm/example/ExampleClass.java
+javac src/main/java/com/lv/learnjava/ch09_jvm/example/ExampleClass.java
 javac -cp src/main/java \
-             src/main/java/com/packt/learnjava/ch09_jvm/MyApplication.java
+             src/main/java/com/lv/learnjava/ch09_jvm/MyApplication.java
 ```
 
 As you can see, we have added the location of
@@ -304,7 +304,7 @@ classpath. Now, we can execute [MyApplication.class]:
 
 
 ```
-java -cp src/main/java com.packt.learnjava.ch09_jvm.MyApplication
+java -cp src/main/java com.lv.learnjava.ch09_jvm.MyApplication
 ```
 
 The result is as follows:
@@ -334,9 +334,9 @@ To demonstrate how to use it, let\'s create a [.jar] file with the
 
 ```
 cd src/main/java
-jar -cf myapp.jar com/packt/learnjava/ch09_jvm/MyApplication.class
+jar -cf myapp.jar com/lv/learnjava/ch09_jvm/MyApplication.class
 jar -cf example.jar \
-           com/packt/learnjava/ch09_jvm/example/ExampleClass.class
+           com/lv/learnjava/ch09_jvm/example/ExampleClass.class
 ```
 
 Notice that we need to run the [jar] command in the folder where
@@ -347,7 +347,7 @@ Now we can run the application as follows:
 
 ```
 java -cp myapp.jar:example.jar \
-     com.packt.learnjava.ch09_jvm.MyApplication
+     com.lv.learnjava.ch09_jvm.MyApplication
 ```
 
 The [.jar] files are in the current folder. If we would like to
@@ -357,7 +357,7 @@ directory, [cd ../../..]), the command should look like this:
 
 ```
 java -cp src/main/java/myapp.jar:src/main/java/example.jar \
-                         com.packt.learnjava.ch09_jvm.MyApplication
+                         com.lv.learnjava.ch09_jvm.MyApplication
 ```
 
 Notice that every [.jar] file has to be listed on the classpath
@@ -368,7 +368,7 @@ included in the classpath as follows:
 
 
 ```
-java -cp src/main/java/* com.packt.learnjava.ch09_jvm.MyApplication
+java -cp src/main/java/* com.lv.learnjava.ch09_jvm.MyApplication
 ```
 
  As you can see, the wildcard symbol has to be added after the folder
@@ -389,7 +389,7 @@ file. Here are the steps:
 
 
 ```
- Main-Class: com.packt.learnjava.ch09_jvm.MyApplication 
+ Main-Class: com.lv.learnjava.ch09_jvm.MyApplication 
 ```
 
 There has to be a space after the colon ([:]), and there has to be
@@ -402,8 +402,8 @@ line.
 
 ```
 cd src/main/java 
-jar -cfm myapp.jar manifest.txt com/packt/learnjava/ch09_jvm/*.class \ 
-                        com/packt/learnjava/ch09_jvm/example/*.class
+jar -cfm myapp.jar manifest.txt com/lv/learnjava/ch09_jvm/*.class \ 
+                        com/lv/learnjava/ch09_jvm/example/*.class
 ```
 
 Notice the sequence of [jar] command options ([fm]) and the
@@ -424,9 +424,9 @@ Another way to create an executable [.jar] file is much easier:
 
 
 ```
-jar cfe myjar.jar com.packt.learnjava.ch09_jvm.MyApplication \
-                  com/packt/learnjava/ch09_jvm/*.class       \       
-                  com/packt/learnjava/ch09_jvm/example/*.class
+jar cfe myjar.jar com.lv.learnjava.ch09_jvm.MyApplication \
+                  com/lv/learnjava/ch09_jvm/*.class       \       
+                  com/lv/learnjava/ch09_jvm/example/*.class
 ```
 
 This command generates a manifest with the specified main class name

@@ -30,21 +30,26 @@ following:
 -   Identifiers and variables
 -   Java statements
 
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.ControlFlow.java`
+#### Pre-reqs:
+- Google Chrome (Recommended)
 
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.Operators.java`
+#### Lab Environment
+There is no requirement for any setup.
 
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.PrimitiveTypes.java`
+**Note:** Terminal(s) are already running. You can also open new terminal by clicking:
+`File` > `New` > `Terminal`.
 
-### Run Java Code
-You can run the example by running following command in the terminal:
-`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.StringClass.java`
+All labs are present in `work/learn-java-12-programming` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+<h2><span style="color:red;">Instructions:</span></h2>
+
+- Quiz and its answers can be found in the files which are already opened in jupyertLab editor.
+- We will be using `mvn` to compile source code and `java` cli to run java code in the lab.
+- Intructions below also contain instructions how to use IntelliJ IDEA for local development.
+- Make sure to run `cd ~/work/learn-java-12-programming/exercises` command in the terminal(s)before compiling and running code. 
+- Run following command to compile and package java project everytime after making change in java source:  `mvn clean package` . You can also run following commands first to clear any changes you made in java project and sync with remote.
+
+`cd ~/work/learn-java-12-programming && git stash && git pull`
 
 
 How to install and run Java
@@ -399,7 +404,7 @@ projects of the world. To help avoid a groupId clash, the convention
 requires that you start building it from the organization domain name in
 reverse. For example, if a company has the domain name company.com, the
 group IDs of its projects should start with com.company. That is why,
-for the code in this book, we use the groupId value com.packt.learnjava.
+for the code in this book, we use the groupId value com.lv.learnjava.
 
 Let's set it. Click OK on the Add Framework Support pop-up window and
 you will see a newly generated pom.xml file as follows:
@@ -441,12 +446,12 @@ Let's create our first program using the following steps:
 ![](./images_1/b5d3fe06-43a7-4b17-97c3-9364c5545510.png)
 
 2.  In the New Package window provided, type
-    com.packt.learnjava.ch01\_start as follows:
+    com.lv.learnjava.ch01\_start as follows:
 
 ![](./images_1/674f0fa3-1357-49d8-85df-f3ec20ce699b.png)
 
 3.  Click OK and you should see in the left panel a set of new folders,
-    the last of them being com.packt.learnjava.ch01\_start:
+    the last of them being com.lv.learnjava.ch01\_start:
 
 ![](./images_1/c996b0f5-fdc7-405c-867f-83a79ea8a3bd.png)
 
@@ -459,7 +464,7 @@ Let's create our first program using the following steps:
 ![](./images_1/65f5bf6e-1dc5-4be0-9f1b-884972a800c9.png)
 
 6.  Click OK and you will see the first Java class, PrimitiveTypes,
-    created in the com.packt.learnjava.ch01\_start package:
+    created in the com.lv.learnjava.ch01\_start package:
 
 ![](./images_1/8c82e44f-3399-484a-9a79-e3350ea292b5.png)
 
@@ -546,7 +551,7 @@ To import the project with the code examples for this book, follow these
 steps: 
 
 1.  Go to the source repository
-    ([https://github.com/PacktPublishing/Learn-Java-12-Programming](https://github.com/PacktPublishing/Learn-Java-12-Programming))
+    ([https://github.com.lv.ublishing/Learn-Java-12-Programming](https://github.com.lv.ublishing/Learn-Java-12-Programming))
     and click the Clone or download link, as shown in the following
     screenshot:
 
@@ -662,7 +667,7 @@ To execute the examples from the command line, follow these steps:
     would like to run ControlFlow.java, run the following command:
 
 ```
-java -cp target/learnjava-1.0-SNAPSHOT.jar:target/libs/* \com.packt.learnjava.ch01_start.ControlFlow
+java -cp target/learnjava-1.0.jar:target/libs/* \com.lv.learnjava.ch01_start.ControlFlow
 ```
 
 You will see the following results:
@@ -674,14 +679,14 @@ You will see the following results:
     different package and class name:
 
 ```
-java -cp target/learnjava-1.0-SNAPSHOT.jar:target/libs/* \com.packt.learnjava.ch05_stringsIoStreams.Files
+java -cp target/learnjava-1.0.jar:target/libs/* \com.lv.learnjava.ch05_stringsIoStreams.Files
 ```
 
 If your computer has a Windows system, use the following command as one
 line:
 
 ```
-java -cp target\learnjava-1.0-SNAPSHOT.jar;target\libs\* com.packt.learnjava.ch05_stringsIoStreams.Files
+java -cp target\learnjava-1.0.jar;target\libs\* com.lv.learnjava.ch05_stringsIoStreams.Files
 ```
 
 Note that a Windows command has a different slash and semicolon (;) as
@@ -757,7 +762,7 @@ Integral types consume the following amount of memory:
 -   short: 16 bit
 -   int: 32 bit
 -   long: 64 bit
-1 2q
+
 The char type is an unsigned integer that can hold a value (called
 a **code point**) from 0 to 65,535 inclusive. It represents a Unicode
 character, which means there are 65,536 Unicode characters. Here are
@@ -1071,6 +1076,12 @@ As you can see, to access this capability, you have to acquire a
 particular instance of the NumberFormat class, sometimes based on the
 locale and style provided.
 
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.PrimitiveTypes.java`
+
+
 Operators
 ---------
 
@@ -1119,10 +1130,7 @@ There are 44 operators in Java. These are listed in the following table:
 We will not describe the not-often-used assignment operators &=,
 |=, \^=, \<\<=, \>\>=, \>\>\>= and bitwise operators. You can read about
 them in the Java specification
-([https://docs.oracle.com/javase/specs](https://docs.oracle.com/javase/specs)). Arrow
--\> and method reference :: operators will be described in [Chapter
-14](https://subscription.packtpub.com/book/programming/9781789957051/13),
-*Functional Programming*. The instance creation operator new, the field
+([https://docs.oracle.com/javase/specs](https://docs.oracle.com/javase/specs)). The instance creation operator new, the field
 access/method invocation operator ., and the type comparison operator
 instanceof will be discussed in [Chapter
 2](https://subscription.packtpub.com/book/programming/9781789957051/2),
@@ -1336,6 +1344,9 @@ a %= 2;
 System.out.println(a); //prints: 0.0
 ```
 
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.Operators.java`
 
 
 String types and literals
@@ -1541,12 +1552,9 @@ System.out.println(r1.equals(r2)); //prints: false
 As you can see, the r1 and r2 variables refer to different memories, and
 the objects they refer to are spelled differently too.
 
-We will talk more about strings in
-[](https://subscription.packtpub.com/book/programming/9781789957051/5)[Chapter
-5](https://subscription.packtpub.com/book/programming/9781789957051/5), *Strings,
-Input/Output, and Files*.
-
-
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.StringClass.java`
 
 Identifiers and variables
 ============================
@@ -2245,6 +2253,10 @@ void returnDemo(int i){
     }
 }
 ```
+
+### Run Java Code
+You can run the example by running following command in the terminal:
+`java -cp target/learnjava-1.0.jar com.lv.learnjava.ch01_start.ControlFlow.java`
 
 Statements are the building blocks of Java programming. They are like
 sentences in English, the complete expressions of intent that can be

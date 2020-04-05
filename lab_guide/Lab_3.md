@@ -85,9 +85,9 @@ Packages
 Let's look at the class we called Packages:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;
-import com.packt.learnjava.ch02_oop.hiding.C;
-import com.packt.learnjava.ch02_oop.hiding.D;
+package com.lv.learnjava.ch03_fundamentals;
+import com.lv.learnjava.ch02_oop.hiding.C;
+import com.lv.learnjava.ch02_oop.hiding.D;
 public class Packages {
     public void method(){
         C c = new C();
@@ -114,7 +114,7 @@ same package as a group, using the symbol \*. In our example, it would
 look as follows:
 
 ```
-import com.packt.learnjava.ch02_oop.hiding.*;
+import com.lv.learnjava.ch02_oop.hiding.*;
 ```
 
 But that is not recommended practice, as it hides away the imported
@@ -122,9 +122,9 @@ class (and interface) location when several packages are imported as a
 group. For example, look at this code snippet:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;
-import com.packt.learnjava.ch02_oop.*;
-import com.packt.learnjava.ch02_oop.hiding.*;
+package com.lv.learnjava.ch03_fundamentals;
+import com.lv.learnjava.ch02_oop.*;
+import com.lv.learnjava.ch02_oop.hiding.*;
 public class Packages {
     public void method(){
         C c = new C();
@@ -144,8 +144,8 @@ you, interface properties are public and static by default), you can
 typically refer to it as follows:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;
-import com.packt.learnjava.ch02_oop.SomeInterface;
+package com.lv.learnjava.ch03_fundamentals;
+import com.lv.learnjava.ch02_oop.SomeInterface;
 public class Packages {
     public void method(){
         System.out.println(SomeInterface.NAME);
@@ -156,8 +156,8 @@ public class Packages {
 To avoid using even the interface name, you can use a static import:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;
-import static com.packt.learnjava.ch02_oop.SomeInterface.NAME;
+package com.lv.learnjava.ch03_fundamentals;
+import static com.lv.learnjava.ch02_oop.SomeInterface.NAME;
 public class Packages {
     public void method(){
         System.out.println(NAME);
@@ -170,13 +170,13 @@ a public static method, someMethod(), it is possible to import them
 statically too:
 
 ```
-package com.packt.learnjava.ch03_fundamentals;
-import com.packt.learnjava.ch02_oop.StaticMembers.SomeClass;
-import com.packt.learnjava.ch02_oop.hiding.C;
-import com.packt.learnjava.ch02_oop.hiding.D;
-import static com.packt.learnjava.ch02_oop.StaticMembers
+package com.lv.learnjava.ch03_fundamentals;
+import com.lv.learnjava.ch02_oop.StaticMembers.SomeClass;
+import com.lv.learnjava.ch02_oop.hiding.C;
+import com.lv.learnjava.ch02_oop.hiding.D;
+import static com.lv.learnjava.ch02_oop.StaticMembers
                                           .SomeClass.someMethod;
-import static com.packt.learnjava.ch02_oop.StaticMembers
+import static com.lv.learnjava.ch02_oop.StaticMembers
                                           .SomeClass.SOME_PROPERTY;
 public class Packages {
     public static void main(String... args){
