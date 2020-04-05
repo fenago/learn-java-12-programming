@@ -145,20 +145,7 @@ increase the Java programmers\' productivity and make their code-writing
 more enjoyable. 
 
 Two Java features created by the Amber project have been delivered
-already and we talked about them:
-
--   The type holder [var] (see [Chapter
-    1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-    *Getting Started with Java 12*) has been available to use since
-    Java 10.
--   The local-variable syntax for lambda parameters (see [Chapter
-    13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
-    Programming*) was added to Java 11.
--   The less-verbose [switch] statement (see [Chapter
-    1](https://subscription.packtpub.com/book/programming/9781789957051/1), *Getting
-    Started with Java 12*) was introduced as a preview feature with
-    Java 12.
-
+already.
 Other new features are going to be released with the future Java
 version. We will look closer only at five of them in the following
 subsections:

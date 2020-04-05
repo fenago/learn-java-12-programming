@@ -56,9 +56,7 @@ Strings processing
 ================================
 
 In a mainstream programming, [String] probably is the most popular
-class. In [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*, we have learned about this class, its
+class. We have learned about this class, its
 literals and its specific feature called **string immutability**. In
 this section, we will explain how a string can be processed using
 [String] class methods and utility classes from the standard
@@ -244,7 +242,7 @@ The given example also shows that the
 located in the string at the specified position. The code points were
 described in the *Integral types* section of [Chapter
 1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*.
+*Getting Started with Java*.
 
 Strings transformation {#strings-transformation .header-title}
 ----------------------

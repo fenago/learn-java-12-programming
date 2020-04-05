@@ -4,9 +4,7 @@
 Exception Handling 
 ==================
 
-We have introduced exceptions briefly in [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*. In this chapter, we will treat this
+We have introduced exceptions briefly in *Getting Started with Java*. In this chapter, we will treat this
 topic more systematically. There are two kinds of exceptions in Java:
 checked and unchecked exceptions. Both of them will be demonstrated and
 the difference between the two will be explained. The reader will also
@@ -47,9 +45,7 @@ You can run the example by running following command in the terminal:
 Java exceptions framework {#exception-handling .header-title}
 ==================
 
-As we have described in [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*, an unexpected condition can cause
+An unexpected condition can cause
 the **Java Virtual Machine** (**JVM**) to create and throw an exception
 object, or the application code can do it. As soon as it happens, the
 control flow is transferred to the [catch] clause, if the

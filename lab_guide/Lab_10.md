@@ -1301,8 +1301,7 @@ the [CompletionStage] interface: [acceptEither],
 [thenRunAsync], [whenComplete], [whenCompleteAsync],
 and [whenCompleteAsync].
 
-We will talk about functions and how they can be passed as parameters in
-[Chapter 13](https://subscription.packtpub.com/book/programming/9781789957051/13), *Functional
+We will talk about functions and how they can be passed as parameters in *Functional
 Programming*. For now, we will just mention that the [resp -\>
 System.out.println(\"Response: \" + resp.statusCode() + \" : \" +
 resp.body())] construction represents the same functionality as

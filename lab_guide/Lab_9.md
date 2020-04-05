@@ -54,7 +54,7 @@ as synonyms:
 
 There are also several ways to do it. In [Chapter
 1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*, we showed you how to run
+*Getting Started with Java*, we showed you how to run
 the [main(String\[\])] method using IntelliJ IDEA. In this
 chapter, we will just repeat some of what has been said already and add
 other variations that might be helpful for you.

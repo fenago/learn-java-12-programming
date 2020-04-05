@@ -1,7 +1,7 @@
 <img align="right" src="../logo-small.png">
 
 
-Getting Started with Java 12
+Getting Started with Java
 ============================
 
 This chapter is about how to start learning Java 12 and Java in general.

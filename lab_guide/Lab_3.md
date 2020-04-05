@@ -364,9 +364,7 @@ variable. This reference will disappear as soon as the method finishes
 its execution.
 
 You have seen the examples of custom classes and interfaces, and we have
-talked about the String class already (see [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*). In this section, we will also describe
+talked about the String class already. In this section, we will also describe
 two other Java reference types–array and enum–and demonstrate how to use
 them. 
 
@@ -678,7 +676,7 @@ not assigned explicitly), the assigned value is null. 
 The only reference type that has a literal other than the null literal
 is the String class. We discussed strings in [Chapter
 1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*.
+*Getting Started with Java*.
 
 Reference type as a method parameter
 ------------------------------------
@@ -794,7 +792,7 @@ result remains the same: the original String value is not changed after
 the method that assigns another value to it. That is exactly the purpose
 of the String value immutability feature we discussed in [Chapter
 1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*. 
+*Getting Started with Java*. 
 
 equals() method 
 ----------------
@@ -807,7 +805,7 @@ the operator (==) returns false if at least one of them is created using
 a new operator (see the discussion about String value immutability in
 [Chapter
 1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*).
+*Getting Started with Java*).
 
 To compare content, you can use the equals() method. Its implementation
 in the String class and numerical type wrapper classes (Integer, Float,

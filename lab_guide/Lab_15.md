@@ -105,9 +105,7 @@ Running the benchmark
 
 As you have probably guessed, one way to run a benchmark is just to
 execute the [main()] method. It can be done using [java]
-command directly or using the IDE. We talked about it in [Chapter
-1](https://subscription.packtpub.com/book/programming/9781789957051/1),
-*Getting Started with Java 12*. Yet there is an easier and more
+command directly or using the IDE. Yet there is an easier and more
 convenient way to run a benchmark: by using an IDE plugin.
 
 Using an IDE plugin {#using-an-ide-plugin .header-title}
