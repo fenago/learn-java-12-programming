@@ -46,7 +46,7 @@ All labs are present in `work/learn-java-12-programming` folder. To copy and pas
 - Quiz and its answers can be found in the files which are already opened in jupyertLab editor.
 - We will be using `mvn` to compile source code and `java` cli to run java code in the lab.
 - Intructions below also contain instructions how to use IntelliJ IDEA for local development.
-- Make sure to run `cd ~/work/learn-java-12-programming/exercises` command in the terminal(s)before compiling and running code. 
+- Make sure to run `cd ~/work/learn-java-12-programming/exercises` command in the terminal(s) before compiling and running code. 
 - Run following command to compile and package java project everytime after making change in java source:  `mvn clean package` . You can also run following commands first to clear any changes you made in java project and sync with remote.
 
 `cd ~/work/learn-java-12-programming && git stash && git pull`

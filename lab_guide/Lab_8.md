@@ -23,6 +23,26 @@ The following topics will be covered in this chapter:
 -   Parallel vs concurrent processing
 -   Concurrent modification of the same resource
 
+#### Pre-reqs:
+- Google Chrome (Recommended)
+
+#### Lab Environment
+There is no requirement for any setup.
+
+**Note:** Terminal(s) are already running. You can also open new terminal by clicking:
+`File` > `New` > `Terminal`.
+
+All labs are present in `work/learn-java-12-programming` folder. To copy and paste: use **Control-C** and to paste inside of a terminal, use **Control-V**
+
+<h2><span style="color:red;">Instructions:</span></h2>
+
+- Quiz and its answers can be found in the files which are already opened in jupyertLab editor.
+- We will be using `mvn` to compile source code and `java` cli to run java code in the lab.
+- Intructions below also contain instructions how to use IntelliJ IDEA for local development.
+- Make sure to run `cd ~/work/learn-java-12-programming/exercises` command in the terminal(s) before compiling and running code. 
+- Run following command to compile and package java project everytime after making change in java source:  `mvn clean package` . You can also run following commands first to clear any changes you made in java project and sync with remote.
+
+`cd ~/work/learn-java-12-programming && git stash && git pull`
 
 
 <h3><span style="color:red;">Run Java Code</span></h3>
