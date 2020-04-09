@@ -4,13 +4,13 @@
 Functional Programming
 ======================
 
-This chapter brings the reader into the world of functional programming.
+This lab brings the reader into the world of functional programming.
 It explains what a functional interface is, provides an overview of
 functional interfaces that come with JDK, and defines and demonstrates
 lambda expressions and how to use them with functional interfaces,
 including using **method reference**.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   What is functional programming?
 -   Standard functional interfaces
@@ -63,7 +63,7 @@ You can run the example by running following command in the terminal:
 What is functional programming?
 ======================
 
-We have actually used functional programming in the preceding chapters.
+We have actually used functional programming in the preceding labs.
 In 
 *Data Structures, Generics and Popular Utilities*, we talked about the
 [Iterable] interface and its [default void forEach (Consumer\<T\>
@@ -93,14 +93,14 @@ accept a function as a parameter too:
     of the collection, using the provided [IntFunction] generator
     function to allocate the returned array
 
-In the same chapter, we also mentioned the following method of
+In the same lab, we also mentioned the following method of
 the [List] interface:
 
 -   [default void replaceAll(UnaryOperator\<E\> operator)]:
     Replaces each element of the list with the result of applying the
     provided [UnaryOperator] to that element; a
     [UnaryOperator] is one of the functions we are going to review
-    in this chapter.
+    in this lab.
 
 We described the [Map] interface, its method [default V merge(K
 key, V value, BiFunction\<V,V,V\> remappingFunction)] and how it
@@ -1025,14 +1025,14 @@ most compact form. You have just to accept with the IDE\'s suggestion.
 Summary
 ======================
 
-This chapter introduced the reader to functional programming by
+This lab introduced the reader to functional programming by
 explaining and demonstrating the concept of functional interface and
 lambda expressions. The overview of standard functional interfaces that
 comes with JDK helps the reader to avoid writing custom code, while the
 method reference notation allows the reader to write well-structured
 code that is easy to understand and maintain.
 
-In the next chapter, we will talk about data streams processing. We will
+In the next lab, we will talk about data streams processing. We will
 define what data streams are, and look at how to process their data and
 how to chain stream operations in a pipeline. Specifically, we will
 discuss the stream\'s initialization and operations (methods), how to

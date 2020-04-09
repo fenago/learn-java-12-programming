@@ -4,7 +4,7 @@
 Java Microbenchmark Harness
 ===========================
 
-In this chapter, the reader will be introduced to a **Java
+In this lab, the reader will be introduced to a **Java
 Microbenchmark Harness** (**JMH**) project that allows for measuring
 various code performance characteristics. If performance is an important
 issue for your application, this tool can help you to identify
@@ -17,7 +17,7 @@ JVM optimizations, warmup runs, and so on.
 In addition to theoretical knowledge, the reader will have a chance to
 run JMH using practical demo examples and recommendations.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   What is JMH?
 -   Creating a JMH benchmark
@@ -237,7 +237,7 @@ It is also possible to request all of them:
 ```
 
 The described parameters and all the parameters we are going to discuss
-later in this chapter can be set at the method and/or class level. The
+later in this lab can be set at the method and/or class level. The
 method-level set value overrides the class-level value.
 
 Output time unit
@@ -530,7 +530,7 @@ generated code. It describes all the steps and decisions JMH makes in
 order to run the requested benchmark. You can find the generated code in
 the [target/generated-sources/annotations].
 
-The scope of this book does not allow for going into too many details on
+The scope of this course does not allow for going into too many details on
 how to read it, but it is not very difficult, especially if you start
 with a simple case of testing one method only. We wish you all the best
 in this endeavor.
@@ -538,14 +538,14 @@ in this endeavor.
 Summary
 ===========================
 
-In this chapter, the reader has learned about the JMH tool and was able
+In this lab, the reader has learned about the JMH tool and was able
 to use it for specific practical cases similar to those they encountered
 while programming their applications. The reader has learned how to
 create and run a benchmark, how to set the benchmark parameters, and how
 to install IDE plugins if needed. We also have provided practical
 recommendations and references for further reading.
 
-In the next chapter, readers will be introduced to the useful practices
+In the next lab, readers will be introduced to the useful practices
 of designing and writing application code. We will talk about Java
 idioms, their implementation and usage, and provide recommendations for
 implementing [equals()], [hashCode()], [compareTo()],

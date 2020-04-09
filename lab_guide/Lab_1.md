@@ -4,11 +4,11 @@
 Getting Started with Java
 ============================
 
-This chapter is about how to start learning Java 12 and Java in general.
+This lab is about how to start learning Java 12 and Java in general.
 We will begin with the basics, first explaining what Java is and its
 main terms, followed by how to install the necessary tools to write and
 run (execute) a program. In this respect, Java 12 is not much different
-to the previous Java versions, so this chapter's content is applies to
+to the previous Java versions, so this lab's content is applies to
 the older versions too.
 
 We will describe and demonstrate all the necessary steps for building
@@ -18,8 +18,8 @@ also describe the basic Java language constructs and illustrate them
 with examples that can be executed immediately.
 
 The best way to learn a programming language, or any language for that
-matter, is to use it, and this chapter guides the reader on how they can
-do this with Java. The topics covered in this chapter include the
+matter, is to use it, and this lab guides the reader on how they can
+do this with Java. The topics covered in this lab include the
 following:
 
 -   How to install and run Java
@@ -139,7 +139,7 @@ purpose. There are five Java platform editions, as listed here:
     runs on high-end secure microcontrollers.
 
 So, to install Java means to install JDK, which also means to install
-Java platform on one of the listed editions. In this book, we are going
+Java platform on one of the listed editions. In this course, we are going
 to talk about and use only Java SE.
 
 <h2><span style="color:red;">Note:</span></h2>
@@ -360,7 +360,7 @@ which is the same for any IDE, as follows:
 4.  Check out from Version Control: This facilitates reading of the
     existing project from the version control system.
 
-In this book, we will walk you through the first option only—using the
+In this course, we will walk you through the first option only—using the
 sequence of guided steps provided by the IDE. The other two options are
 much simpler and do not require additional explanations. Once you have
 learned how to create a new project from scratch, the other ways to
@@ -377,7 +377,7 @@ follows:
 3.  Select the desired project location in the Project location field
     (this is where your new code will reside).
 4.  Enter anything you like in the Project name field (for example, the
-    project for the code in this book is called learnjava) and click
+    project for the code in this course is called learnjava) and click
     the Finish button.
 5.  You will see the following project structure: 
 
@@ -404,7 +404,7 @@ projects of the world. To help avoid a groupId clash, the convention
 requires that you start building it from the organization domain name in
 reverse. For example, if a company has the domain name company.com, the
 group IDs of its projects should start with com.company. That is why,
-for the code in this book, we use the groupId value com.lv.learnjava.
+for the code in this course, we use the groupId value com.lv.learnjava.
 
 Let's set it. Click OK on the Add Framework Support pop-up window and
 you will see a newly generated pom.xml file as follows:
@@ -535,14 +535,14 @@ Importing a project (for Local Development)
 -------------------
 
 We are going to demonstrate project importing using the source code for
-this book. We assume that you have Maven installed
+this course. We assume that you have Maven installed
 ([https://maven.apache.org/install.html](https://maven.apache.org/install.html))
 on your computer and that you have Git
 ([https://gist.github.com/derhuerst/1b15ff4652a867391f03](https://gist.github.com/derhuerst/1b15ff4652a867391f03))
 installed too, and can use it. We also assume that you have installed
 JDK 12, as was described in the *Installation of Java SE* section.
 
-To import the project with the code examples for this book, follow these
+To import the project with the code examples for this course, follow these
 steps: 
 
 1.  Go to the source repository
@@ -565,7 +565,7 @@ its name, making sure that the folder's name
 is Learn-Java-12-Programming.
 
 5.  The new Learn-Java-12-Programming folder contains the Maven project
-    with all the source code from this book. Now run the IntelliJ IDEA
+    with all the source code from this course. Now run the IntelliJ IDEA
     and click File in the topmost menu, then New and Project from
     Existing Sources...:
 
@@ -698,7 +698,7 @@ is not as daunting as many people assume. 
 
 All the values in Java are divided into two categories: reference types
 and primitive types. We start with primitive types and operators as the
-natural entry point to any programming language. In this chapter, we
+natural entry point to any programming language. In this lab, we
 will also discuss one reference type called String (see the *String type
 and literals* section). 
 
@@ -1163,7 +1163,7 @@ relational operators (\<, \>, \<=, and \>=) in such cases is much more
 reliable, because calculations such as 1/3, for example, results in a
 never-ending fractional part 0.33333333... and ultimately depends on the
 precision implementation (a complex topic that is beyond the scope of
-this book).
+this course).
 
 Relational operators (\<, \>, \<=, and \>=)
 -------------------------------------------
@@ -1310,7 +1310,7 @@ by the new operator. We will talk about classes and objects in more
 detail in  *Java
 Object-Oriented Programming (OOP)*. 
 
-In this chapter, we will talk about one of the reference types called
+In this lab, we will talk about one of the reference types called
 String. It is represented by the java.lang.String class, which belongs,
 as you can see, to the most foundational package of JDK, java.lang. The
 reason we introduce the String class that early is that it behaves in
@@ -1601,11 +1601,9 @@ Here is the list of Java statement types:
 
 -   An empty statement that consists of only one symbol, ; (semicolon)
 -   A class or interface declaration statement (we will talk about this
-    in [Chapter
-    2]
-    *Java Object-Oriented Programming (OOP)*)
+    in *Java Object-Oriented Programming (OOP)*)
 -   A local variable declaration statement: int x;
--   A synchronized statement: this is beyond the scope of this book
+-   A synchronized statement: this is beyond the scope of this course
 -   An expression statement
 -   A control flow statement 
 
@@ -1670,9 +1668,7 @@ something.\
 -   A unary operator expression: x++, for example
 -   A binary operator expression: x\*y, for example
 -   A ternary operator expression: x \> y ? true : false, for example
--   A lambda expression: x -\> x + 1 (see [Chapter
-    14]
-    *Functional Programming*)
+-   A lambda expression: x -\> x + 1 (see *Functional Programming*)
 
 If an expression consists of other expressions, the parenthesis is often
 used to identify each of the expressions clearly. This way, it is easier
@@ -2214,7 +2210,7 @@ Congratulations for getting through it!
 Summary
 ============================
 
-This chapter introduced you to the exciting world of Java programming.
+This lab introduced you to the exciting world of Java programming.
 We started with explaining the main terms, and then explained how to
 install the necessary tools, JDK and IDE, and how to configure and use
 them.
@@ -2226,7 +2222,7 @@ defined what an identifier is, and what a variable is, and finished with
 a description of the main types of Java statements. All the points of
 the discussion were illustrated by the specific code examples.
 
-In the next chapter, we are going to talk about the object-oriented
+In the next lab, we are going to talk about the object-oriented
 aspects of Java. We will introduce the main concepts, explain what a
 class is, what an interface is, and the relationship between them. The
 terms *overloading*, *overriding*, and *hiding* will also be defined and

@@ -19,11 +19,11 @@ not easy. That is because an **Integrated Development Environment**
 cannot advise about the functionality of a package not imported yet. The
 only package that is imported automatically is [java.lang].
 
-This purpose of this chapter is to provide you with an overview of the
+This purpose of this lab is to provide you with an overview of the
 functionality of the most popular packages of JCL and external
 libraries. 
 
-The topics we are discussing in this chapter are as follows:
+The topics we are discussing in this lab are as follows:
 
 -   Java Class Library (JCL)
 -   [java.lang]
@@ -117,7 +117,7 @@ you will see listed as standard not only [java] and
 [javax] packages, but also [jdk], [com.sun],
 [org.xml], and some other packages too. These extra packages are
 primarily used by the tools or other specialized applications. In our
-book, we will concentrate mostly on the mainstream Java programming and
+course, we will concentrate mostly on the mainstream Java programming and
 talk only about the [java] and [javax] packages.
 
 java.lang
@@ -141,7 +141,7 @@ contains the most often used classes of JCL:
     [Boolean]
 -   [System] class: Provides access to important system operations
     and the standard input and output (we have used
-    the [System.out] object in every code example in this book)
+    the [System.out] object in every code example in this course)
 -   [Runtime] class: Provides access to the execution environment
 -   The [Thread] and [Runnable] interfaces: Fundamental for
     creating Java threads
@@ -193,16 +193,14 @@ The [java.util] package also includes several other useful
 classes:
 
 -   [Objects]: Provides various object-related utility methods,
-    some of which we have over-viewed in [Chapter
-    6]
+    some of which we have over-viewed in
     *Data Structures, Generics, and Popular Utilities.*
 -   [Arrays]: Contains some 160 static methods to manipulate
     arrays, some of which we have over-viewed in
     *Data Structures, Generics, and Popular Utilities.*
 -   [Formatter]: Allows formatting of any primitive type,
     [String], [Date], and other types; we have demonstrated
-    the examples of its usage in [Chapter
-    6]
+    the examples of its usage in
     *Data Structures, Generics, and Popular Utilities.*
 -   [Optional], [OptionalInt], [OptionalLong], and
     [OptionalDouble]: These classes help to avoid
@@ -256,16 +254,14 @@ serialization, and file systems. The difference between these two
 packages is as follows:
 
 -   The [java.io] package classes allow reading/writing data as
-    they come without caching (we discussed it in [Chapter
-    5]
+    they come without caching (we discussed it in 
     *Strings, Input/Output, and Files*), while classes of
     the [java.nio] package create a buffer that allows moving back
     and forth along the populated buffer.
 -   The [java.io] package classes block the stream until all the
     data is read or written, while classes of
     the [java.nio] package are implemented in a non-blocking style
-    (we will talk about non-blocking style in [Chapter
-    15]
+    (we will talk about non-blocking style in
     *Reactive Programming*).
 
 java.sql and javax.sql
@@ -549,7 +545,7 @@ third-party classes. 
 org.apache.log4j and org.slf4j
 ------------------------------
 
-Throughout this book, we used [System.out] to display the results.
+Throughout this course, we used [System.out] to display the results.
 In the real-life application, one can do it too and redirect the output
 to a file, for example, for later analysis. After doing it for some
 time, you will notice that you need more details about each output: the
@@ -724,15 +720,13 @@ static utility methods, chiefly concerned with adding value to the
 [java.lang] classes*.* Here are a few notable examples:
 
 -   The [ArrayUtils] class: Allows to search and manipulate
-    arrays; we discussed and demonstrated it in [Chapter
-    6]
+    arrays; we discussed and demonstrated it in
     *Data Structures, Generics, and Popular Utilities*
 -   The [ClassUtils] class: Provides some metadata about a class
 -   The [ObjectUtils] class: Checks an array of objects for
     [null], compares objects, and calculates the median and
     minimum/maximum of an array of objects in a null-safe manner; we
-    discussed and demonstrated it in [Chapter
-    6] *Data
+    discussed and demonstrated it in *Data
     Structures, Generics, and Popular Utilities*
 -   The [SystemUtils] class: Provides information about the
     execution environment
@@ -743,8 +737,7 @@ static utility methods, chiefly concerned with adding value to the
     performs many other validations
 -   The [RandomStringUtils] class: Generates [String]
     objects from the characters of various character sets
--   The [StringUtils] class: We discussed in [Chapter
-    5] *String,
+-   The [StringUtils] class: We discussed in *String,
     Input/Output, and Files*
 
 collections4
@@ -882,7 +875,7 @@ You can read more about this package on the Apache Commons project site
 Summary
 ====================================
 
-In this chapter, we provided an overview of the functionality of the
+In this lab, we provided an overview of the functionality of the
 most popular packages of
 JCL: [java.lang], [java.util], [java.time], [java.io], [java.nio], [java.sql],
 [javax.sql], [java.net], [java.lang.math],
@@ -895,11 +888,11 @@ The most popular external libraries were represented by the
 to avoid writing custom code in the cases when such functionality
 already exists and can just be imported and used out of the box.
 
-In the next chapter, we will talk about Java threads and demonstrate
+In the next lab, we will talk about Java threads and demonstrate
 their usage. We will also explain the difference between parallel and
 concurrent processing. We will demonstrate how to create a thread and
 how to execute, monitor, and stop it. It will be very useful material
 not only for those who are going to write code for multi-threaded
 processing but also for those who would like to improve their
 understanding of how the JVM works, which will be the topic of the
-following chapter.
+following lab.

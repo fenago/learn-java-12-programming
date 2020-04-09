@@ -40,7 +40,7 @@ In Java, a class can have only one direct parent but can implement many
 interfaces. The ability to behave as any of its ancestors and adhere to
 multiple interfaces is called **polymorphism**.
 
-In this chapter, we will look at these OOP concepts and how they are
+In this lab, we will look at these OOP concepts and how they are
 implemented in Java. The topics discussed include the following:
 
 -   OOP concepts
@@ -1694,7 +1694,7 @@ Polymorphism in action
 Polymorphism is the most powerful and useful feature of OOP. It uses all
 other OOP concepts and features we have presented so far. It is the
 highest conceptual point on the way to mastering Java programming. After
-it, the rest of the book will be mostly about Java language syntax and
+it, the rest of the course will be mostly about Java language syntax and
 JVM functionality. 
 
 As we have stated in the *OOP concepts* section, **polymorphism** is the
@@ -1915,7 +1915,7 @@ looks polymorphic and it is, but only to a degree.
 Summary
 ======================================
 
-This chapter introduced readers to the concepts of OOP and how they are
+This lab introduced readers to the concepts of OOP and how they are
 implemented in Java. It provided an explanation of each concept and
 demonstrated how to use it in specific code examples. The Java language
 constructs of class and interface were discussed in detail. The reader
@@ -1927,7 +1927,7 @@ powerful Java feature of polymorphism. This section brought all the
 presented material together and showed how polymorphism stays in the
 center of OOP.
 
-In the next chapter, the reader will become familiar with Java language
+In the next lab, the reader will become familiar with Java language
 syntax, including packages, importing, access modifiers, reserved and
 restricted keywords, and some aspects of Java reference types. The
 reader will also learn how to use the this and super keywords, what

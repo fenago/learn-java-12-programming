@@ -12,15 +12,15 @@ may also depend on how knowledgeable a programmer is. A novice may not
 understand what an experienced programmer is talking about, while a
 seasoned colleague nods and responds in kind. 
 
-In this chapter, readers will be introduced to some Java programming
+In this lab, readers will be introduced to some Java programming
 jargon---the Java idioms that describe certain features, functionality,
 design solutions, and so on. The reader will also learn the most popular
 and useful practices of designing and writing application code. By the
-end of this chapter, the reader will have a solid understanding of what
+end of this lab, the reader will have a solid understanding of what
 other Java programmers are talking about while discussing their design
 decisions and the functionalities they use.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Java idioms, their implementation, and their usage
 -   The [equals()], [hashCode()], [compareTo()], and
@@ -313,8 +313,7 @@ There are three things worth noting:
     value affects the order.
 -   We have put the result of [List.of()] into a [new
     ArrayList()] object. We did so because, as we have mentioned
-    already in [Chapter
-    6] *Data
+    already in *Data
     Structures, Generics, and Popular Utilities*, the collection created
     by a factory method [of()] is unmodifiable. No elements can be
     added or removed from it and the order of the elements cannot be
@@ -579,7 +578,7 @@ class is a preferred choice because it is faster.
 Try, catch, and finally clauses
 -------------------------------
 
-This book contains *Exception
+This course contains *Exception
 Handling*, dedicated to the usage of [try], [catch],
 and [finally] clauses, so we are not going to repeat it here. We
 would like just to repeat again that using a try-with-resources
@@ -687,10 +686,10 @@ design is more flexible, more extensible, and more predictable.
 Using libraries
 ---------------
 
-Throughout the book, we mentioned many times that using the **Java Class
+Throughout the course, we mentioned many times that using the **Java Class
 Library** (**JCL**) and external (to the **Java Development Kit**
 (**JDK**) Java libraries makes programming much easier and produces a
-code of higher quality. There is even a dedicated chapter,  *Java
+code of higher quality. There is even a dedicated lab,  *Java
 Standard and External Libraries*, which contains an overview of the most
 popular Java libraries. People who create libraries invest a lot of time
 and effort, so you should take advantage of them any time you can.
@@ -701,7 +700,7 @@ that reside in the [java.util.function] package of JCL. That is
 another way to take advantage of a library---by using the set of
 well-known and shared interfaces, instead of defining your own ones.
 
-This last statement is a good segue to the next topic of this chapter
+This last statement is a good segue to the next topic of this lab
 about writing code that is easily understood by other people.
 
 Code is written for people
@@ -720,7 +719,7 @@ submitted code work as fast as possible, even when a programmer did not
 think about it.
 
 It allowed programmers to write more lines of code without thinking much
-about the optimization. But tradition and many books about programming
+about the optimization. But tradition and many courses about programming
 continued to call for it, and some programmers still worry about their
 code performance, more so than the results it produces. It is easier to
 follow the tradition than to break away from it. That is why programmers
@@ -816,18 +815,18 @@ at all. 
 Summary
 ============================================
 
-In this chapter, we have discussed the Java idioms that a mainstream
+In this lab, we have discussed the Java idioms that a mainstream
 programmer encounters daily. We have also discussed the best design
 practices and related recommendations, including code-writing style and
 testing.
 
-In this chapter, readers have learned about the most popular Java idioms
+In this lab, readers have learned about the most popular Java idioms
 related to certain features, functionalities, and design solutions. The
 idioms were demonstrated with practical examples, and readers have
 learned how to incorporate them into their code and the professional
 language they use to communicate with other programmers. 
 
-In the next chapter, we will introduce the reader to four projects that
+In the next lab, we will introduce the reader to four projects that
 add new features to Java: Panama, Valhalla, Amber, and Loom. We hope it
 will help the reader to follow the Java development and envision the
 roadmap of future releases.

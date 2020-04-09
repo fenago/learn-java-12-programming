@@ -4,17 +4,17 @@
 Microservices 
 =============
 
-In this chapter, you will learn what microservices are, how they are
+In this lab, you will learn what microservices are, how they are
 different from other architectural styles, and how existing microservice
 frameworks support message-driven architecture. We will also help you to
 decide on the size of a microservice and discuss whether the service
 size plays any role in identifying it as a microservice or not. By the
-end of the chapter, you will understand how to build microservices and
+end of the lab, you will understand how to build microservices and
 use them as the foundational component for creating a reactive system.
 We will support the discussion with a detailed code demonstration of a
 small reactive system built using the Vert.x toolkit.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   What is a microservice?
 -   The size of a microservice
@@ -250,7 +250,7 @@ lightweight polyglot toolkit. It allows you to write components in Java,
 JavaScript, Groovy, Ruby, Scala, Kotlin, and Ceylon. It supports an
 asynchronous programming model and a distributed event bus that reaches
 into in-browser JavaScript, thus allowing the creation of real-time web
-applications. However, because of the focus of this book, we are going
+applications. However, because of the focus of this course, we are going
 to use Java only.
 
 Vert.x API has two source trees: the first starts with
@@ -864,7 +864,7 @@ read about this feature in the Vert.x documentation
 Summary
 =============
 
-In this chapter, the reader was introduced to the concept of
+In this lab, the reader was introduced to the concept of
 microservices and how they can be used to create a reactive system. We
 discussed the significance of the size of an application and how this
 can affect your decision to convert it into a microservice. You also
@@ -872,7 +872,7 @@ learned how existing microservice frameworks support message-driven
 architecture and had a chance to use one of them -- the Vert.x toolkit
 -- in practice.
 
-In the next chapter, we are going to explore the **Java Microbenchmark
+In the next lab, we are going to explore the **Java Microbenchmark
 Harness** (**JMH**) project, which allows you to measure code
 performance and other parameters. We will define what JMH is, how to
 create and run a benchmark, what the benchmark parameters are, and the

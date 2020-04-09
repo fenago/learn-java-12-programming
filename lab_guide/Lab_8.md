@@ -4,14 +4,14 @@
 Multithreading and Concurrent Processing 
 ========================================
 
-In this chapter, we will discuss the ways to increase Java application
+In this lab, we will discuss the ways to increase Java application
 performance by using the workers (threads) that process data
 concurrently. We will explain the concept of Java threads and
 demonstrate their usage. We will also talk about the difference between
 parallel and concurrent processing and how to avoid unpredictable
 results caused by the concurrent modification of the shared resource.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Thread vs process
 -   User thread vs daemon 
@@ -76,7 +76,7 @@ Thread versus process
 Java has two units of execution---process and thread. A **process**
 usually represents the whole JVM, although an application can create
 another process using [java.lang.ProcessBuilder]. But, since the
-multi-process case is outside the scope of this book, we will focus on
+multi-process case is outside the scope of this course, we will focus on
 the second unit of execution, that is, a **thread**, which is similar to
 a process but less isolated from other threads and requires fewer
 resources for execution.
@@ -301,7 +301,7 @@ The state of a thread can have one of the following values:
 Threads and any objects for that matter also can *talk to each
 other* using the methods [wait()], [notify()], and
 [notifyAll()] of the [java.lang.Object] base class. But this
-aspect of threads\' behavior is outside the scope of this book.
+aspect of threads\' behavior is outside the scope of this course.
 
 Using pool of threads 
 ========================================
@@ -1388,7 +1388,7 @@ and computer systems are evolving in this direction.
 Summary
 ========================================
 
-In this chapter, we talked about multithreaded processing, the ways to
+In this lab, we talked about multithreaded processing, the ways to
 organize it and avoid unpredictable results caused by the concurrent
 modification of the shared resource. We have shown readers how to create
 threads and execute them using pools of threads. We have also
@@ -1396,10 +1396,10 @@ demonstrated how the results can be extracted from the threads that have
 completed successfully and discussed the difference between parallel and
 concurrent processing. 
 
-In the next chapter, we will provide readers with a deeper understanding
+In the next lab, we will provide readers with a deeper understanding
 of JVM, its structure and processes, and we\'ll discuss in detail the
 garbage collection process that keeps memory from being overflown. By
-the end of the chapter, the readers will know what constitutes Java
+the end of the lab, the readers will know what constitutes Java
 application execution, Java processes inside JVM, garbage collection,
 and how JVM works in general.
 

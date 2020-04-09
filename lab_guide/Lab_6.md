@@ -4,14 +4,14 @@
 Data Structures, Generics, and Popular Utilities 
 ================================================
 
-This chapter presents the Java collections framework and its three main
+This lab presents the Java collections framework and its three main
 interfaces: [List], [Set], and [Map], including a
 discussion and demonstration of generics. The [equals()] and
 [hashCode()] methods are also discussed in the context of Java
 collections. Utility classes for managing arrays, objects, and time/date
 values have corresponding dedicated sections too.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   [List], [Set], and [Map] interfaces
 -   Collections utilities
@@ -104,7 +104,7 @@ The [java.util] package contains the following:
     three most frequently used
 
 To review all the classes and interfaces of the [java.util]
-package would require a dedicated book. So, in this section, we will
+package would require a dedicated course. So, in this section, we will
 just have a brief overview of the three main
 interfaces: [List], [Set], and [Map]---and one
 implementation class for each of them---[ArrayList],
@@ -393,8 +393,7 @@ for(String e: list){
     applies the provided function of the [Consumer] type to each
     element of the collection until all elements have been processed or
     the function throws an exception. What function is, we will discuss
-    this in [Chapter
-    13] *Functional
+    this in *Functional
     Programming;* for now, we will just provide an example:
 
 
@@ -408,7 +407,7 @@ list.forEach(e -> System.out.print(e + " ")); //prints: s1 s2 s3
     object of a class that implements the
     [java.util.Spliterator] interface; it is used primarily for
     implementing methods that allow parallel processing and is outside
-    the scope of this book. 
+    the scope of this course. 
 
 Collection interface
 --------------------
@@ -504,8 +503,7 @@ System.out.println(set1.equals(set3));  //prints: false
 -   [default boolean removeIf(Predicate\<? super E\> filter)]:
     This attempts to remove from the collection all the elements that
     satisfy the given predicate; it is a function we are going to
-    describe in [Chapter
-    13] *Functional
+    describe in *Functional
     Programming*; it returns [true] if at least one element was
     removed
 
@@ -523,12 +521,10 @@ System.out.println(set1.equals(set3));  //prints: false
     toArray(T\[\] a)]: This converts the collection to an array.
 -   [default T\[\] toArray(IntFunction\<T\[\]\>
     generator)]: This converts the collection to an array, using
-    the function provided; we are going to explain functions in [Chapter
-    13] *Functional
+    the function provided; we are going to explain functions in *Functional
     Programming*.
 -   [default Stream\<E\> stream()]: This returns
-    a [Stream] object (we talk about streams in [Chapter
-    14] *Java
+    a [Stream] object (we talk about streams in *Java
     Standard Streams*).
 -   [default Stream\<E\> parallelStream()]: This returns a
     possibly parallel [Stream] object (we talk about streams in *Java
@@ -766,7 +762,7 @@ we are not going to repeat them here. We will only walk through the
     This converts the [Map] provided to an unmodifiable one.
 
 The following [Map] methods are much too complicated for the scope
-of this book, so we are just mentioning them for the sake of
+of this course, so we are just mentioning them for the sake of
 completeness. They allow multiple values to be combined or calculated
 and aggregated in a single existing value in the [Map], or a new
 one to be created:
@@ -781,8 +777,7 @@ one to be created:
     aggregating several values; for example, it can be used for
     concatenating the following string values: [map.merge(key, value,
     String::concat)]; we will explain what
-    [String::concat] means in [Chapter
-    13]
+    [String::concat] means in
     *Functional Programming.*
 -   [default V compute(K key, BiFunction\<K,V,V\>
     remappingFunction)]: It computes a new value using the
@@ -1037,7 +1032,7 @@ Maven [pom.xml] configuration file:
 There are many methods in this class, and more methods will probably be
 added over time. These utilities are created in addition to
 the [Collections] methods, so they are more complex and nuanced
-and do not fit the scope of this book. To give you an idea of the
+and do not fit the scope of this course. To give you an idea of the
 methods available in the [CollectionUtils] class, here are some
 brief descriptions of the methods grouped according to their
 functionality:
@@ -1122,8 +1117,7 @@ the [Arrays] class functionality:
     for parallel processing of an array or part of it (specified
     according to the range of indices).
 -   [stream()]: This generates a stream of array elements or some
-    of them (specified according to the range of indices); see [Chapter
-    14]
+    of them (specified according to the range of indices); see 
     *Java Standard Streams.*
 
 All of these methods are helpful, but we would like to draw your
@@ -1441,7 +1435,7 @@ The last statement of the previous section applies to
 the [org.apache.commons.lang3.ObjectUtils] class of the Apache
 Commons library that complements the methods of
 the [java.util.Objects] class described in the preceding section.
-The scope of this book and its allotted size does not allow for a
+The scope of this course and its allotted size does not allow for a
 detailed review of all the methods under
 the [ObjectUtils] class, so we will describe them briefly in
 groups according to their related functionality. To use this class, you
@@ -1873,7 +1867,7 @@ the [java.time] package and its sub-packages.
 Summary
 ================================================
 
-This chapter introduced the reader to the Java collections framework and
+This lab introduced the reader to the Java collections framework and
 its three main interfaces: [List], [Set], and [Map].
 Each of the interfaces was discussed and its methods demonstrated with
 one of the implementing classes. The generics were explained and
@@ -1891,7 +1885,7 @@ The class methods of the [java.time] package allow time/date
 values to be managed, class was demonstrated in specific practical code
 snippets.
 
-In the next chapter, we will overview the Java Class Library and some
+In the next lab, we will overview the Java Class Library and some
 external libraries, including those that support testing. Specifically,
 we will explore the [org.junit], [org.mockito],
 [org.apache.log4j], [org.slf4j], and

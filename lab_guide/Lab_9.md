@@ -4,7 +4,7 @@
 JVM Structure and Garbage Collection 
 ====================================
 
-This chapter provides readers with an overview of **Java Virtual
+This lab provides readers with an overview of **Java Virtual
 Machine** (**JVM**) structure and behavior, which are more complex than
 you might expect.
 
@@ -18,11 +18,11 @@ to the application threads. One of the service threads, called **garbage
 collection** (**GC**), performs an important mission of releasing the
 memory from unused objects. 
 
-After reading this chapter, readers will better understand what
+After reading this lab, readers will better understand what
 constitutes Java application execution, Java processes inside JVM, GC,
 and how JVM works in general.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Java application execution
 -   Java processes
@@ -72,7 +72,7 @@ as synonyms:
 There are also several ways to do it. In 
 *Getting Started with Java*, we showed you how to run
 the [main(String\[\])] method using IntelliJ IDEA. In this
-chapter, we will just repeat some of what has been said already and add
+lab, we will just repeat some of what has been said already and add
 other variations that might be helpful for you.
 
 Using an IDE
@@ -934,7 +934,7 @@ grow big enough to affect both the application\'s responsiveness and
 throughput.
 
 Fortunately, it is possible to tune the GC behavior using Java command
-options, but that is outside the scope of this book. We will concentrate
+options, but that is outside the scope of this course. We will concentrate
 instead on a high-level view of the main activity of a GC inspecting
 objects in the heap and removing those that don\'t have references in
 any thread stack.
@@ -1013,7 +1013,7 @@ behavior.
 Summary
 ====================================
 
-In this chapter, the reader has learned how a Java application can be
+In this lab, the reader has learned how a Java application can be
 executed using an IDE or the command line. Now you can write your own
 applications and launch them in a manner most appropriate for the given
 environment. Knowledge about the JVM structure and its processes --
@@ -1022,7 +1022,7 @@ collection, and application termination -- provides you with better
 control over the application\'s execution and transparency about the
 performance and current state of the JVM.
 
-In the next chapter, we will discuss and demonstrate how to manage --
+In the next lab, we will discuss and demonstrate how to manage --
 insert, read, update, and delete -- data in a database from a Java
 application. We will also provide a short introduction to SQL language
 and basic database operations: how to connect to a database, how to

@@ -4,14 +4,14 @@
 Java - Getting New Features 
 ===========================
 
-In this chapter, the reader will learn about the current most
+In this lab, the reader will learn about the current most
 significant projects that will add new features to Java and enhance it
-in other aspects. After reading this chapter, the reader will understand
+in other aspects. After reading this lab, the reader will understand
 how to follow Java development and will envision the road map of future
 Java releases. If so desired, the reader can become a JDK source
 contributor too.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Java continues to evolve
 -   Panama project
@@ -45,7 +45,7 @@ one of the Java enhancement projects in the area of your interests is
 much easier. You could even try to contribute to one such project as an
 expert in a particular area, or just as an interested party.
 
-In this chapter, we are going to review the five most important, in our
+In this lab, we are going to review the five most important, in our
 opinion, Java enhancement projects:
 
 -   **Project Panama**: Focused on the interoperability with non-Java
@@ -63,7 +63,7 @@ opinion, Java enhancement projects:
 Panama project
 ===========================
 
-Throughout the book, we advised using various Java libraries--- the
+Throughout the course, we advised using various Java libraries--- the
 standard **Java Class Library** (**JCL**) and external Java libraries
 that help to improve code quality and make the development time shorter.
 But there are also non-Java external libraries that may be needed for
@@ -474,7 +474,7 @@ Loom project
 ===========================
 
 The **Loom project** (<https://openjdk.java.net/projects/loom>) may be
-the most significant of the projects listed in this chapter that can
+the most significant of the projects listed in this lab that can
 give Java a power boost. From the very early days almost 25 years ago,
 Java provided a relatively simple multi-threading model with a
 well-defined synchronization mechanism. We described it in 
@@ -566,7 +566,7 @@ To access the source code today, you need to download it from a
 Mercurial repository and compile it manually. The Skara project\'s goal
 is to move the source code to Git because Git is now the most popular
 source repository, and many programmers use it already. The source code
-of the examples in this book, as you know, is stored on GitHub too. 
+of the examples in this course, as you know, is stored on GitHub too. 
 
 The current results of the Skara project you can see in GitHub already
 (<https://github.com/Project-Skara/jdk>). Well, it still uses a mirror
@@ -577,7 +577,7 @@ independent.
 Summary
 ===========================
 
-In this chapter, the reader has learned about the current most
+In this lab, the reader has learned about the current most
 significant projects that enhance the JDK. We hope that you were able to
 understand how to follow Java development and have envisioned the road
 map of future Java releases. There are many more on-going projects

@@ -4,14 +4,14 @@
 Reactive Programming 
 ====================
 
-In this chapter, the reader will be introduced to the **Reactive
+In this lab, the reader will be introduced to the **Reactive
 Manifesto** and the world of reactive programming. We start with
 defining and discussing the main related concepts -- asynchronous,
 non-blocking, and responsive. Using them, we then define and discuss
 reactive programming, the main reactive frameworks, and talk about
 **RxJava** in more detail.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Asynchronous processing
 -   Non-blocking API
@@ -101,7 +101,7 @@ streams.
 The parallel-stream operations behind the scenes that create child
 threads break the stream into segments, and assign each segment to a
 dedicated thread for processing, and then aggregate the partial results
-from all the segments into the final result. In the previous chapter, we
+from all the segments into the final result. In the previous lab, we
 have even written functions that did the aggregating job. As a reminder,
 the function was called a **combiner**.
 
@@ -489,7 +489,7 @@ resources allocation.
 Such small services are called microservices, and many of them together
 can comprise a reactive system that can be both scalable and elastic. We
 will talk about such architecture in more details in the following
-sections and the next chapter.
+sections and the next lab.
 
 Message-driven
 --------------
@@ -505,7 +505,7 @@ It creates a breathing space around each component without which the
 system would be a tightly coupled monolith susceptible to all kinds of
 problems, not to mention a maintenance nightmare.
 
-In the next chapter, we are going to look at the architectural style
+In the next lab, we are going to look at the architectural style
 that can be used to build an application as a collection of
 loosely-coupled microservices that communicate using messages.
 
@@ -693,7 +693,7 @@ advantage of the cached data, thus allowing for better performance:
 ![]./images_13/3ec2a6d2-6903-489f-8d6c-52cffc64cfe0.png)
 
 RxJava provides such a rich functionality that there is no way we can
-review it all in detail in this book. Instead, we will try to cover the
+review it all in detail in this course. Instead, we will try to cover the
 most popular API. The API describes the methods available for invocation
 using an [Observable] object. Such methods are often also called
 **operations** (as in the case with the standard Java 8 streams too) or
@@ -1259,7 +1259,7 @@ rarely used because there are many simpler ways to create an observable.
 We review them in the following sections.
 
 You will see examples of other factory methods used in our
-examples throughout other sections of this chapter.
+examples throughout other sections of this lab.
 
 Operators
 ---------
@@ -1806,8 +1806,7 @@ configuration:
 -   [from(Executor executor)]: Creates a scheduler based on the
     provided executor (thread pool), which allows for better controlling
     the max number of threads and their life cycles. We talked about
-    thread pools in [Chapter
-    8]
+    thread pools in
     *Multithreading and Concurrent Processing*. To remind you, here are
     the pools we have discussed:
 
@@ -1972,20 +1971,20 @@ another for observing:
 
 This concludes our short overview of RxJava, which is a big and
 still-growing library with a lot of possibilities, many of which we just
-did not have space in this book to review. We encourage you to try and
+did not have space in this course to review. We encourage you to try and
 learn it because it seems that reactive programming is the way modern
 data processing is heading.
 
 Summary
 ====================
 
-In this chapter, the reader has learned what reactive programming is and
+In this lab, the reader has learned what reactive programming is and
 what its main concepts are: asynchronous, non-blocking, responsive, and
 so on. The reactive streams were introduced and explained in simple
 terms, as well as the RxJava library, the first solid implementation
 that supports reactive programming principles.
 
-In the next chapter, we will talk about microservices as the foundation
+In the next lab, we will talk about microservices as the foundation
 for creating reactive systems and will review another library that
 successfully supports reactive programming: **Vert.x**. We will use it
 to demonstrate how various microservices can be built.

@@ -4,22 +4,22 @@
 Java Fundamentals
 =================
 
-This chapter presents to the reader a more detailed view of Java as a
+This lab presents to the reader a more detailed view of Java as a
 language. It starts with the code organization in packages and the
 description of accessibility levels of classes (interfaces) and their
 methods and properties (fields). The reference types, as the main types
 of a Java object—oriented nature, are also presented in detail ,
 followed by a list of reserved and restricted keywords and a discussion
-of their usage. The chapter ends with the methods of conversion between
+of their usage. The lab ends with the methods of conversion between
 primitive types and from a primitive type to the corresponding reference
 type and back.
 
 These are the Java language fundamental terms and features. The
 importance of their understanding cannot be overstated. Without them,
 you cannot write any Java program. So, try not to rush through this
-chapter and make sure you understand everything presented.
+lab and make sure you understand everything presented.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Packages, importing, and access
 -   Java reference types
@@ -957,8 +957,7 @@ string. 
     is equals(). Nevertheless, it is recommended to have it just in case
     the object of this class is going to be collected in Set or another
     collection based on a hash code (we are going to talk about Java
-    collections in [Chapter
-    6]
+    collections in
     *Data Structures, Generics, and Popular Utilities*). 
 
 Both these methods are implemented in Object because many algorithms use
@@ -1009,12 +1008,10 @@ keywords:
 
 -   const and goto are reserved but not used, so far
 -   The assert keyword is used in an assert statement (we will talk
-    about this in [Chapter
-    4]
+    about this in
     *Exception Handling*).
 -   The synchronized keyword is used in concurrent programming (we will
-    talk about this in [Chapter
-    8]
+    talk about this in
     *Multithreading and Concurrent Processing*).
 -   The volatile keyword makes the value of a variable uncacheable.
 -   The transient keyword makes the value of a variable not serializable
@@ -1041,7 +1038,7 @@ The 10 restricted keywords in Java are as follows:
 -   with
 
 They are called *restricted* because they cannot be identifiers in the
-context of a module declaration, which we will not discuss in this book.
+context of a module declaration, which we will not discuss in this course.
 In all other places, it is possible to use them as identifiers, for
 example:
 
@@ -1176,7 +1173,7 @@ class C extends B {
 }
 ```
 
-As we progress through this book, we will see more examples of using
+As we progress through this course, we will see more examples of using
 the this and super keywords.
 
 
@@ -1266,7 +1263,7 @@ conversions:
 Similar to the widening conversion, a narrowing conversion may result in
 a loss of precision, or even in a loss of the value magnitude. The
 narrowing conversion is more complicated than a widening one and we are
-not going to discuss it in this book. It is important to remember that
+not going to discuss it in this course. It is important to remember that
 before performing a narrowing, you must make sure that the original
 value is smaller than the maximum value of the target type. Otherwise,
 you can get a completely different value (with lost magnitude). Look at
@@ -1492,7 +1489,7 @@ between wrapping and primitive types that do not match.
 Summary
 =================
 
-In this chapter, you have learned what Java packages are and the role
+In this lab, you have learned what Java packages are and the role
 they play in organizing  code and class accessibility, including the
 import statement and access modifiers. You also became familiar with
 reference types: classes, interfaces, arrays, and enums. The default
@@ -1504,10 +1501,10 @@ overridden. You also had an opportunity to study the full list of
 reserved and restricted keywords and learned the meaning and usage of
 the this and super keywords.
 
-The chapter concluded by describing the process and methods of
+The lab concluded by describing the process and methods of
 conversion between primitive types, wrapping types, and String literals.
 
-In the next chapter, we will talk about the Java exceptions framework,
+In the next lab, we will talk about the Java exceptions framework,
 checked and unchecked (runtime) exceptions, try-catch-finally blocks,
 throws and throw statements, and the best practices of exception
 handling.

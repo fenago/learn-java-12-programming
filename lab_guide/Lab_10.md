@@ -4,7 +4,7 @@
 Network Programming 
 ===================
 
-In this chapter, we will describe and discuss the most popular network
+In this lab, we will describe and discuss the most popular network
 protocols -- **User Datagram Protocol** (**UDP**), **Transmission
 Control Protocol** (**TCP**), **HyperText Transfer Protocol**
 (**HTTP**), and **WebSocket** -- and their support from the **Java Class
@@ -13,7 +13,7 @@ how to implement client-server communication in Java code. We will
 also review **Uniform Resource Locator** (**URL**)-based communication
 and the latest **Java HTTP Client API**.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Network protocols
 -   UDP-based communication
@@ -122,7 +122,7 @@ implementations.
 For security reasons, Java does not provide access to the protocols of
 the link layer and the internet layer. This means that Java does not
 allow you to create custom transport protocols that, for example, serve
-as an alternative to TCP/IP. That is why, in this chapter, we will
+as an alternative to TCP/IP. That is why, in this lab, we will
 review only the protocols of the transport layer (TCP and UDP) and the
 application layer (HTTP). We will explain and demonstrate how Java
 supports them and how a Java application can take advantage of this
@@ -1655,7 +1655,7 @@ class WsClient implements WebSocket.Listener {
 ```
 
 A server can be implemented in a similar way, but server implementation
-is beyond the scope of this book. To demonstrate the preceding client
+is beyond the scope of this course. To demonstrate the preceding client
 code, we are going to use a WebSocket server provided by
 the [echo.websocket.org] website. It allows a WebSocket connection
 and sends the received message back; such a server is typically called
@@ -1701,12 +1701,12 @@ support the WebSocket protocol.
 Summary
 ===================
 
-In this chapter, the reader was presented with a description of the most
+In this lab, the reader was presented with a description of the most
 popular network protocols: UDP, TCP/IP, and WebSocket. The discussion
 was illustrated with code examples using JCL. We also reviewed URL-based
 communication and the latest Java HTTP 2 Client API.
 
-The next chapter provides an overview of Java GUI technologies and
+The next lab provides an overview of Java GUI technologies and
 demonstrates a GUI application using JavaFX, including code examples
 with control elements, charts, CSS, FXML, HTML, media, and various other
 effects. The reader will learn how to use JavaFX to create a GUI

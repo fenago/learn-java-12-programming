@@ -4,7 +4,7 @@
 Strings, Input/Output, and Files
 ================================
 
-In this chapter, a reader will be presented with [String] class
+In this lab, a reader will be presented with [String] class
 methods in more detail. We will also discuss popular string utilities
 from standard libraries and Apache Commons project. An overview of Java
 input/output streams and related classes of the [java.io] packages
@@ -12,7 +12,7 @@ will follow along with some classes of
 the [org.apache.commons.io] package. The file managing classes and
 their methods are described in the dedicated section.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Strings processing
 -   I/O streams
@@ -139,7 +139,7 @@ System.out.println("abc".matches("[a-z]+"));   //prints: true
 System.out.println("ab1".matches("[a-z]+"));   //prints: false
 ```
 
-Regular expressions are outside the scope of this book. You can learn
+Regular expressions are outside the scope of this course. You can learn
 about them
 at [https://www.regular-expressions.info](https://www.regular-expressions.info/).
 In the preceding example, the expression [\[a-z\]+] matches one or
@@ -887,7 +887,7 @@ Primitive types and most of Java classes, including [String]
 class and primitive type wrappers, are serializable. If a class has
 fields of custom types, they have to be made serializable by
 implementing [java.io.Serizalizable]. How to do it is outside the
-scope of this book. For now, we are going to use only the serializable
+scope of this course. For now, we are going to use only the serializable
 types. Let\'s look at this class:
 
 
@@ -1363,7 +1363,7 @@ Other classes of the [java.io] package include the following: 
     from a serializable class
 -   [RandomAccessFile]: Allows random access for reading from and
     writing to a file, but its discussion is outside the scope of this
-    book
+    course
 -   [File]: Allows creating and managing files and directories;
     described in the *Files management* section
 
@@ -1857,7 +1857,7 @@ The result remains the same:
 ![]./images_5/4b59a98e-30bb-44e8-bfc8-43026a7a3c3c.png)
 
 It is also possible to use a regular expression for extracting the
-tokens, but this topic is outside the scope of this book.
+tokens, but this topic is outside the scope of this course.
 
 The [Scanner] class has many other methods that make its usage
 applicable to a variety of sources and required results. The
@@ -2082,7 +2082,7 @@ filter:
 -   [File\[\] listFiles(FilenameFilter filter)]
 
 However, discussion of the file filters is outside the scope of this
-book.
+course.
 
 
 Apache Commons utilities FileUtils and IOUtils
@@ -2181,15 +2181,15 @@ website
 Summary
 ================================
 
-In this chapter, we have discussed the [String] class methods that
+In this lab, we have discussed the [String] class methods that
 allow analyzing strings, comparing, and transforming them. We have also
 discussed popular string utilities from JCL and the Apache Commons
-project. Two big sections of this chapter were dedicated to the
+project. Two big sections of this lab were dedicated to the
 input/output streams and the supporting classes in JCL and the Apache
 Commons project. The file managing classes and their methods were also
 discussed and demonstrated in specific code examples.
 
-In the next chapter, we will present the Java collections framework and
+In the next lab, we will present the Java collections framework and
 its three main interfaces, [List], [Set], and [Map],
 including discussion and demonstration of generics. We will also discuss
 utility classes for managing arrays, objects, and time/date values.

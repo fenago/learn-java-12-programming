@@ -4,16 +4,16 @@
 Exception Handling 
 ==================
 
-We have introduced exceptions briefly in *Getting Started with Java*. In this chapter, we will treat this
+We have introduced exceptions briefly in *Getting Started with Java*. In this lab, we will treat this
 topic more systematically. There are two kinds of exceptions in Java:
 checked and unchecked exceptions. Both of them will be demonstrated and
 the difference between the two will be explained. The reader will also
 learn about the syntax of the Java constructs related to exceptions
 handling and the best practices to address (handle) the exceptions. The
-chapter will end with the related topic of an assertion statement that
+lab will end with the related topic of an assertion statement that
 can be used to debug the code in production.
 
-The following topics will be covered in this chapter:
+The following topics will be covered in this lab:
 
 -   Java exceptions framework
 -   Checked and unchecked (runtime) exceptions
@@ -597,15 +597,15 @@ proved to be useful:
 Summary
 ==================
 
-In this chapter, readers were introduced to the Java exception handling
+In this lab, readers were introduced to the Java exception handling
 framework, learned about two kinds of exceptions -- checked and
 unchecked (runtime) -- and how to handle them using
 [try-catch-finally] and [throws] statements. Readers have
 also learned how to generate (throw) exceptions and how to create their
-own (custom) exceptions. The chapter concluded with the best practices
+own (custom) exceptions. The lab concluded with the best practices
 of exception handling.
 
-In the next chapter, we will talk about strings and their processing in
+In the next lab, we will talk about strings and their processing in
 detail, as well as input/output streams and file reading and writing
 techniques.
 

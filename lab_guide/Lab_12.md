@@ -4,16 +4,15 @@
 Numeric stream interfaces
 =====================
 
-In this chapter, we will talk about processing data streams, which are
-different from the I/O streams we reviewed in
-[Chapter 5] *Strings,
+In this lab, we will talk about processing data streams, which are
+different from the I/O streams we reviewed in *Strings,
 Input/Output, and Files*. We will define what data streams are, how to
 process their elements using methods (operations) of
 the [java.util.stream.Stream] object, and how to chain (connect)
 stream operations in a pipeline. We will also discuss stream
 initialization and how to process streams in parallel.
 
-The following topics will be covered in this chapter, as follows:
+The following topics will be covered in this lab, as follows:
 
 -   Streams as a source of data and operations
 -   Stream initialization
@@ -72,7 +71,7 @@ You can run the example by running following command in the terminal:
 Streams as a source of data and operations
 =====================
 
-Lambda expressions, described and demonstrated in the previous chapter,
+Lambda expressions, described and demonstrated in the previous lab,
 together with functional interfaces added a powerful functional
 programming capability to Java. They allow passing behavior (functions)
 as parameters to libraries optimized for the performance of the data
@@ -80,7 +79,7 @@ processing. This way, an application programmer can concentrate on the
 business aspects of the developed system, leaving the performance
 aspects to the specialists -- the authors of the library. One example of
 such a library is [java.util.stream], which is going to be the
-focus of this chapter.
+focus of this lab.
 
 In
 *Strings, Input/Output, and Files*, we talked about I/O streams as the
@@ -133,7 +132,7 @@ of [Stream] interface, [IntStream], [LongStream], or
 methods of the [Stream] interface are also available in numeric
 streams. Some of the numeric streams have a few extra methods, such
 as [average()] and [sum()], specific numeric values. In this
-chapter, we are going to speak mostly about the [Stream] interface
+lab, we are going to speak mostly about the [Stream] interface
 and its methods, but everything we will cover is equally applicable to
 numeric streams too.
 
@@ -636,7 +635,7 @@ Other classes and methods that create streams include the following:
 
 There is also a [java.util.stream.StreamSupport] class that
 contains static low-level utility methods for library developers. But we
-won\'t be reviewing it, as this is outside the scope of this book.
+won\'t be reviewing it, as this is outside the scope of this course.
 
 
 Operations (methods)
@@ -1851,7 +1850,7 @@ static Collector<T,A,R> of(Supplier<A> supplier,
 The functions you have to pass to the preceding methods are similar to
 those we have demonstrated already. But we are not going to do this, for
 two reasons. First, it is more involved and pushes us beyond the scope
-of this book, and, second, before doing that, you have to look in
+of this course, and, second, before doing that, you have to look in
 the [java.util.stream.Collectors] class, which provides many
 ready-to-use collectors.
 
@@ -2055,7 +2054,7 @@ as follows:
     [toUnmodifiableSet()]
 
 If you cannot find the operation you need among those discussed in this
-book, search the [Collectors] API first, before building your own
+course, search the [Collectors] API first, before building your own
 [Collector] object.
 
 Numeric stream interfaces
@@ -2066,7 +2065,7 @@ interfaces, [IntStream], [LongStream], and
 [DoubleStream], have methods similar to the methods in the
 [Stream] interface, including the methods of the
 [Stream.Builder] interface. This means that everything we have
-discussed so far in this chapter equally applies to any numeric stream
+discussed so far in this lab equally applies to any numeric stream
 interfaces. That is why in this section we will only talk about those
 methods that are not present in the [Stream] interface, as
 follows:
@@ -2333,15 +2332,15 @@ deciding between sequential and parallel processing, as follows:
 Summary
 =====================
 
-In this chapter, we have talked about data-streams processing, which is
+In this lab, we have talked about data-streams processing, which is
 different from processing the I/O streams we reviewed in
-[Chapter 5] *Strings,
+*Strings,
 Input/Output, and Files*. We defined what the data streams are, how to
 process their elements using stream operations, and how to chain
 (connect) stream operations in a pipeline. We also discussed stream
 initialization and how to process streams in parallel. 
 
-In the next chapter, the reader will be introduced to The **Reactive
+In the next lab, the reader will be introduced to The **Reactive
 Manifesto**, its thrust, and examples of its implementations. We will
 discuss the difference between reactive and responsive systems and what
 **asynchronous** and **non-blocking** processings are. We will also talk
